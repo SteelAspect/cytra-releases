@@ -9,6 +9,14 @@
       "changelog": "- Enabled switch (Scanner tab): off stops the running scan, the overlay, the HUD and the scan hotkeys. Cytra Hub uses it for the on/off switch and profiles\n- Mod icon (Cytra logo)\n\nNeeds Litematica 0.26.16+ and MaLiLib 0.27.20+."
     },
     {
+      "id": "cytra-botmacros",
+      "name": "Cytra Bot Macros",
+      "version": "1.2.0",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-botmacros-v1.2.0/cytra-botmacros-1.2.0.jar",
+      "sha256": "06be0f61e6e8566dcc5fa580a11fd35899a59244c8bb1496a1e2aaf673b72491",
+      "changelog": "- Client on/off switch: clientEnabled in config.json and /bm enable | /bm disable. Off: keys, hotkeys, quick add and starting macros from this client do nothing; running and server macros keep going. Cytra Hub uses it for the on/off switch and profiles\n- Mod icon (Cytra logo)"
+    },
+    {
       "id": "cytra-hub",
       "name": "Cytra Hub",
       "version": "0.3.0",
