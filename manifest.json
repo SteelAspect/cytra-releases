@@ -55,6 +55,14 @@
       "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-syncmatica-v1.4.0+1.21.11/cytra-syncmatica-1.4.0+1.21.11.jar",
       "sha256": "086aa20a028445949ec6536e59832074652a7992522128890cb1f99c92546370",
       "changelog": "- Chunk Claims screen: drag to claim chunks with a description, or release them\n- Warning when a schematic is placed in someone else's claimed area\n- Previews can be drawn from other angles\n- Previews of .schem and .nbt files"
+    },
+    {
+      "id": "cytrabackups",
+      "name": "CytraBackups",
+      "version": "1.6.4",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytrabackups-v1.6.4/cytrabackups-1.6.4.jar",
+      "sha256": "1c976d405f47d9be0086e0cc0d5f316de3bad02b3aa5a64c67d143883f955f18",
+      "changelog": "- New mod icon: the Cytra logo (Mod Menu, Cytra Hub). No other changes."
     }
   ]
 }
