@@ -108,19 +108,6 @@
       }
     },
     {
-      "id": "cytra-link",
-      "name": "Cytra Link",
-      "version": "0.3.2",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-link-v0.3.2/cytra-link-0.3.2.jar",
-      "sha256": "f1a09c8a63830d81ee783724e008e5c1b24299384db6559b8f92c1e69c56ade1",
-      "changelog": "- Mod icon (Cytra logo). Same code as 0.3.1\n- 0.3.1: a bot that reconnects after a server restart gets the new boot's log lines\n- 0.3.0: extension API for other server mods (Cytra-Syncmatica, Cytra Hub)\n\nServer only.",
-      "environment": "server",
-      "depends": {
-        "fabric-api": "*"
-      },
-      "optional": {}
-    },
-    {
       "id": "cytra-syncmatica",
       "name": "Cytra-Syncmatica",
       "version": "1.4.0+1.21.11",
