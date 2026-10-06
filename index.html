@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cytra Mods</title>
+<meta name="description" content="Downloads for the Cytra Fabric mods for Minecraft 1.21.11.">
+<style>
+  :root {
+    --bg: #0e0d16;
+    --panel: #181624;
+    --panel-hi: #211e31;
+    --border: #2c2840;
+    --text: #ecebf5;
+    --muted: #a19db8;
+    --faint: #6f6a88;
+    --accent: #a78bfa;
+    --accent-hi: #c4b5fd;
+    --accent-ink: #160f2b;
+    --bad: #f87171;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 15px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 40px 16px 56px; }
+  header { margin-bottom: 28px; }
+  h1 { margin: 0 0 6px; font-size: 30px; letter-spacing: .04em; }
+  h1 span { color: var(--accent); }
+  .sub { margin: 0; color: var(--muted); }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
+    gap: 16px;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 18px;
+    min-width: 0;
+  }
+  .card:hover { border-color: #3b3555; }
+  .top { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; }
+  .name { margin: 0; font-size: 18px; font-weight: 600; overflow-wrap: anywhere; }
+  .ver {
+    flex: none;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--accent-hi);
+    background: #2a2147;
+    border-radius: 999px;
+    padding: 2px 9px;
+  }
+  .id { margin: 2px 0 12px; color: var(--faint); font-size: 12px; font-family: ui-monospace, Consolas, monospace; }
+  .log {
+    flex: 1;
+    margin: 0 0 16px;
+    color: var(--muted);
+    font-size: 14px;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    max-height: 220px;
+    overflow: auto;
+  }
+  .dl {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 14px;
+    border-radius: 10px;
+    background: var(--accent);
+    color: var(--accent-ink);
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .dl:hover { background: var(--accent-hi); }
+  .dl:focus-visible { outline: 2px solid var(--accent-hi); outline-offset: 2px; }
+  .sha { margin-top: 10px; color: var(--faint); font-size: 11px; font-family: ui-monospace, Consolas, monospace; overflow-wrap: anywhere; }
+  .msg { color: var(--muted); padding: 24px; text-align: center; background: var(--panel); border: 1px dashed var(--border); border-radius: 14px; }
+  .msg.err { color: var(--bad); }
+  footer { margin-top: 32px; color: var(--faint); font-size: 13px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1><span>Cytra</span> Mods</h1>
+    <p class="sub">Fabric mods for Minecraft 1.21.11. Cytra Hub can install these updates for you from its Updates tab.</p>
+  </header>
+  <main id="mods" class="grid" aria-live="polite"><div class="msg">Loading…</div></main>
+  <footer>Made by steelaspect.</footer>
+</div>
+<script>
+(function () {
+  var root = document.getElementById('mods');
+
+  function el(tag, cls, text) {
+    var e = document.createElement(tag);
+    if (cls) e.className = cls;
+    if (text != null) e.textContent = text;
+    return e;
+  }
+
+  function message(text, err) {
+    root.className = '';
+    root.replaceChildren(el('div', err ? 'msg err' : 'msg', text));
+  }
+
+  function safeUrl(u) {
+    return typeof u === 'string' && /^https:\/\/github\.com\/steelaspect\/cytra-releases\//i.test(u) ? u : null;
+  }
+
+  fetch('manifest.json', { cache: 'no-cache' })
+    .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+    .then(function (data) {
+      var mods = (data && Array.isArray(data.mods)) ? data.mods.slice() : [];
+      if (!mods.length) { message('No mods published yet.'); return; }
+      mods.sort(function (a, b) { return String(a.name || a.id).localeCompare(String(b.name || b.id)); });
+      root.className = 'grid';
+      root.replaceChildren();
+      mods.forEach(function (m) {
+        var card = el('article', 'card');
+        var top = el('div', 'top');
+        top.append(el('h2', 'name', m.name || m.id), el('span', 'ver', 'v' + m.version));
+        card.append(top, el('div', 'id', m.id), el('p', 'log', m.changelog || ''));
+        var url = safeUrl(m.url);
+        if (url) {
+          var a = el('a', 'dl', 'Download');
+          a.href = url;
+          a.setAttribute('download', '');
+          a.setAttribute('aria-label', 'Download ' + (m.name || m.id) + ' ' + m.version);
+          card.append(a);
+        }
+        if (m.sha256) card.append(el('div', 'sha', 'SHA-256 ' + m.sha256));
+        root.append(card);
+      });
+    })
+    .catch(function (e) { message('Could not load the mod list (' + e.message + ').', true); });
+})();
+</script>
+</body>
+</html>
