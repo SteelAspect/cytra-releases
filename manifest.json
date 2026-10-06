@@ -47,6 +47,14 @@
       "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-link-v0.3.2/cytra-link-0.3.2.jar",
       "sha256": "f1a09c8a63830d81ee783724e008e5c1b24299384db6559b8f92c1e69c56ade1",
       "changelog": "- Mod icon (Cytra logo). Same code as 0.3.1\n- 0.3.1: a bot that reconnects after a server restart gets the new boot's log lines\n- 0.3.0: extension API for other server mods (Cytra-Syncmatica, Cytra Hub)\n\nServer only."
+    },
+    {
+      "id": "cytra-syncmatica",
+      "name": "Cytra-Syncmatica",
+      "version": "1.4.0+1.21.11",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-syncmatica-v1.4.0+1.21.11/cytra-syncmatica-1.4.0+1.21.11.jar",
+      "sha256": "086aa20a028445949ec6536e59832074652a7992522128890cb1f99c92546370",
+      "changelog": "- Chunk Claims screen: drag to claim chunks with a description, or release them\n- Warning when a schematic is placed in someone else's claimed area\n- Previews can be drawn from other angles\n- Previews of .schem and .nbt files"
     }
   ]
 }
