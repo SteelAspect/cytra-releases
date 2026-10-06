@@ -63,6 +63,14 @@
       "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytrabackups-v1.6.4/cytrabackups-1.6.4.jar",
       "sha256": "1c976d405f47d9be0086e0cc0d5f316de3bad02b3aa5a64c67d143883f955f18",
       "changelog": "- New mod icon: the Cytra logo (Mod Menu, Cytra Hub). No other changes."
+    },
+    {
+      "id": "cytratrades",
+      "name": "CytraTrades",
+      "version": "1.1.1",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytratrades-v1.1.1/cytratrades-1.1.1.jar",
+      "sha256": "bed241d74e246da124646018571feb2574f44e6804796ccb5c59880281af087b",
+      "changelog": "- Mod icon (Cytra logo) in Mod Menu. No other changes."
     }
   ]
 }
