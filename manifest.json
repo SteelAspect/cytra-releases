@@ -84,10 +84,10 @@
     {
       "id": "cytra-hub",
       "name": "Cytra Hub",
-      "version": "0.3.1",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-hub-v0.3.1/cytra-hub-0.3.1.jar",
-      "sha256": "d57b9f8c84ca8279809ec0cf451976fe804536fea6098d8cfdf2cae26bbaef7b",
-      "changelog": "- Fix: mods whose jar name has a + (Cytra-Syncmatica) can be updated\n- New Updates tab: see which Cytra mods have updates, read the changelog, and install them on the next restart (or Quit & apply)\n- Downloads are checked (SHA-256, only from SteelAspect/cytra-releases); a small helper swaps the jars after the game closes, and can update Cytra Hub itself\n- Optional auto-update, plus toasts when updates are available or were installed\n- Commands tab on each mod page: every command you can use, click to type it into chat",
+      "version": "0.4.0",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-hub-v0.4.0/cytra-hub-0.4.0.jar",
+      "sha256": "9481b33b519f68ccc37264299e3d856fcb97b3b61f5e01d21a8ea13a0c5b9431",
+      "changelog": "- Install Cytra mods you don't have from the Updates tab (and the mod's page): shows client/server/both and required mods with a tick or cross; missing ones never block the install\n- Update all and auto-update only update mods you have\n- Updates tab, SHA-checked downloads and the jar-swapping helper (from 0.3.x)\n- Commands tab on each mod page",
       "environment": "*",
       "depends": {
         "fabric-api": "*"
