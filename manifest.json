@@ -17,6 +17,14 @@
       "changelog": "- Client on/off switch: clientEnabled in config.json and /bm enable | /bm disable. Off: keys, hotkeys, quick add and starting macros from this client do nothing; running and server macros keep going. Cytra Hub uses it for the on/off switch and profiles\n- Mod icon (Cytra logo)"
     },
     {
+      "id": "cytracarpet",
+      "name": "Cytra Carpet",
+      "version": "1.0.1",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytracarpet-v1.0.1/cytra-carpet-1.0.1.jar",
+      "sha256": "d49f090f0efe8e2001673a0b790bff9e6a9a15556a953cc74f6042365817e2af",
+      "changelog": "- Mod icon (Cytra logo) in Mod Menu. No other changes."
+    },
+    {
       "id": "cytra-hub",
       "name": "Cytra Hub",
       "version": "0.3.0",
