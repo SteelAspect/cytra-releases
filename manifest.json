@@ -1,3 +1,12 @@
 {
-  "mods": []
+  "mods": [
+    {
+      "id": "cytra-hub",
+      "name": "Cytra Hub",
+      "version": "0.3.0",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-hub-v0.3.0/cytra-hub-0.3.0.jar",
+      "sha256": "2b8986b819aa67f35831212cb9abb7cc6990453edaad2c3c99dfafae173de09c",
+      "changelog": "- New Updates tab: see which Cytra mods have updates, read the changelog, and install them on the next restart (or Quit & apply)\n- Downloads are checked (SHA-256, only from SteelAspect/cytra-releases); a small helper swaps the jars after the game closes, and can update Cytra Hub itself\n- Optional auto-update, plus toasts when updates are available or were installed\n- Commands tab on each mod page (from 0.2.0): every command you can use, click to type it into chat"
+    }
+  ]
 }
