@@ -79,6 +79,14 @@
       "url": "https://github.com/SteelAspect/cytra-releases/releases/download/sharedwaypoints-v2.6.0/sharedwaypoints-2.6.0.jar",
       "sha256": "e95d21ef36dc08dcb63b9a6bfee85795f327ddf921ddc39625d0c4ab604663a8",
       "changelog": "- Client on/off switch: config/sharedwaypoints/client.json \"enabled\" (default on). Off: the menu key and Esc-menu button do nothing and syncing into Xaero's Minimap pauses. Cytra Hub uses it for the on/off switch and profiles"
+    },
+    {
+      "id": "stickytoggle",
+      "name": "StickyToggle",
+      "version": "2.2.1",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/stickytoggle-v2.2.1/stickytoggle-2.2.1.jar",
+      "sha256": "062f66080c567be9a0f369c2e691b81dc0ebcd2ba896f746af33d95d709524fb",
+      "changelog": "- Mod icon (Cytra logo) in Mod Menu. No other changes.\n\nOne jar for client and server."
     }
   ]
 }
