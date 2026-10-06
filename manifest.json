@@ -1,6 +1,14 @@
 {
   "mods": [
     {
+      "id": "cytra-areascanner",
+      "name": "Cytra Area Scanner",
+      "version": "1.1.0",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-areascanner-v1.1.0/cytra-areascanner-1.1.0.jar",
+      "sha256": "91caf778c248c6755f242fa75735b748ce4bfd9f4d6c46c53d65430fd7e919f1",
+      "changelog": "- Enabled switch (Scanner tab): off stops the running scan, the overlay, the HUD and the scan hotkeys. Cytra Hub uses it for the on/off switch and profiles\n- Mod icon (Cytra logo)\n\nNeeds Litematica 0.26.16+ and MaLiLib 0.27.20+."
+    },
+    {
       "id": "cytra-hub",
       "name": "Cytra Hub",
       "version": "0.3.0",
