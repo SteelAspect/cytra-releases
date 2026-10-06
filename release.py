@@ -3,7 +3,7 @@
 
 Usage: python release.py <path-to-jar> "<changelog>"
 
-Reads id, name and version from fabric.mod.json inside the jar, creates the GitHub release
+Reads id, name, version, environment and required mods from fabric.mod.json inside the jar, creates the GitHub release
 <id>-v<version> with the jar attached, updates manifest.json, then commits and pushes.
 Refuses to run if that version is already in the manifest.
 """
@@ -43,7 +43,26 @@ def read_mod_json(jar):
     for key in ("id", "version"):
         if not isinstance(data.get(key), str) or not data[key]:
             fail("fabric.mod.json has no " + key)
-    return data["id"], data.get("name") or data["id"], data["version"]
+    return data["id"], data.get("name") or data["id"], data["version"], extra_info(data)
+
+
+SKIP_DEPS = {"minecraft", "java", "fabricloader"}
+
+
+def extra_info(data):
+    """environment ("*", "client" or "server"), required mods and optional (recommends/suggests) mods, id -> version range."""
+    def ranges(section):
+        out = {}
+        for dep, rng in (section or {}).items():
+            if dep not in SKIP_DEPS:
+                out[dep] = " || ".join(rng) if isinstance(rng, list) else str(rng)
+        return out
+
+    optional = ranges(data.get("suggests"))
+    optional.update(ranges(data.get("recommends")))
+    depends = ranges(data.get("depends"))
+    return {"environment": data.get("environment") or "*", "depends": depends,
+            "optional": {k: v for k, v in optional.items() if k not in depends}}
 
 
 def sha256(path):
@@ -63,7 +82,7 @@ def main():
     if not changelog:
         fail("changelog is empty")
 
-    mod_id, name, version = read_mod_json(jar)
+    mod_id, name, version, extra = read_mod_json(jar)
     jar_name = os.path.basename(jar)
     tag = f"{mod_id}-v{version}"
 
@@ -86,6 +105,7 @@ def main():
         "url": f"https://github.com/{REPO}/releases/download/{tag}/{jar_name}",
         "sha256": digest,
         "changelog": changelog,
+        **extra,
     }
     if entry is None:
         mods.append(new_entry)

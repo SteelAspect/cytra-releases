@@ -40,11 +40,16 @@ It refuses to run if that version of the mod is already in the manifest. Bump th
       "version": "0.2.0",
       "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-hub-v0.2.0/cytra-hub-0.2.0.jar",
       "sha256": "…",
-      "changelog": "…"
+      "changelog": "…",
+      "environment": "*",
+      "depends": {"fabric-api": "*"},
+      "optional": {"modmenu": "*"}
     }
   ]
 }
 ```
+
+`environment` (`*`, `client` or `server`), `depends` (required mods) and `optional` (recommended or suggested mods) come from the jar's fabric.mod.json. Cytra Hub lists them next to the Install button for mods you don't have.
 
 Cytra Hub only updates mods whose `id` is in the manifest and whose `url` starts with `https://github.com/SteelAspect/cytra-releases/`. It checks the SHA-256 before installing anything.
 

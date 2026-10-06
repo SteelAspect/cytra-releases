@@ -6,7 +6,14 @@
       "version": "1.1.0",
       "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-areascanner-v1.1.0/cytra-areascanner-1.1.0.jar",
       "sha256": "91caf778c248c6755f242fa75735b748ce4bfd9f4d6c46c53d65430fd7e919f1",
-      "changelog": "- Enabled switch (Scanner tab): off stops the running scan, the overlay, the HUD and the scan hotkeys. Cytra Hub uses it for the on/off switch and profiles\n- Mod icon (Cytra logo)\n\nNeeds Litematica 0.26.16+ and MaLiLib 0.27.20+."
+      "changelog": "- Enabled switch (Scanner tab): off stops the running scan, the overlay, the HUD and the scan hotkeys. Cytra Hub uses it for the on/off switch and profiles\n- Mod icon (Cytra logo)\n\nNeeds Litematica 0.26.16+ and MaLiLib 0.27.20+.",
+      "environment": "client",
+      "depends": {
+        "fabric-api": "*",
+        "litematica": ">=0.26.16",
+        "malilib": ">=0.27.20"
+      },
+      "optional": {}
     },
     {
       "id": "cytra-botmacros",
@@ -14,7 +21,15 @@
       "version": "1.2.0",
       "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-botmacros-v1.2.0/cytra-botmacros-1.2.0.jar",
       "sha256": "06be0f61e6e8566dcc5fa580a11fd35899a59244c8bb1496a1e2aaf673b72491",
-      "changelog": "- Client on/off switch: clientEnabled in config.json and /bm enable | /bm disable. Off: keys, hotkeys, quick add and starting macros from this client do nothing; running and server macros keep going. Cytra Hub uses it for the on/off switch and profiles\n- Mod icon (Cytra logo)"
+      "changelog": "- Client on/off switch: clientEnabled in config.json and /bm enable | /bm disable. Off: keys, hotkeys, quick add and starting macros from this client do nothing; running and server macros keep going. Cytra Hub uses it for the on/off switch and profiles\n- Mod icon (Cytra logo)",
+      "environment": "*",
+      "depends": {
+        "fabric-api": "*"
+      },
+      "optional": {
+        "carpet": "*",
+        "malilib": "*"
+      }
     },
     {
       "id": "cytracarpet",
@@ -22,7 +37,17 @@
       "version": "1.0.1",
       "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytracarpet-v1.0.1/cytra-carpet-1.0.1.jar",
       "sha256": "d49f090f0efe8e2001673a0b790bff9e6a9a15556a953cc74f6042365817e2af",
-      "changelog": "- Mod icon (Cytra logo) in Mod Menu. No other changes."
+      "changelog": "- Mod icon (Cytra logo) in Mod Menu. No other changes.",
+      "environment": "*",
+      "depends": {
+        "fabric-api": "*",
+        "carpet": ">=1.4.194"
+      },
+      "optional": {
+        "carpet-extra": "*",
+        "carpet-tis-addition": "*",
+        "essential-addons": "*"
+      }
     },
     {
       "id": "containerautofill",
@@ -30,7 +55,15 @@
       "version": "1.3.8",
       "url": "https://github.com/SteelAspect/cytra-releases/releases/download/containerautofill-v1.3.8/cytra-container-1.3.8.jar",
       "sha256": "4ee09e2cdc582f3a76f685240a42c8d0349f57f4032883b64e2658f7349ed934",
-      "changelog": "- Get Materials pulls only what's still needed for that material list\n- Works with Carpet's stacked shulker boxes: an empty box is split off a stack and filled\n- Mod icon (Cytra logo)\n\nClient needs Litematica 0.26.16+ and MaLiLib 0.27.20+. The server part is optional."
+      "changelog": "- Get Materials pulls only what's still needed for that material list\n- Works with Carpet's stacked shulker boxes: an empty box is split off a stack and filled\n- Mod icon (Cytra logo)\n\nClient needs Litematica 0.26.16+ and MaLiLib 0.27.20+. The server part is optional.",
+      "environment": "*",
+      "depends": {
+        "fabric-api": "*"
+      },
+      "optional": {
+        "litematica": ">=0.26.16",
+        "malilib": ">=0.27.20"
+      }
     },
     {
       "id": "cytra-hub",
@@ -38,7 +71,25 @@
       "version": "0.3.1",
       "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-hub-v0.3.1/cytra-hub-0.3.1.jar",
       "sha256": "d57b9f8c84ca8279809ec0cf451976fe804536fea6098d8cfdf2cae26bbaef7b",
-      "changelog": "- Fix: mods whose jar name has a + (Cytra-Syncmatica) can be updated\n- New Updates tab: see which Cytra mods have updates, read the changelog, and install them on the next restart (or Quit & apply)\n- Downloads are checked (SHA-256, only from SteelAspect/cytra-releases); a small helper swaps the jars after the game closes, and can update Cytra Hub itself\n- Optional auto-update, plus toasts when updates are available or were installed\n- Commands tab on each mod page: every command you can use, click to type it into chat"
+      "changelog": "- Fix: mods whose jar name has a + (Cytra-Syncmatica) can be updated\n- New Updates tab: see which Cytra mods have updates, read the changelog, and install them on the next restart (or Quit & apply)\n- Downloads are checked (SHA-256, only from SteelAspect/cytra-releases); a small helper swaps the jars after the game closes, and can update Cytra Hub itself\n- Optional auto-update, plus toasts when updates are available or were installed\n- Commands tab on each mod page: every command you can use, click to type it into chat",
+      "environment": "*",
+      "depends": {
+        "fabric-api": "*"
+      },
+      "optional": {
+        "modmenu": "*",
+        "cytra-link": "*",
+        "sharedwaypoints": "*",
+        "stickytoggle": "*",
+        "containerautofill": "*",
+        "cytra-syncmatica": "*",
+        "cytra-areascanner": "*",
+        "cytra-botmacros": "*",
+        "cytracarpet": "*",
+        "cytratrades": "*",
+        "cytrabackups": "*",
+        "cytracreative": "*"
+      }
     },
     {
       "id": "cytra-link",
@@ -46,7 +97,12 @@
       "version": "0.3.2",
       "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-link-v0.3.2/cytra-link-0.3.2.jar",
       "sha256": "f1a09c8a63830d81ee783724e008e5c1b24299384db6559b8f92c1e69c56ade1",
-      "changelog": "- Mod icon (Cytra logo). Same code as 0.3.1\n- 0.3.1: a bot that reconnects after a server restart gets the new boot's log lines\n- 0.3.0: extension API for other server mods (Cytra-Syncmatica, Cytra Hub)\n\nServer only."
+      "changelog": "- Mod icon (Cytra logo). Same code as 0.3.1\n- 0.3.1: a bot that reconnects after a server restart gets the new boot's log lines\n- 0.3.0: extension API for other server mods (Cytra-Syncmatica, Cytra Hub)\n\nServer only.",
+      "environment": "server",
+      "depends": {
+        "fabric-api": "*"
+      },
+      "optional": {}
     },
     {
       "id": "cytra-syncmatica",
@@ -54,7 +110,16 @@
       "version": "1.4.0+1.21.11",
       "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-syncmatica-v1.4.0+1.21.11/cytra-syncmatica-1.4.0+1.21.11.jar",
       "sha256": "086aa20a028445949ec6536e59832074652a7992522128890cb1f99c92546370",
-      "changelog": "- Chunk Claims screen: drag to claim chunks with a description, or release them\n- Warning when a schematic is placed in someone else's claimed area\n- Previews can be drawn from other angles\n- Previews of .schem and .nbt files"
+      "changelog": "- Chunk Claims screen: drag to claim chunks with a description, or release them\n- Warning when a schematic is placed in someone else's claimed area\n- Previews can be drawn from other angles\n- Previews of .schem and .nbt files",
+      "environment": "*",
+      "depends": {
+        "fabric-api": "*"
+      },
+      "optional": {
+        "cytra-link": ">=0.3.0",
+        "litematica": "*",
+        "malilib": "*"
+      }
     },
     {
       "id": "cytrabackups",
@@ -62,7 +127,12 @@
       "version": "1.6.4",
       "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytrabackups-v1.6.4/cytrabackups-1.6.4.jar",
       "sha256": "1c976d405f47d9be0086e0cc0d5f316de3bad02b3aa5a64c67d143883f955f18",
-      "changelog": "- New mod icon: the Cytra logo (Mod Menu, Cytra Hub). No other changes."
+      "changelog": "- New mod icon: the Cytra logo (Mod Menu, Cytra Hub). No other changes.",
+      "environment": "*",
+      "depends": {
+        "fabric-api": "*"
+      },
+      "optional": {}
     },
     {
       "id": "cytratrades",
@@ -70,7 +140,14 @@
       "version": "1.1.1",
       "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytratrades-v1.1.1/cytratrades-1.1.1.jar",
       "sha256": "bed241d74e246da124646018571feb2574f44e6804796ccb5c59880281af087b",
-      "changelog": "- Mod icon (Cytra logo) in Mod Menu. No other changes."
+      "changelog": "- Mod icon (Cytra logo) in Mod Menu. No other changes.",
+      "environment": "client",
+      "depends": {
+        "fabric-api": "*"
+      },
+      "optional": {
+        "modmenu": "*"
+      }
     },
     {
       "id": "sharedwaypoints",
@@ -78,7 +155,17 @@
       "version": "2.6.0",
       "url": "https://github.com/SteelAspect/cytra-releases/releases/download/sharedwaypoints-v2.6.0/sharedwaypoints-2.6.0.jar",
       "sha256": "e95d21ef36dc08dcb63b9a6bfee85795f327ddf921ddc39625d0c4ab604663a8",
-      "changelog": "- Client on/off switch: config/sharedwaypoints/client.json \"enabled\" (default on). Off: the menu key and Esc-menu button do nothing and syncing into Xaero's Minimap pauses. Cytra Hub uses it for the on/off switch and profiles"
+      "changelog": "- Client on/off switch: config/sharedwaypoints/client.json \"enabled\" (default on). Off: the menu key and Esc-menu button do nothing and syncing into Xaero's Minimap pauses. Cytra Hub uses it for the on/off switch and profiles",
+      "environment": "*",
+      "depends": {
+        "fabric-api": "*"
+      },
+      "optional": {
+        "luckperms": "*",
+        "bluemap": "*",
+        "squaremap": "*",
+        "xaerominimap": "*"
+      }
     },
     {
       "id": "stickytoggle",
@@ -86,7 +173,15 @@
       "version": "2.2.1",
       "url": "https://github.com/SteelAspect/cytra-releases/releases/download/stickytoggle-v2.2.1/stickytoggle-2.2.1.jar",
       "sha256": "062f66080c567be9a0f369c2e691b81dc0ebcd2ba896f746af33d95d709524fb",
-      "changelog": "- Mod icon (Cytra logo) in Mod Menu. No other changes.\n\nOne jar for client and server."
+      "changelog": "- Mod icon (Cytra logo) in Mod Menu. No other changes.\n\nOne jar for client and server.",
+      "environment": "*",
+      "depends": {
+        "fabric-api": "*"
+      },
+      "optional": {
+        "malilib": ">=0.27.20",
+        "modmenu": "*"
+      }
     }
   ]
 }
