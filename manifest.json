@@ -25,6 +25,14 @@
       "changelog": "- Mod icon (Cytra logo) in Mod Menu. No other changes."
     },
     {
+      "id": "containerautofill",
+      "name": "Cytra Container",
+      "version": "1.3.8",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/containerautofill-v1.3.8/cytra-container-1.3.8.jar",
+      "sha256": "4ee09e2cdc582f3a76f685240a42c8d0349f57f4032883b64e2658f7349ed934",
+      "changelog": "- Get Materials pulls only what's still needed for that material list\n- Works with Carpet's stacked shulker boxes: an empty box is split off a stack and filled\n- Mod icon (Cytra logo)\n\nClient needs Litematica 0.26.16+ and MaLiLib 0.27.20+. The server part is optional."
+    },
+    {
       "id": "cytra-hub",
       "name": "Cytra Hub",
       "version": "0.3.0",
