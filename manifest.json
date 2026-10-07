@@ -68,10 +68,10 @@
     {
       "id": "cytracreative",
       "name": "Cytra Creative",
-      "version": "0.1.0",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytracreative-v0.1.0/cytra-creative-0.1.0.jar",
-      "sha256": "1d36152e5dedfe8eec2dc36fe646d67937e49dbf234ff58f1fea6b24d26477ad",
-      "changelog": "First release: a creative-server (CMP) toolkit; every feature is a module you switch on and off with /cc modules.\n- Regions and a selection wand, particle outlines, map-style and 3D renders, .litematic copy and paste with undo\n- Creative Guard: per-region rules for building, explosions, fire, fluids, pistons, mob spawning and more\n- Lab: private test dimensions with their own tick rate, world border and snapshots\n- Build Share + Gallery, Scale Model, Showcase, Timelapse (GIF) and Camera flight paths\n\nInstall on the server with Fabric API. Players don't need it; with it (and MaLiLib) they get the menu (/cc menu) and smooth camera playback.",
+      "version": "0.3.0",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytracreative-v0.3.0/cytra-creative-0.3.0.jar",
+      "sha256": "de340d70568d03f0e781e488dac0ac15dfcf110ec8dcb1b1dee4375cc579ec2f",
+      "changelog": "Labs from the SMP: areas sent with Cytra Send become labs at the same coordinates, with a [Go to lab] button (now or on next join). Also: faster /cc perimeter.",
       "environment": "*",
       "depends": {
         "fabric-api": "*"
