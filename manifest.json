@@ -52,10 +52,10 @@
     {
       "id": "containerautofill",
       "name": "Cytra Container",
-      "version": "1.3.8",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/containerautofill-v1.3.8/cytra-container-1.3.8.jar",
-      "sha256": "4ee09e2cdc582f3a76f685240a42c8d0349f57f4032883b64e2658f7349ed934",
-      "changelog": "- Get Materials pulls only what's still needed for that material list\n- Works with Carpet's stacked shulker boxes: an empty box is split off a stack and filled\n- Mod icon (Cytra logo)\n\nClient needs Litematica 0.26.16+ and MaLiLib 0.27.20+. The server part is optional.",
+      "version": "1.3.9",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/containerautofill-v1.3.9/cytra-container-1.3.9.jar",
+      "sha256": "21402b0a0c8dc2edbf781d81ab607d384e0dad9586fc13439164d4b81802456a",
+      "changelog": "- Dump into shulker boxes inside dump containers, including splitting empty boxes off Carpet's stacked shulker boxes\n\nClient needs Litematica 0.26.16+ and MaLiLib 0.27.20+. The server part is optional.",
       "environment": "*",
       "depends": {
         "fabric-api": "*"
