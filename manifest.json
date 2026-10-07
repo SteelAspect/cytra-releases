@@ -124,6 +124,24 @@
       "listed": false
     },
     {
+      "id": "sharedwaypoints",
+      "name": "Cytra Waypoints",
+      "version": "2.7.0",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/sharedwaypoints-v2.7.0/cytra-waypoints-2.7.0.jar",
+      "sha256": "d2c31bc00eda4fb7767158c8c443693c9a221ab57069e17837c0c74d0b2ad507",
+      "changelog": "Renamed to Cytra Waypoints (was SharedWaypoints). Same mod: waypoints, settings, permissions, /cway and Xaero's Shared set all carry over. New jar name cytra-waypoints-2.7.0.jar; the Hub swaps the old jar for you.",
+      "environment": "*",
+      "depends": {
+        "fabric-api": "*"
+      },
+      "optional": {
+        "luckperms": "*",
+        "bluemap": "*",
+        "squaremap": "*",
+        "xaerominimap": "*"
+      }
+    },
+    {
       "id": "cytra-syncmatica",
       "name": "Cytra-Syncmatica",
       "version": "1.4.0+1.21.11",
@@ -166,24 +184,6 @@
       },
       "optional": {
         "modmenu": "*"
-      }
-    },
-    {
-      "id": "sharedwaypoints",
-      "name": "SharedWaypoints",
-      "version": "2.6.0",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/sharedwaypoints-v2.6.0/sharedwaypoints-2.6.0.jar",
-      "sha256": "e95d21ef36dc08dcb63b9a6bfee85795f327ddf921ddc39625d0c4ab604663a8",
-      "changelog": "- Client on/off switch: config/sharedwaypoints/client.json \"enabled\" (default on). Off: the menu key and Esc-menu button do nothing and syncing into Xaero's Minimap pauses. Cytra Hub uses it for the on/off switch and profiles",
-      "environment": "*",
-      "depends": {
-        "fabric-api": "*"
-      },
-      "optional": {
-        "luckperms": "*",
-        "bluemap": "*",
-        "squaremap": "*",
-        "xaerominimap": "*"
       }
     },
     {
