@@ -118,7 +118,8 @@
       "depends": {
         "fabric-api": "*"
       },
-      "optional": {}
+      "optional": {},
+      "listed": false
     },
     {
       "id": "cytra-masscraft",
@@ -150,7 +151,8 @@
         "fabric-api": "*",
         "cytra-link": ">=0.3.0"
       },
-      "optional": {}
+      "optional": {},
+      "listed": false
     },
     {
       "id": "cytra-shulkerview",
