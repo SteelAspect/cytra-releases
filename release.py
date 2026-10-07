@@ -1,7 +1,10 @@
 #!/usr/bin/env python3
 """Publish a Cytra mod jar to SteelAspect/cytra-releases and add it to manifest.json.
 
-Usage: python release.py <path-to-jar> "<changelog>"
+Usage: python release.py [--unlisted] <path-to-jar> "<changelog>"
+
+--unlisted marks the mod "listed": false: Cytra Hub then only offers it as an update to players who already have it,
+never as an install, and the download page leaves it out. The flag is kept on later releases of that mod.
 
 Reads id, name, version, environment and required mods from fabric.mod.json inside the jar, creates the GitHub release
 <id>-v<version> with the jar attached, updates manifest.json, then commits and pushes.
@@ -74,9 +77,12 @@ def sha256(path):
 
 
 def main():
-    if len(sys.argv) != 3:
-        fail('usage: python release.py <path-to-jar> "<changelog>"')
-    jar, changelog = os.path.abspath(sys.argv[1]), sys.argv[2].strip()
+    args = sys.argv[1:]
+    unlisted = "--unlisted" in args
+    args = [a for a in args if a != "--unlisted"]
+    if len(args) != 2:
+        fail('usage: python release.py [--unlisted] <path-to-jar> "<changelog>"')
+    jar, changelog = os.path.abspath(args[0]), args[1].strip()
     if not os.path.isfile(jar):
         fail("no such file: " + jar)
     if not changelog:
@@ -107,6 +113,8 @@ def main():
         "changelog": changelog,
         **extra,
     }
+    if unlisted or (entry is not None and entry.get("listed") is False):
+        new_entry["listed"] = False
     if entry is None:
         mods.append(new_entry)
     else:

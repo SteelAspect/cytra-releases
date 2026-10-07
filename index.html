@@ -121,7 +121,7 @@
   fetch('manifest.json', { cache: 'no-cache' })
     .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
     .then(function (data) {
-      var mods = (data && Array.isArray(data.mods)) ? data.mods.slice() : [];
+      var mods = (data && Array.isArray(data.mods)) ? data.mods.filter(function (m) { return m.listed !== false; }) : [];
       if (!mods.length) { message('No mods published yet.'); return; }
       mods.sort(function (a, b) { return String(a.name || a.id).localeCompare(String(b.name || b.id)); });
       root.className = 'grid';

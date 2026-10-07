@@ -29,6 +29,10 @@ What it does:
 
 It refuses to run if that version of the mod is already in the manifest. Bump the version in the mod first.
 
+Add `--unlisted` (e.g. `python release.py --unlisted <jar> "<changelog>"`) for a mod that should only be updated,
+never offered: it gets `"listed": false`, so Cytra Hub shows it only to players who already have it (as an update) and
+the download page leaves it out. Later releases of that mod keep the flag. Cytra Mass Craft is released this way.
+
 ## Manifest format
 
 ```json
@@ -43,7 +47,8 @@ It refuses to run if that version of the mod is already in the manifest. Bump th
       "changelog": "…",
       "environment": "*",
       "depends": {"fabric-api": "*"},
-      "optional": {"modmenu": "*"}
+      "optional": {"modmenu": "*"},
+      "listed": true
     }
   ]
 }
