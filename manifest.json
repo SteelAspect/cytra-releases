@@ -159,10 +159,10 @@
     {
       "id": "cytra-shulkerview",
       "name": "Cytra Shulker View",
-      "version": "1.1.0",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-shulkerview-v1.1.0/cytra-shulkerview-1.1.0.jar",
-      "sha256": "89c798312967d4e6053943d9509793bd5d032b9c4f4c5dce3f69d8599b3b6431",
-      "changelog": "Fill bar colours and icon sizes are now settings, also on the new Cytra Hub page.",
+      "version": "1.1.1",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-shulkerview-v1.1.1/cytra-shulkerview-1.1.1.jar",
+      "sha256": "9b113fce4b27103faddfe6edf6bc9b05ad1b1e2a1884b737786c759f815a3d1a",
+      "changelog": "Fix: labels on placed shulkers now show with Optimized Block Entities (they only flashed while opening).",
       "environment": "*",
       "depends": {
         "fabric-api": "*"
