@@ -108,6 +108,19 @@
       }
     },
     {
+      "id": "cytra-link",
+      "name": "Cytra Link",
+      "version": "0.3.3",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-link-v0.3.3/cytra-link-0.3.3.jar",
+      "sha256": "0f05f5817f4795ec504f159aca6994a626cd07737fdade595fef43f3f2b47950",
+      "changelog": "Bots may send larger messages once connected (up to 8 MB), so areas sent to labs travel fast.",
+      "environment": "server",
+      "depends": {
+        "fabric-api": "*"
+      },
+      "optional": {}
+    },
+    {
       "id": "cytra-masscraft",
       "name": "Cytra Mass Craft",
       "version": "0.3.0",
