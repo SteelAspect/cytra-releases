@@ -84,10 +84,10 @@
     {
       "id": "cytra-hub",
       "name": "Cytra Hub",
-      "version": "0.4.0",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-hub-v0.4.0/cytra-hub-0.4.0.jar",
-      "sha256": "9481b33b519f68ccc37264299e3d856fcb97b3b61f5e01d21a8ea13a0c5b9431",
-      "changelog": "- Install Cytra mods you don't have from the Updates tab (and the mod's page): shows client/server/both and required mods with a tick or cross; missing ones never block the install\n- Update all and auto-update only update mods you have\n- Updates tab, SHA-checked downloads and the jar-swapping helper (from 0.3.x)\n- Commands tab on each mod page",
+      "version": "0.4.1",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-hub-v0.4.1/cytra-hub-0.4.1.jar",
+      "sha256": "e3a16f7b4ebe4cc556014184d144bb7d5b8e9e826ae476cb6b03ee91e244c40a",
+      "changelog": "Updates tab: unlisted mods are only shown as updates to players who already have them, never as an install.",
       "environment": "*",
       "depends": {
         "fabric-api": "*"
