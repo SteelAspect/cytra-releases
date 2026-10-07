@@ -84,10 +84,10 @@
     {
       "id": "cytra-hub",
       "name": "Cytra Hub",
-      "version": "0.4.2",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-hub-v0.4.2/cytra-hub-0.4.2.jar",
-      "sha256": "4e7455fbdd1aa7d15fbcaa2e9aaf88b00d14abb0778fcc5bab3557e224908ca1",
-      "changelog": "New Cytra Shulker View page. SharedWaypoints is now shown as Cytra Waypoints.",
+      "version": "0.4.3",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-hub-v0.4.3/cytra-hub-0.4.3.jar",
+      "sha256": "c9eb2c66d5057ce1ef31bc09437f198d7898dcfda7833725eeb2d86329ecd096",
+      "changelog": "New Cytra Mass Craft page: settings, status and a stop button.",
       "environment": "*",
       "depends": {
         "fabric-api": "*"
@@ -105,7 +105,8 @@
         "cytratrades": "*",
         "cytrabackups": "*",
         "cytracreative": "*",
-        "cytra-shulkerview": "*"
+        "cytra-shulkerview": "*",
+        "cytra-masscraft": "*"
       }
     },
     {
