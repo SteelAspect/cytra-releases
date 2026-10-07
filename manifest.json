@@ -84,10 +84,10 @@
     {
       "id": "cytra-hub",
       "name": "Cytra Hub",
-      "version": "0.4.3",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-hub-v0.4.3/cytra-hub-0.4.3.jar",
-      "sha256": "c9eb2c66d5057ce1ef31bc09437f198d7898dcfda7833725eeb2d86329ecd096",
-      "changelog": "New Cytra Mass Craft page: settings, status and a stop button.",
+      "version": "0.4.4",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-hub-v0.4.4/cytra-hub-0.4.4.jar",
+      "sha256": "6e719d055aa7a72d16a1fd69c399c70be43a592b91f2b512af3bcc7d6caa59ca",
+      "changelog": "- Cytra button works with Essential: drawn on top of the title and pause screens with its own clicks, so menu mods can't hide it\n- New setting: Menu button position (Auto, next to the buttons, or any corner); Auto uses the top-left corner when Essential is installed",
       "environment": "*",
       "depends": {
         "fabric-api": "*"
