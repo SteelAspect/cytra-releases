@@ -126,10 +126,10 @@
     {
       "id": "cytra-masscraft",
       "name": "Cytra Mass Craft",
-      "version": "0.3.0",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-masscraft-v0.3.0/cytra-masscraft-0.3.0.jar",
-      "sha256": "3b0792d16f48d6d5943d66ce8a1bc0fe5632deaedf796feb67c621d5e005d204",
-      "changelog": "Craft what's missing (setting, off by default): a Craft missing button crafts the shortfall of the open Litematica material list from inventory + linked storage; uncraftable items listed in chat.",
+      "version": "0.3.1",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-masscraft-v0.3.1/cytra-masscraft-0.3.1.jar",
+      "sha256": "6bd41f78a5a13338f4a8f0c9ca97c82253be95a4b4e043e100f64956d70a0784",
+      "changelog": "No dump containers: results are now crafted and dropped in one click, no pause before they drop.",
       "environment": "client",
       "depends": {
         "fabric-api": "*",
