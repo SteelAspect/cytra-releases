@@ -108,6 +108,22 @@
       }
     },
     {
+      "id": "cytra-masscraft",
+      "name": "Cytra Mass Craft",
+      "version": "0.2.0",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-masscraft-v0.2.0/cytra-masscraft-0.2.0.jar",
+      "sha256": "e8e540566e5829547eb4e77ab7ed9017f99855924a33fa3d2e7e2d8936fc87b5",
+      "changelog": "Mass craft at a crafting table from your inventory and Cytra Container linked storage, results to dump containers. Mass Drop (Ctrl+Shift+Q) and a Fastest Speed option. Needs Cytra Container 1.3.9+ and MaLiLib.",
+      "environment": "client",
+      "depends": {
+        "fabric-api": "*",
+        "malilib": ">=0.27.20",
+        "containerautofill": ">=1.3.9"
+      },
+      "optional": {},
+      "listed": false
+    },
+    {
       "id": "cytra-syncmatica",
       "name": "Cytra-Syncmatica",
       "version": "1.4.0+1.21.11",
