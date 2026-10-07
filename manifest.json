@@ -176,10 +176,10 @@
     {
       "id": "cytratrades",
       "name": "CytraTrades",
-      "version": "1.1.1",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytratrades-v1.1.1/cytratrades-1.1.1.jar",
-      "sha256": "bed241d74e246da124646018571feb2574f44e6804796ccb5c59880281af087b",
-      "changelog": "- Mod icon (Cytra logo) in Mod Menu. No other changes.",
+      "version": "1.2.0",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytratrades-v1.2.0/cytratrades-1.2.0.jar",
+      "sha256": "6f684ebb9ef7eac9f4a6f7a53f7279de0e527fa15db6e160952c21c9e585ba8e",
+      "changelog": "- Trade hall sweep: one key (unbound by default) auto-trades every villager and wandering trader in reach, nearest first, with one combined summary. Repeats while something trades; the abort key stops it.",
       "environment": "client",
       "depends": {
         "fabric-api": "*"
