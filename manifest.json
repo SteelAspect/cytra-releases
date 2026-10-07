@@ -126,6 +126,20 @@
       "listed": false
     },
     {
+      "id": "cytrasend",
+      "name": "Cytra Send",
+      "version": "0.1.0",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytrasend-v0.1.0/cytra-send-0.1.0.jar",
+      "sha256": "9a051fa859369215e7d1ba0381e9ac641643a0aedba61e2345c7a8a37a540d9b",
+      "changelog": "First release: the SMP side of Cytra Creative labs. Select an area (/cc send wand, or pos1/pos2) and run /cc send <name>; the bridge bot carries it to the CMP, where it becomes a lab with a [Go to lab] button. Up to 1024x1024, every height, unloaded chunks too.",
+      "environment": "server",
+      "depends": {
+        "fabric-api": "*",
+        "cytra-link": ">=0.3.0"
+      },
+      "optional": {}
+    },
+    {
       "id": "sharedwaypoints",
       "name": "Cytra Waypoints",
       "version": "2.7.0",
