@@ -84,10 +84,10 @@
     {
       "id": "cytra-hub",
       "name": "Cytra Hub",
-      "version": "0.4.1",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-hub-v0.4.1/cytra-hub-0.4.1.jar",
-      "sha256": "e3a16f7b4ebe4cc556014184d144bb7d5b8e9e826ae476cb6b03ee91e244c40a",
-      "changelog": "Updates tab: unlisted mods are only shown as updates to players who already have them, never as an install.",
+      "version": "0.4.2",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-hub-v0.4.2/cytra-hub-0.4.2.jar",
+      "sha256": "4e7455fbdd1aa7d15fbcaa2e9aaf88b00d14abb0778fcc5bab3557e224908ca1",
+      "changelog": "New Cytra Shulker View page. SharedWaypoints is now shown as Cytra Waypoints.",
       "environment": "*",
       "depends": {
         "fabric-api": "*"
@@ -104,7 +104,8 @@
         "cytracarpet": "*",
         "cytratrades": "*",
         "cytrabackups": "*",
-        "cytracreative": "*"
+        "cytracreative": "*",
+        "cytra-shulkerview": "*"
       }
     },
     {
