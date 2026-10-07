@@ -153,6 +153,19 @@
       "optional": {}
     },
     {
+      "id": "cytra-shulkerview",
+      "name": "Cytra Shulker View",
+      "version": "1.0.0",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-shulkerview-v1.0.0/cytra-shulkerview-1.0.0.jar",
+      "sha256": "7582b9e8325093d43724c2ed55192ef55d01ae8f5f599d0be2e7103acdc2ee7d",
+      "changelog": "First release: item icon + fill bar on shulker items and placed shulkers. Install on server and client for live placed labels; client-only shows placed labels after you open a shulker once.",
+      "environment": "*",
+      "depends": {
+        "fabric-api": "*"
+      },
+      "optional": {}
+    },
+    {
       "id": "sharedwaypoints",
       "name": "Cytra Waypoints",
       "version": "2.7.0",
