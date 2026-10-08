@@ -207,10 +207,10 @@
     {
       "id": "cytrabackups",
       "name": "CytraBackups",
-      "version": "1.6.4",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytrabackups-v1.6.4/cytrabackups-1.6.4.jar",
-      "sha256": "1c976d405f47d9be0086e0cc0d5f316de3bad02b3aa5a64c67d143883f955f18",
-      "changelog": "- New mod icon: the Cytra logo (Mod Menu, Cytra Hub). No other changes.",
+      "version": "1.7.0",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytrabackups-v1.7.0/cytrabackups-1.7.0.jar",
+      "sha256": "64db3952217ce74658b27a7b1e0a6c9c34af28b5a2ce2058e96bb637fe6fe2f6",
+      "changelog": "Restore preview: /cbackup preview <id> radius <0-7> (or chunks <dim> <x1> <z1> <x2> <z2>) turns an area of a backup into a Litematica schematic in place. With Cytra Syncmatica on the server it's shared right away; otherwise saved under previews/. /cbackup preview clear removes shared previews.",
       "environment": "*",
       "depends": {
         "fabric-api": "*"
