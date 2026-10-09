@@ -220,10 +220,10 @@
     {
       "id": "cytratrades",
       "name": "CytraTrades",
-      "version": "1.3.0",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytratrades-v1.3.0/cytratrades-1.3.0.jar",
-      "sha256": "8780e4fbb20b9bde34324f0a39f00b2eea71a834f37dec73cc6c20150bcce73d",
-      "changelog": "- Auto-supply (optional, needs Cytra Container): when a trade runs out of emeralds, pull more from your linked storage (loose and from shulker boxes) and keep trading. Off by default; set emeralds per refill in the config. Works exactly as before without Cytra Container.",
+      "version": "1.3.1",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytratrades-v1.3.1/cytratrades-1.3.1.jar",
+      "sha256": "d711a4da5ceef70d71815ed90f49a0605a76460325a75d671710ef3791806266",
+      "changelog": "Trade hall sweep no longer turns your camera and reaches every villager the server allows (walled-off ones too).",
       "environment": "client",
       "depends": {
         "fabric-api": "*"
