@@ -110,6 +110,19 @@
       }
     },
     {
+      "id": "cytra-ledger",
+      "name": "Cytra Ledger",
+      "version": "0.2.0",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-ledger-v0.2.0/cytra-ledger-0.2.0.jar",
+      "sha256": "2d42b13232a024f3d4be82a1ceab2ca89ad839fa6461f3f85742e94e43ce34b2",
+      "changelog": "Server-only player action log (/ll). New: /ll wand gives the Ledger Wand - hold it and click blocks, containers or entities to see their history; right-click the air for what happened nearby.",
+      "environment": "server",
+      "depends": {
+        "fabric-api": "*"
+      },
+      "optional": {}
+    },
+    {
       "id": "cytra-link",
       "name": "Cytra Link",
       "version": "0.3.3",
