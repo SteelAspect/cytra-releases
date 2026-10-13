@@ -34,10 +34,10 @@
     {
       "id": "cytracarpet",
       "name": "Cytra Carpet",
-      "version": "1.4.0",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytracarpet-v1.4.0/cytra-carpet-1.4.0.jar",
-      "sha256": "bfb6224aa95c5f459e13ca42d817a819a890cc999b17228a77d41c8bd8479a9d",
-      "changelog": "forceOpenContainers rule: chests, ender chests and shulker boxes open even when blocked. Right-click stairs and slabs with an empty hand to sit (/cytra sit rightclick). Phantom control: /cytra nophantoms with noPhantoms, noPhantomsDefault and noPhantomsBots (toggle/spawn/never) rules.",
+      "version": "1.5.0",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytracarpet-v1.5.0/cytra-carpet-1.5.0.jar",
+      "sha256": "1ef8cd378d578591f22230abdc18b4d9fbd86644fa4687ae217b5079fa5c9a3b",
+      "changelog": "doubleChestHopperFix rule (on by default): fixes Lithium hoppers ignoring one half of double chests placed with Easy Place. Restart once to clear hoppers that are already stuck.",
       "environment": "*",
       "depends": {
         "fabric-api": "*",
