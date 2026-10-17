@@ -95,6 +95,19 @@
       }
     },
     {
+      "id": "cytra-ledger",
+      "name": "Alloy Ledger",
+      "version": "0.3.0",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-ledger-v0.3.0/alloy-ledger-0.3.0.jar",
+      "sha256": "a2e669a49c969d08d6278bd6180b699a1a5a2889a5c1b28dec42892b98142ae8",
+      "changelog": "- Cytra Ledger is now Alloy Ledger, with the new Alloy logo\n- /ll rollback player|near: preview (counts and particles), confirm, and /ll undo. Puts back broken blocks with their facing and contents, removes placed blocks, undoes container takes and puts\n- Logs full block states, container contents and exact items from now on",
+      "environment": "server",
+      "depends": {
+        "fabric-api": "*"
+      },
+      "optional": {}
+    },
+    {
       "id": "cytramap",
       "name": "Alloy Map",
       "version": "0.23.1",
@@ -253,19 +266,6 @@
         "cytra-masscraft": "*",
         "cytramap": "*"
       }
-    },
-    {
-      "id": "cytra-ledger",
-      "name": "Cytra Ledger",
-      "version": "0.2.0",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-ledger-v0.2.0/cytra-ledger-0.2.0.jar",
-      "sha256": "2d42b13232a024f3d4be82a1ceab2ca89ad839fa6461f3f85742e94e43ce34b2",
-      "changelog": "Server-only player action log (/ll). New: /ll wand gives the Ledger Wand - hold it and click blocks, containers or entities to see their history; right-click the air for what happened nearby.",
-      "environment": "server",
-      "depends": {
-        "fabric-api": "*"
-      },
-      "optional": {}
     },
     {
       "id": "cytra-link",
