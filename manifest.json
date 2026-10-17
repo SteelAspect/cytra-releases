@@ -196,10 +196,10 @@
     {
       "id": "cytraprinter",
       "name": "Alloy Printer",
-      "version": "1.0.1",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytraprinter-v1.0.1/alloy-printer-1.0.1.jar",
-      "sha256": "fc71cc7bb48a4a672c29ea21866d21b2fd3edd5695ffaeb96e541688b21e76ec",
-      "changelog": "Cytra Printer is now Alloy Printer. Renamed from Cytra to Alloy, with the new Alloy logo. Nothing else changes: settings, commands and saved data stay the same.",
+      "version": "1.1.0",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytraprinter-v1.1.0/alloy-printer-1.1.0.jar",
+      "sha256": "f7fe462e42766b9bf6e9cd4c8dd94f4d7ecef70daefd6c6e7c1aa0a6e62b31ef",
+      "changelog": "- Excluded Blocks list: the printer never places or fixes these (ids or #tags), plus a hotkey to exclude the block you look at\n- Protected Blocks list: the printer never breaks these\n- Strip Logs: places plain logs and strips them with an axe when you have no stripped ones\n- Composter Levels: fills composters to the schematic's level\n- Coral: live coral stands in for dead coral, and live coral waits for water so it doesn't die\n- Break Bedrock (off by default): piston trick in survival, cleans up after itself\n- Safe Observers: observers and pistons wait so nothing fires mid-build\n- Pauses while the server lags, turns off when you die\n- Settings button in Mod Menu and a Toggle printing key in Controls",
       "environment": "*",
       "depends": {
         "fabric-api": "*"
