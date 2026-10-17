@@ -110,6 +110,19 @@
       "listed": false
     },
     {
+      "id": "cytra-shulkerview",
+      "name": "Alloy Shulker View",
+      "version": "1.1.2",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-shulkerview-v1.1.2/alloy-shulkerview-1.1.2.jar",
+      "sha256": "d6bc864111c472f55042c2e215afeb3869a2840f0246faf7dc97c99305e7cd94",
+      "changelog": "Cytra Shulker View is now Alloy Shulker View. Renamed from Cytra to Alloy, with the new Alloy logo. Nothing else changes: settings, commands and saved data stay the same.",
+      "environment": "*",
+      "depends": {
+        "fabric-api": "*"
+      },
+      "optional": {}
+    },
+    {
       "id": "cytra-syncmatica",
       "name": "Alloy Syncmatica",
       "version": "1.4.1+1.21.11",
@@ -267,19 +280,6 @@
         "litematica": ">=0.26.16",
         "malilib": ">=0.27.20"
       }
-    },
-    {
-      "id": "cytra-shulkerview",
-      "name": "Cytra Shulker View",
-      "version": "1.1.1",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-shulkerview-v1.1.1/cytra-shulkerview-1.1.1.jar",
-      "sha256": "9b113fce4b27103faddfe6edf6bc9b05ad1b1e2a1884b737786c759f815a3d1a",
-      "changelog": "Fix: labels on placed shulkers now show with Optimized Block Entities (they only flashed while opening).",
-      "environment": "*",
-      "depends": {
-        "fabric-api": "*"
-      },
-      "optional": {}
     },
     {
       "id": "stickytoggle",
