@@ -26,6 +26,11 @@ What it does:
 3. Creates the GitHub release `<id>-v<version>` here, with the jar attached.
 4. Adds or replaces that mod's entry in `manifest.json`.
 5. Commits and pushes. The page and manifest update within a few minutes.
+6. Adds the release to Cytra Hub's built-in changelog (`src/client/resources/cytra-hub/mods.json` in the `cytra-hub`
+   checkout next to this repo, or the folder in `$CYTRA_HUB`) and commits it there, without pushing. Each line of the
+   changelog becomes one item (a leading `- ` is dropped). Players see it with the next Cytra Hub release. Skipped for
+   Cytra Hub itself and when there is no checkout. A brand-new mod also needs a `put(...)` line in Hub's
+   `ModCatalog.java`; the script reminds you.
 
 It refuses to run if that version of the mod is already in the manifest. Bump the version in the mod first.
 

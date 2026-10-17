@@ -9,6 +9,10 @@ never as an install, and the download page leaves it out. The flag is kept on la
 Reads id, name, version, environment and required mods from fabric.mod.json inside the jar, creates the GitHub release
 <id>-v<version> with the jar attached, updates manifest.json, then commits and pushes.
 Refuses to run if that version is already in the manifest.
+
+Then adds the release to Cytra Hub's built-in changelog (src/client/resources/cytra-hub/mods.json in the cytra-hub
+checkout next to this repo, or $CYTRA_HUB) and commits it there on the current branch, without pushing. One changelog
+line becomes one item; a leading "- " is dropped. Skipped for Cytra Hub itself, or when there's no checkout.
 """
 import hashlib
 import json
@@ -16,10 +20,13 @@ import os
 import subprocess
 import sys
 import zipfile
+from datetime import date
 
 REPO = "SteelAspect/cytra-releases"
 HERE = os.path.dirname(os.path.abspath(__file__))
 MANIFEST = os.path.join(HERE, "manifest.json")
+HUB = os.environ.get("CYTRA_HUB") or os.path.join(os.path.dirname(HERE), "cytra-hub")
+HUB_MODS_JSON = os.path.join("src", "client", "resources", "cytra-hub", "mods.json")
 
 
 def fail(msg):
@@ -46,7 +53,7 @@ def read_mod_json(jar):
     for key in ("id", "version"):
         if not isinstance(data.get(key), str) or not data[key]:
             fail("fabric.mod.json has no " + key)
-    return data["id"], data.get("name") or data["id"], data["version"], extra_info(data)
+    return data["id"], data.get("name") or data["id"], data["version"], extra_info(data), data.get("description") or ""
 
 
 SKIP_DEPS = {"minecraft", "java", "fabricloader"}
@@ -76,6 +83,54 @@ def sha256(path):
     return h.hexdigest()
 
 
+def hub_change(version, items):
+    lines = ",\n".join("        " + json.dumps(i, ensure_ascii=False) for i in items)
+    return f'      {{"version": "{version}", "date": "{date.today().isoformat()}", "items": [\n{lines}\n      ]}},\n'
+
+
+def update_hub(mod_id, name, description, version, changelog):
+    """Add this release to Cytra Hub's mods.json, keeping its hand-written layout. Never fails the release."""
+    path = os.path.join(HUB, HUB_MODS_JSON)
+    if mod_id == "cytra-hub" or not os.path.isfile(path):
+        return
+    items = [line.strip().removeprefix("- ").strip() for line in changelog.splitlines()]
+    items = [i for i in items if i]
+    with open(path, encoding="utf-8") as f:
+        text = f.read()
+    try:
+        data = json.loads(text)
+    except ValueError as e:
+        print(f"Cytra Hub: mods.json is not valid JSON ({e}), not updated")
+        return
+    if mod_id in data:
+        if any(c.get("version") == version for c in data[mod_id].get("changelog", [])):
+            return
+        start = text.index(f'"{mod_id}": {{')
+        marker = '"changelog": ['
+        at = text.find(marker, start)
+        if at < 0:
+            print(f"Cytra Hub: {mod_id} has no changelog list in mods.json, not updated")
+            return
+        at = text.index("\n", at) + 1
+        text = text[:at] + hub_change(version, items) + text[at:]
+    else:
+        end = text.rstrip().rindex("}")
+        change = hub_change(version, items).rstrip().rstrip(",")
+        text = (text[:end].rstrip() + f',\n  "{mod_id}": {{\n    "name": {json.dumps(name, ensure_ascii=False)},\n'
+                f'    "description": {json.dumps(description, ensure_ascii=False)},\n    "changelog": [\n{change}\n    ]\n  }}\n}}\n')
+    json.loads(text)
+    with open(path, "w", encoding="utf-8") as f:
+        f.write(text)
+    for cmd in (["git", "add", HUB_MODS_JSON], ["git", "commit", "-q", "-m", f"Changelog: {name} {version}"]):
+        if subprocess.run(cmd, cwd=HUB).returncode != 0:
+            print("Cytra Hub: could not commit mods.json, the change is left in the working tree")
+            return
+    print(f"Cytra Hub: added {name} {version} to mods.json and committed it in {HUB} (not pushed). "
+          f"It reaches players with the next Cytra Hub release.")
+    if mod_id not in data:
+        print(f"Cytra Hub: {mod_id} is new; add a put(...) line in ModCatalog.java so the Hub shows its page.")
+
+
 def main():
     args = sys.argv[1:]
     unlisted = "--unlisted" in args
@@ -88,7 +143,7 @@ def main():
     if not changelog:
         fail("changelog is empty")
 
-    mod_id, name, version, extra = read_mod_json(jar)
+    mod_id, name, version, extra, description = read_mod_json(jar)
     jar_name = os.path.basename(jar)
     tag = f"{mod_id}-v{version}"
 
@@ -128,6 +183,7 @@ def main():
     run("git", "commit", "-q", "-m", f"{name} {version}")
     run("git", "push", "-q")
     print(f"Released {name} {version}: https://github.com/{REPO}/releases/tag/{tag}")
+    update_hub(mod_id, name, description, version, changelog)
 
 
 if __name__ == "__main__":
