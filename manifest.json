@@ -84,10 +84,10 @@
     {
       "id": "cytra-hub",
       "name": "Cytra Hub",
-      "version": "0.4.4",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-hub-v0.4.4/cytra-hub-0.4.4.jar",
-      "sha256": "6e719d055aa7a72d16a1fd69c399c70be43a592b91f2b512af3bcc7d6caa59ca",
-      "changelog": "- Cytra button works with Essential: drawn on top of the title and pause screens with its own clicks, so menu mods can't hide it\n- New setting: Menu button position (Auto, next to the buttons, or any corner); Auto uses the top-left corner when Essential is installed",
+      "version": "0.4.5",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-hub-v0.4.5/cytra-hub-0.4.5.jar",
+      "sha256": "6254d046410e5596f9039ab8bf6500ddae2dd684c6ec0278fe0815c66505395e",
+      "changelog": "- New mod pages: Cytra Map, Cytra Printer, Cytra Shulker View and Cytra Ledger (ops)\n- Changelogs for every Cytra mod are up to date\n- HUD editor: the panel no longer stays on top of the element you drag when other mods' HUD elements fill the corners",
       "environment": "*",
       "depends": {
         "fabric-api": "*"
@@ -106,7 +106,8 @@
         "cytrabackups": "*",
         "cytracreative": "*",
         "cytra-shulkerview": "*",
-        "cytra-masscraft": "*"
+        "cytra-masscraft": "*",
+        "cytramap": "*"
       }
     },
     {
