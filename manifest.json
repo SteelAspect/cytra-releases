@@ -32,6 +32,24 @@
       }
     },
     {
+      "id": "cytracarpet",
+      "name": "Alloy Carpet",
+      "version": "1.5.1",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytracarpet-v1.5.1/alloy-carpet-1.5.1.jar",
+      "sha256": "14f939c21b7c2df67dedf74df4689b8ec1bfe85d821a21473d7a7c2893c0e5b3",
+      "changelog": "Cytra Carpet is now Alloy Carpet. Renamed from Cytra to Alloy, with the new Alloy logo. Nothing else changes: settings, commands and saved data stay the same.",
+      "environment": "*",
+      "depends": {
+        "fabric-api": "*",
+        "carpet": ">=1.4.194"
+      },
+      "optional": {
+        "carpet-extra": "*",
+        "carpet-tis-addition": "*",
+        "essential-addons": "*"
+      }
+    },
+    {
       "id": "containerautofill",
       "name": "Alloy Container",
       "version": "1.4.1",
@@ -80,24 +98,6 @@
         "bluemap": "*",
         "squaremap": "*",
         "xaerominimap": "*"
-      }
-    },
-    {
-      "id": "cytracarpet",
-      "name": "Cytra Carpet",
-      "version": "1.5.0",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytracarpet-v1.5.0/cytra-carpet-1.5.0.jar",
-      "sha256": "1ef8cd378d578591f22230abdc18b4d9fbd86644fa4687ae217b5079fa5c9a3b",
-      "changelog": "doubleChestHopperFix rule (on by default): fixes Lithium hoppers ignoring one half of double chests placed with Easy Place. Restart once to clear hoppers that are already stuck.",
-      "environment": "*",
-      "depends": {
-        "fabric-api": "*",
-        "carpet": ">=1.4.194"
-      },
-      "optional": {
-        "carpet-extra": "*",
-        "carpet-tis-addition": "*",
-        "essential-addons": "*"
       }
     },
     {
