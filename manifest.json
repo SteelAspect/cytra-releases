@@ -16,6 +16,22 @@
       "optional": {}
     },
     {
+      "id": "cytra-botmacros",
+      "name": "Alloy Bot Macros",
+      "version": "1.2.1",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-botmacros-v1.2.1/alloy-botmacros-1.2.1.jar",
+      "sha256": "dda63d90018a6f2f5451befb5ded136b3ef7d1fe25a6215b4ab4eb1d478b6e61",
+      "changelog": "Cytra Bot Macros is now Alloy Bot Macros. Renamed from Cytra to Alloy, with the new Alloy logo. Nothing else changes: settings, commands and saved data stay the same.",
+      "environment": "*",
+      "depends": {
+        "fabric-api": "*"
+      },
+      "optional": {
+        "carpet": "*",
+        "malilib": "*"
+      }
+    },
+    {
       "id": "containerautofill",
       "name": "Alloy Container",
       "version": "1.4.1",
@@ -64,22 +80,6 @@
         "bluemap": "*",
         "squaremap": "*",
         "xaerominimap": "*"
-      }
-    },
-    {
-      "id": "cytra-botmacros",
-      "name": "Cytra Bot Macros",
-      "version": "1.2.0",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-botmacros-v1.2.0/cytra-botmacros-1.2.0.jar",
-      "sha256": "06be0f61e6e8566dcc5fa580a11fd35899a59244c8bb1496a1e2aaf673b72491",
-      "changelog": "- Client on/off switch: clientEnabled in config.json and /bm enable | /bm disable. Off: keys, hotkeys, quick add and starting macros from this client do nothing; running and server macros keep going. Cytra Hub uses it for the on/off switch and profiles\n- Mod icon (Cytra logo)",
-      "environment": "*",
-      "depends": {
-        "fabric-api": "*"
-      },
-      "optional": {
-        "carpet": "*",
-        "malilib": "*"
       }
     },
     {
