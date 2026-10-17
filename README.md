@@ -38,6 +38,11 @@ Add `--unlisted` (e.g. `python release.py --unlisted <jar> "<changelog>"`) for a
 never offered: it gets `"listed": false`, so Alloy Hub shows it only to players who already have it (as an update) and
 the download page leaves it out. Later releases of that mod keep the flag. Alloy Mass Craft is released this way.
 
+Add `--replaces <old-id>` when a mod's id changed (Alloy Map was `cytramap`): the entry gets `"replaces": ["cytramap"]`,
+and `cytramap` gets an unlisted copy of the entry (same jar, `"renamedTo": "alloymap"`). Any Hub then updates the old
+mod to the renamed jar, and Alloy Hub 0.5.1+ doesn't offer the renamed mod as a second install while the old one is
+there. Later releases keep both in sync without the flag.
+
 ## Manifest format
 
 ```json

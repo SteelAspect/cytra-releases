@@ -1,10 +1,15 @@
 #!/usr/bin/env python3
 """Publish a Cytra mod jar to SteelAspect/cytra-releases and add it to manifest.json.
 
-Usage: python release.py [--unlisted] <path-to-jar> "<changelog>"
+Usage: python release.py [--unlisted] [--replaces <old-id>]... <path-to-jar> "<changelog>"
 
 --unlisted marks the mod "listed": false: Cytra Hub then only offers it as an update to players who already have it,
 never as an install, and the download page leaves it out. The flag is kept on later releases of that mod.
+
+--replaces <old-id> is for a mod whose id changed (Alloy Map was cytramap). The entry gets "replaces": [old ids], so
+Alloy Hub 0.5.1+ doesn't offer it as a second install to players who still have the old mod, and each old id gets an
+unlisted entry pointing at the same jar, so any Hub updates the old mod to the renamed one. Both are kept on later
+releases.
 
 Reads id, name, version, environment and required mods from fabric.mod.json inside the jar, creates the GitHub release
 <id>-v<version> with the jar attached, updates manifest.json, then commits and pushes.
@@ -135,6 +140,13 @@ def main():
     args = sys.argv[1:]
     unlisted = "--unlisted" in args
     args = [a for a in args if a != "--unlisted"]
+    replaces = []
+    while "--replaces" in args:
+        i = args.index("--replaces")
+        if i + 1 >= len(args):
+            fail("--replaces needs the old mod id")
+        replaces.append(args[i + 1])
+        del args[i:i + 2]
     if len(args) != 2:
         fail('usage: python release.py [--unlisted] <path-to-jar> "<changelog>"')
     jar, changelog = os.path.abspath(args[0]), args[1].strip()
@@ -170,10 +182,22 @@ def main():
     }
     if unlisted or (entry is not None and entry.get("listed") is False):
         new_entry["listed"] = False
+    replaces = sorted(set(replaces) | set((entry or {}).get("replaces", [])))
+    if replaces:
+        new_entry["replaces"] = replaces
     if entry is None:
         mods.append(new_entry)
     else:
         mods[mods.index(entry)] = new_entry
+    for old_id in replaces:
+        # The old id updates to the renamed mod's jar; never offered as an install.
+        alias = {**new_entry, "id": old_id, "listed": False, "renamedTo": mod_id}
+        alias.pop("replaces", None)
+        old = next((m for m in mods if m.get("id") == old_id), None)
+        if old is None:
+            mods.append(alias)
+        else:
+            mods[mods.index(old)] = alias
     mods.sort(key=lambda m: m.get("name", "").lower())
     with open(MANIFEST, "w", encoding="utf-8") as f:
         json.dump(manifest, f, indent=2, ensure_ascii=False)
