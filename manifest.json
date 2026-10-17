@@ -95,6 +95,23 @@
       }
     },
     {
+      "id": "cytramap",
+      "name": "Alloy Map",
+      "version": "0.23.1",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytramap-v0.23.1/alloy-map-0.23.1.jar",
+      "sha256": "a03054a698d04b751f4ef4f96ed793d92119f045b4234d53bca51959edb2a00a",
+      "changelog": "Cytra Map is now Alloy Map, with the new Alloy logo as its icon. Settings, keys and saved maps stay the same.",
+      "environment": "*",
+      "depends": {
+        "fabric-api": "*"
+      },
+      "optional": {
+        "sharedwaypoints": "*",
+        "cytra-hub": "*",
+        "litematica": "*"
+      }
+    },
+    {
       "id": "cytra-masscraft",
       "name": "Alloy Mass Craft",
       "version": "0.3.2",
@@ -246,23 +263,6 @@
       },
       "optional": {},
       "listed": false
-    },
-    {
-      "id": "cytramap",
-      "name": "Cytra Map",
-      "version": "0.23.0",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytramap-v0.23.0/cytra-map-0.23.0.jar",
-      "sha256": "a838806761ccdbe24f11670246078be59d8dc033de8f7539c9ca39e89de8c340",
-      "changelog": "First release: Cytra's own minimap and world map. Cave and Nether layers, markers with custom pictures, Classic (Xaero-like) style, biome and height views, chat coordinate links, Litematica boxes, Xaero map import and an optional shared server map.",
-      "environment": "*",
-      "depends": {
-        "fabric-api": "*"
-      },
-      "optional": {
-        "sharedwaypoints": "*",
-        "cytra-hub": "*",
-        "litematica": "*"
-      }
     },
     {
       "id": "cytraprinter",
