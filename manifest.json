@@ -79,6 +79,22 @@
       }
     },
     {
+      "id": "cytracreative",
+      "name": "Alloy Creative",
+      "version": "0.4.2",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytracreative-v0.4.2/alloy-creative-0.4.2.jar",
+      "sha256": "92941069436720df8d2a7731968dcb0901623f6f0e5295895cc791ad5f096a6b",
+      "changelog": "Cytra Creative is now Alloy Creative. Renamed from Cytra to Alloy, with the new Alloy logo. Nothing else changes: settings, commands and saved data stay the same.",
+      "environment": "*",
+      "depends": {
+        "fabric-api": "*"
+      },
+      "optional": {
+        "cytra-link": ">=0.3.0",
+        "malilib": "*"
+      }
+    },
+    {
       "id": "cytra-syncmatica",
       "name": "Alloy Syncmatica",
       "version": "1.4.1+1.21.11",
@@ -127,22 +143,6 @@
         "bluemap": "*",
         "squaremap": "*",
         "xaerominimap": "*"
-      }
-    },
-    {
-      "id": "cytracreative",
-      "name": "Cytra Creative",
-      "version": "0.4.1",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytracreative-v0.4.1/cytra-creative-0.4.1.jar",
-      "sha256": "f8453d04f9cfd4ef635f5358ae20102f75cf725ace7f387d862433c0978e86e4",
-      "changelog": "Every lab now has its own Nether, linked by portals. Mobs spawn in labs, rejoining a lab no longer leaves a ghost player, and labs follow the server's /tick like any dimension.",
-      "environment": "*",
-      "depends": {
-        "fabric-api": "*"
-      },
-      "optional": {
-        "cytra-link": ">=0.3.0",
-        "malilib": "*"
       }
     },
     {
