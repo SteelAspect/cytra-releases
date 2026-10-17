@@ -95,6 +95,21 @@
       }
     },
     {
+      "id": "cytrasend",
+      "name": "Alloy Send",
+      "version": "0.1.1",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytrasend-v0.1.1/alloy-send-0.1.1.jar",
+      "sha256": "299b7ea4963045717dbc99fb581e343f9182db159351d65efca61f73555d2d4d",
+      "changelog": "Cytra Send is now Alloy Send. Renamed from Cytra to Alloy, with the new Alloy logo. Nothing else changes: settings, commands and saved data stay the same.",
+      "environment": "server",
+      "depends": {
+        "fabric-api": "*",
+        "cytra-link": ">=0.3.0"
+      },
+      "optional": {},
+      "listed": false
+    },
+    {
       "id": "cytra-syncmatica",
       "name": "Alloy Syncmatica",
       "version": "1.4.1+1.21.11",
@@ -252,21 +267,6 @@
         "litematica": ">=0.26.16",
         "malilib": ">=0.27.20"
       }
-    },
-    {
-      "id": "cytrasend",
-      "name": "Cytra Send",
-      "version": "0.1.0",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytrasend-v0.1.0/cytra-send-0.1.0.jar",
-      "sha256": "9a051fa859369215e7d1ba0381e9ac641643a0aedba61e2345c7a8a37a540d9b",
-      "changelog": "First release: the SMP side of Cytra Creative labs. Select an area (/cc send wand, or pos1/pos2) and run /cc send <name>; the bridge bot carries it to the CMP, where it becomes a lab with a [Go to lab] button. Up to 1024x1024, every height, unloaded chunks too.",
-      "environment": "server",
-      "depends": {
-        "fabric-api": "*",
-        "cytra-link": ">=0.3.0"
-      },
-      "optional": {},
-      "listed": false
     },
     {
       "id": "cytra-shulkerview",
