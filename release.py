@@ -10,9 +10,9 @@ Reads id, name, version, environment and required mods from fabric.mod.json insi
 <id>-v<version> with the jar attached, updates manifest.json, then commits and pushes.
 Refuses to run if that version is already in the manifest.
 
-Then adds the release to Cytra Hub's built-in changelog (src/client/resources/cytra-hub/mods.json in the cytra-hub
+Then adds the release to Alloy Hub's built-in changelog (src/client/resources/cytra-hub/mods.json in the cytra-hub
 checkout next to this repo, or $CYTRA_HUB) and commits it there on the current branch, without pushing. One changelog
-line becomes one item; a leading "- " is dropped. Skipped for Cytra Hub itself, or when there's no checkout.
+line becomes one item; a leading "- " is dropped. Skipped for Alloy Hub itself, or when there's no checkout.
 """
 import hashlib
 import json
@@ -100,7 +100,7 @@ def update_hub(mod_id, name, description, version, changelog):
     try:
         data = json.loads(text)
     except ValueError as e:
-        print(f"Cytra Hub: mods.json is not valid JSON ({e}), not updated")
+        print(f"Alloy Hub: mods.json is not valid JSON ({e}), not updated")
         return
     if mod_id in data:
         if any(c.get("version") == version for c in data[mod_id].get("changelog", [])):
@@ -109,7 +109,7 @@ def update_hub(mod_id, name, description, version, changelog):
         marker = '"changelog": ['
         at = text.find(marker, start)
         if at < 0:
-            print(f"Cytra Hub: {mod_id} has no changelog list in mods.json, not updated")
+            print(f"Alloy Hub: {mod_id} has no changelog list in mods.json, not updated")
             return
         at = text.index("\n", at) + 1
         text = text[:at] + hub_change(version, items) + text[at:]
@@ -123,12 +123,12 @@ def update_hub(mod_id, name, description, version, changelog):
         f.write(text)
     for cmd in (["git", "add", HUB_MODS_JSON], ["git", "commit", "-q", "-m", f"Changelog: {name} {version}"]):
         if subprocess.run(cmd, cwd=HUB).returncode != 0:
-            print("Cytra Hub: could not commit mods.json, the change is left in the working tree")
+            print("Alloy Hub: could not commit mods.json, the change is left in the working tree")
             return
-    print(f"Cytra Hub: added {name} {version} to mods.json and committed it in {HUB} (not pushed). "
-          f"It reaches players with the next Cytra Hub release.")
+    print(f"Alloy Hub: added {name} {version} to mods.json and committed it in {HUB} (not pushed). "
+          f"It reaches players with the next Alloy Hub release.")
     if mod_id not in data:
-        print(f"Cytra Hub: {mod_id} is new; add a put(...) line in ModCatalog.java so the Hub shows its page.")
+        print(f"Alloy Hub: {mod_id} is new; add a put(...) line in ModCatalog.java so the Hub shows its page.")
 
 
 def main():
