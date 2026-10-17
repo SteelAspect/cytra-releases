@@ -1,6 +1,22 @@
 {
   "mods": [
     {
+      "id": "containerautofill",
+      "name": "Alloy Container",
+      "version": "1.4.1",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/containerautofill-v1.4.1/alloy-container-1.4.1.jar",
+      "sha256": "feb57429a6c5144ba97a9837020e85bd0cf0f556f25c073a89b6b3e225852396",
+      "changelog": "Cytra Container is now Alloy Container. Renamed from Cytra to Alloy, with the new Alloy logo. Nothing else changes: settings, commands and saved data stay the same.",
+      "environment": "*",
+      "depends": {
+        "fabric-api": "*"
+      },
+      "optional": {
+        "litematica": ">=0.26.16",
+        "malilib": ">=0.27.20"
+      }
+    },
+    {
       "id": "sharedwaypoints",
       "name": "Alloy Waypoints",
       "version": "2.8.0",
@@ -65,22 +81,6 @@
         "carpet-extra": "*",
         "carpet-tis-addition": "*",
         "essential-addons": "*"
-      }
-    },
-    {
-      "id": "containerautofill",
-      "name": "Cytra Container",
-      "version": "1.4.0",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/containerautofill-v1.4.0/cytra-container-1.4.0.jar",
-      "sha256": "8ed1b662bcf9b996309ad0659786661b9404063c42b622c0af0f62e2dbac4022",
-      "changelog": "Material list Contents button: switch Litematica's placement material list between Blocks, Containers (what goes inside the schematic's containers, shulker boxes counted with their contents, missing = not in the real container yet) and Both. The chosen list shows on the material list Info HUD.",
-      "environment": "*",
-      "depends": {
-        "fabric-api": "*"
-      },
-      "optional": {
-        "litematica": ">=0.26.16",
-        "malilib": ">=0.27.20"
       }
     },
     {
