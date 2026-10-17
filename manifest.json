@@ -139,10 +139,10 @@
     {
       "id": "cytramap",
       "name": "Alloy Map",
-      "version": "0.23.1",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytramap-v0.23.1/alloy-map-0.23.1.jar",
-      "sha256": "a03054a698d04b751f4ef4f96ed793d92119f045b4234d53bca51959edb2a00a",
-      "changelog": "Cytra Map is now Alloy Map, with the new Alloy logo as its icon. Settings, keys and saved maps stay the same.",
+      "version": "0.24.0",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/alloymap-v0.24.0/alloy-map-0.24.0.jar",
+      "sha256": "62694b7e80494ccce2bbc8437de0eb88e44080156325f40406e9d0718c947c86",
+      "changelog": "- The mod id is now alloymap: your saved maps, settings, marker pictures, key bindings and the server's shared map move over by themselves the first time it starts\n- Commands are /alloymap and /alloymapc (the old /cytramap ones still work)\n- Update the server and players together; don't keep the old Cytra Map jar next to it",
       "environment": "*",
       "depends": {
         "fabric-api": "*"
@@ -151,7 +151,29 @@
         "sharedwaypoints": "*",
         "cytra-hub": "*",
         "litematica": "*"
-      }
+      },
+      "listed": false,
+      "renamedTo": "alloymap"
+    },
+    {
+      "id": "alloymap",
+      "name": "Alloy Map",
+      "version": "0.24.0",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/alloymap-v0.24.0/alloy-map-0.24.0.jar",
+      "sha256": "62694b7e80494ccce2bbc8437de0eb88e44080156325f40406e9d0718c947c86",
+      "changelog": "- The mod id is now alloymap: your saved maps, settings, marker pictures, key bindings and the server's shared map move over by themselves the first time it starts\n- Commands are /alloymap and /alloymapc (the old /cytramap ones still work)\n- Update the server and players together; don't keep the old Cytra Map jar next to it",
+      "environment": "*",
+      "depends": {
+        "fabric-api": "*"
+      },
+      "optional": {
+        "sharedwaypoints": "*",
+        "cytra-hub": "*",
+        "litematica": "*"
+      },
+      "replaces": [
+        "cytramap"
+      ]
     },
     {
       "id": "cytra-masscraft",
