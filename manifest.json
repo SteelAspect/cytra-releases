@@ -95,6 +95,35 @@
       }
     },
     {
+      "id": "cytra-hub",
+      "name": "Alloy Hub",
+      "version": "0.5.0",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-hub-v0.5.0/alloy-hub-0.5.0.jar",
+      "sha256": "f32beb1016b640a7c696a8b4b7f8286fd9aaa8af4a595201c0893e7bff4ad95c",
+      "changelog": "- Cytra Hub is now Alloy Hub, with the new Alloy logo (Hub button, menu and mod icons)\n- Every Cytra mod is renamed to Alloy; update them from the Updates tab\n- Changelogs for the new versions, including Alloy Ledger's rollback",
+      "environment": "*",
+      "depends": {
+        "fabric-api": "*"
+      },
+      "optional": {
+        "modmenu": "*",
+        "cytra-link": "*",
+        "sharedwaypoints": "*",
+        "stickytoggle": "*",
+        "containerautofill": "*",
+        "cytra-syncmatica": "*",
+        "cytra-areascanner": "*",
+        "cytra-botmacros": "*",
+        "cytracarpet": "*",
+        "cytratrades": "*",
+        "cytrabackups": "*",
+        "cytracreative": "*",
+        "cytra-shulkerview": "*",
+        "cytra-masscraft": "*",
+        "cytramap": "*"
+      }
+    },
+    {
       "id": "cytra-ledger",
       "name": "Alloy Ledger",
       "version": "0.3.0",
@@ -236,35 +265,6 @@
         "bluemap": "*",
         "squaremap": "*",
         "xaerominimap": "*"
-      }
-    },
-    {
-      "id": "cytra-hub",
-      "name": "Cytra Hub",
-      "version": "0.4.5",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-hub-v0.4.5/cytra-hub-0.4.5.jar",
-      "sha256": "6254d046410e5596f9039ab8bf6500ddae2dd684c6ec0278fe0815c66505395e",
-      "changelog": "- New mod pages: Cytra Map, Cytra Printer, Cytra Shulker View and Cytra Ledger (ops)\n- Changelogs for every Cytra mod are up to date\n- HUD editor: the panel no longer stays on top of the element you drag when other mods' HUD elements fill the corners",
-      "environment": "*",
-      "depends": {
-        "fabric-api": "*"
-      },
-      "optional": {
-        "modmenu": "*",
-        "cytra-link": "*",
-        "sharedwaypoints": "*",
-        "stickytoggle": "*",
-        "containerautofill": "*",
-        "cytra-syncmatica": "*",
-        "cytra-areascanner": "*",
-        "cytra-botmacros": "*",
-        "cytracarpet": "*",
-        "cytratrades": "*",
-        "cytrabackups": "*",
-        "cytracreative": "*",
-        "cytra-shulkerview": "*",
-        "cytra-masscraft": "*",
-        "cytramap": "*"
       }
     },
     {
