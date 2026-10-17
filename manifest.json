@@ -284,10 +284,10 @@
     {
       "id": "stickytoggle",
       "name": "StickyToggle",
-      "version": "2.2.2",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/stickytoggle-v2.2.2/stickytoggle-2.2.2.jar",
-      "sha256": "0578616d33d672630a7973b8010a5a79dce91c4ff89337768981c224fff7ad47",
-      "changelog": "Fixed: your toggles no longer reset back to ON every time you join a world or restart the game.",
+      "version": "2.2.3",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/stickytoggle-v2.2.3/stickytoggle-2.2.3.jar",
+      "sha256": "05c0cdd2ccea085ed764e312800bb3a732dfa018b89674c9e7e5e875fd3722be",
+      "changelog": "New Alloy logo as the mod icon.",
       "environment": "*",
       "depends": {
         "fabric-api": "*"
