@@ -16,6 +16,19 @@
       "optional": {}
     },
     {
+      "id": "cytrabackups",
+      "name": "Alloy Backups",
+      "version": "1.7.1",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytrabackups-v1.7.1/alloy-backups-1.7.1.jar",
+      "sha256": "8f524a73f5696b96356fd806be308c5aac10a617e1a82b7593adfd81822e1f04",
+      "changelog": "CytraBackups is now Alloy Backups. Renamed from Cytra to Alloy, with the new Alloy logo. Nothing else changes: settings, commands and saved data stay the same.",
+      "environment": "*",
+      "depends": {
+        "fabric-api": "*"
+      },
+      "optional": {}
+    },
+    {
       "id": "cytra-botmacros",
       "name": "Alloy Bot Macros",
       "version": "1.2.1",
@@ -262,19 +275,6 @@
       "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-shulkerview-v1.1.1/cytra-shulkerview-1.1.1.jar",
       "sha256": "9b113fce4b27103faddfe6edf6bc9b05ad1b1e2a1884b737786c759f815a3d1a",
       "changelog": "Fix: labels on placed shulkers now show with Optimized Block Entities (they only flashed while opening).",
-      "environment": "*",
-      "depends": {
-        "fabric-api": "*"
-      },
-      "optional": {}
-    },
-    {
-      "id": "cytrabackups",
-      "name": "CytraBackups",
-      "version": "1.7.0",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytrabackups-v1.7.0/cytrabackups-1.7.0.jar",
-      "sha256": "64db3952217ce74658b27a7b1e0a6c9c34af28b5a2ce2058e96bb637fe6fe2f6",
-      "changelog": "Restore preview: /cbackup preview <id> radius <0-7> (or chunks <dim> <x1> <z1> <x2> <z2>) turns an area of a backup into a Litematica schematic in place. With Cytra Syncmatica on the server it's shared right away; otherwise saved under previews/. /cbackup preview clear removes shared previews.",
       "environment": "*",
       "depends": {
         "fabric-api": "*"
