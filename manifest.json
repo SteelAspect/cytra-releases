@@ -17,6 +17,23 @@
       }
     },
     {
+      "id": "cytra-syncmatica",
+      "name": "Alloy Syncmatica",
+      "version": "1.4.1+1.21.11",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-syncmatica-v1.4.1+1.21.11/alloy-syncmatica-1.4.1+1.21.11.jar",
+      "sha256": "56aef5c2914220f55931c10934280b5782d951011df3764b8fe13aa531c7ccf7",
+      "changelog": "- Cytra-Syncmatica is now Alloy Syncmatica, with the new Alloy logo\n- Server hardening: uploaded schematic previews are size-checked, chunk claims only accept the server's real dimensions, and the claim list is sent in bounded parts",
+      "environment": "*",
+      "depends": {
+        "fabric-api": "*"
+      },
+      "optional": {
+        "cytra-link": ">=0.3.0",
+        "litematica": "*",
+        "malilib": "*"
+      }
+    },
+    {
       "id": "sharedwaypoints",
       "name": "Alloy Waypoints",
       "version": "2.8.0",
@@ -234,23 +251,6 @@
         "fabric-api": "*"
       },
       "optional": {}
-    },
-    {
-      "id": "cytra-syncmatica",
-      "name": "Cytra-Syncmatica",
-      "version": "1.4.0+1.21.11",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-syncmatica-v1.4.0+1.21.11/cytra-syncmatica-1.4.0+1.21.11.jar",
-      "sha256": "086aa20a028445949ec6536e59832074652a7992522128890cb1f99c92546370",
-      "changelog": "- Chunk Claims screen: drag to claim chunks with a description, or release them\n- Warning when a schematic is placed in someone else's claimed area\n- Previews can be drawn from other angles\n- Previews of .schem and .nbt files",
-      "environment": "*",
-      "depends": {
-        "fabric-api": "*"
-      },
-      "optional": {
-        "cytra-link": ">=0.3.0",
-        "litematica": "*",
-        "malilib": "*"
-      }
     },
     {
       "id": "cytrabackups",
