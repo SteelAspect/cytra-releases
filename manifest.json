@@ -1,6 +1,21 @@
 {
   "mods": [
     {
+      "id": "cytra-areascanner",
+      "name": "Alloy Area Scanner",
+      "version": "1.1.2",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-areascanner-v1.1.2/alloy-areascanner-1.1.2.jar",
+      "sha256": "ba00e65090e1874fd628f4f8fae6097cac871eb612b095b22a22f63182e4bd9d",
+      "changelog": "Cytra Area Scanner is now Alloy Area Scanner. Renamed from Cytra to Alloy, with the new Alloy logo. Nothing else changes: settings, commands and saved data stay the same.",
+      "environment": "client",
+      "depends": {
+        "fabric-api": "*",
+        "litematica": ">=0.26.16",
+        "malilib": ">=0.27.20"
+      },
+      "optional": {}
+    },
+    {
       "id": "containerautofill",
       "name": "Alloy Container",
       "version": "1.4.1",
@@ -50,21 +65,6 @@
         "squaremap": "*",
         "xaerominimap": "*"
       }
-    },
-    {
-      "id": "cytra-areascanner",
-      "name": "Cytra Area Scanner",
-      "version": "1.1.1",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-areascanner-v1.1.1/cytra-areascanner-1.1.1.jar",
-      "sha256": "3848661cf6e9a35335b6dcbbb0cb38af8037c4372a48cb11c57287cce809a650",
-      "changelog": "- Litematica menu: the Area Scanner button now sits bottom left, above the Cytra Syncmatica buttons\n\nNeeds Litematica 0.26.16+ and MaLiLib 0.27.20+.",
-      "environment": "client",
-      "depends": {
-        "fabric-api": "*",
-        "litematica": ">=0.26.16",
-        "malilib": ">=0.27.20"
-      },
-      "optional": {}
     },
     {
       "id": "cytra-botmacros",
