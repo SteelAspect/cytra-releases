@@ -97,10 +97,10 @@
     {
       "id": "cytra-hub",
       "name": "Alloy Hub",
-      "version": "0.5.0",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-hub-v0.5.0/alloy-hub-0.5.0.jar",
-      "sha256": "f32beb1016b640a7c696a8b4b7f8286fd9aaa8af4a595201c0893e7bff4ad95c",
-      "changelog": "- Cytra Hub is now Alloy Hub, with the new Alloy logo (Hub button, menu and mod icons)\n- Every Cytra mod is renamed to Alloy; update them from the Updates tab\n- Changelogs for the new versions, including Alloy Ledger's rollback",
+      "version": "0.5.1",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-hub-v0.5.1/alloy-hub-0.5.1.jar",
+      "sha256": "a1cd71bf7eb03dd8f5696a23dd78d8a33abef72d21f83d9a8ce1568abfb24134",
+      "changelog": "- Alloy Map's new mod id (alloymap): its Hub page, settings and update\n- Players who still have Cytra Map get it updated to Alloy Map instead of a second map",
       "environment": "*",
       "depends": {
         "fabric-api": "*"
@@ -120,7 +120,7 @@
         "cytracreative": "*",
         "cytra-shulkerview": "*",
         "cytra-masscraft": "*",
-        "cytramap": "*"
+        "alloymap": "*"
       }
     },
     {
