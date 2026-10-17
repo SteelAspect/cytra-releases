@@ -68,10 +68,10 @@
     {
       "id": "cytracreative",
       "name": "Cytra Creative",
-      "version": "0.3.0",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytracreative-v0.3.0/cytra-creative-0.3.0.jar",
-      "sha256": "de340d70568d03f0e781e488dac0ac15dfcf110ec8dcb1b1dee4375cc579ec2f",
-      "changelog": "Labs from the SMP: areas sent with Cytra Send become labs at the same coordinates, with a [Go to lab] button (now or on next join). Also: faster /cc perimeter.",
+      "version": "0.4.1",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytracreative-v0.4.1/cytra-creative-0.4.1.jar",
+      "sha256": "f8453d04f9cfd4ef635f5358ae20102f75cf725ace7f387d862433c0978e86e4",
+      "changelog": "Every lab now has its own Nether, linked by portals. Mobs spawn in labs, rejoining a lab no longer leaves a ghost player, and labs follow the server's /tick like any dimension.",
       "environment": "*",
       "depends": {
         "fabric-api": "*"
