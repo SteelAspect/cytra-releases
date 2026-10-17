@@ -172,6 +172,23 @@
       "listed": false
     },
     {
+      "id": "cytraprinter",
+      "name": "Cytra Printer",
+      "version": "1.0.0",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytraprinter-v1.0.0/cytra-printer-1.0.0.jar",
+      "sha256": "f632f51eec30f9c8a6898eb64500b1abf3a5dc48c87a1c8c3be8ba758aa4879a",
+      "changelog": "First release: a fast Litematica printer that only places a block when vanilla placement would give exactly the schematic's block and rotation. Fixes wrong blocks, waits for the server, safe redstone order. Works in survival and creative; the same jar on the server makes placement even more exact.",
+      "environment": "*",
+      "depends": {
+        "fabric-api": "*"
+      },
+      "optional": {
+        "containerautofill": "*",
+        "litematica": ">=0.26.16",
+        "malilib": ">=0.27.20"
+      }
+    },
+    {
       "id": "cytrasend",
       "name": "Cytra Send",
       "version": "0.1.0",
