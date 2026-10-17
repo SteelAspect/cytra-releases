@@ -95,6 +95,24 @@
       }
     },
     {
+      "id": "cytra-masscraft",
+      "name": "Alloy Mass Craft",
+      "version": "0.3.2",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-masscraft-v0.3.2/alloy-masscraft-0.3.2.jar",
+      "sha256": "4d77968a221deedd7f662e32404984d32b6a5957193a46a342bc58485eb8358d",
+      "changelog": "Cytra Mass Craft is now Alloy Mass Craft. Renamed from Cytra to Alloy, with the new Alloy logo. Nothing else changes: settings, commands and saved data stay the same.",
+      "environment": "client",
+      "depends": {
+        "fabric-api": "*",
+        "malilib": ">=0.27.20",
+        "containerautofill": ">=1.3.9"
+      },
+      "optional": {
+        "litematica": "*"
+      },
+      "listed": false
+    },
+    {
       "id": "cytrasend",
       "name": "Alloy Send",
       "version": "0.1.1",
@@ -245,24 +263,6 @@
         "cytra-hub": "*",
         "litematica": "*"
       }
-    },
-    {
-      "id": "cytra-masscraft",
-      "name": "Cytra Mass Craft",
-      "version": "0.3.1",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-masscraft-v0.3.1/cytra-masscraft-0.3.1.jar",
-      "sha256": "6bd41f78a5a13338f4a8f0c9ca97c82253be95a4b4e043e100f64956d70a0784",
-      "changelog": "No dump containers: results are now crafted and dropped in one click, no pause before they drop.",
-      "environment": "client",
-      "depends": {
-        "fabric-api": "*",
-        "malilib": ">=0.27.20",
-        "containerautofill": ">=1.3.9"
-      },
-      "optional": {
-        "litematica": "*"
-      },
-      "listed": false
     },
     {
       "id": "cytraprinter",
