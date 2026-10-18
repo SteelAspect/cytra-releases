@@ -194,6 +194,21 @@
       "listed": false
     },
     {
+      "id": "alloypackmixer",
+      "name": "Alloy Pack Mixer",
+      "version": "0.7.4",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/alloypackmixer-v0.7.4/alloy-packmixer-0.7.4.jar",
+      "sha256": "e0d8431b9058cab6e7027319ba2b52b7c7c5a972f05af7c4a7fead3fd199d295",
+      "changelog": "First release on Alloy Hub\n- PACKS tab: mix resource packs per category (armor from one pack, swords from another) with previews, loadouts and Modrinth search\n- ALLOY tab: the built-in Alloy Pack with title backgrounds, glint colours, Monster can totems, steel GUI, title screen layouts and the Alloy loading screen\n- Armor named after a theme (Frostbite, Inferno, Voidwalker...) is recoloured, worn and in the inventory, with a glint in the theme colour\n- Themed particles around held named weapons, and a mace smash style for each theme",
+      "environment": "client",
+      "depends": {
+        "fabric-api": "*"
+      },
+      "optional": {
+        "cytra-hub": "*"
+      }
+    },
+    {
       "id": "cytraprinter",
       "name": "Alloy Printer",
       "version": "1.1.0",
