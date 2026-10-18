@@ -196,10 +196,10 @@
     {
       "id": "alloypackmixer",
       "name": "Alloy Pack Mixer",
-      "version": "0.7.4",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/alloypackmixer-v0.7.4/alloy-packmixer-0.7.4.jar",
-      "sha256": "e0d8431b9058cab6e7027319ba2b52b7c7c5a972f05af7c4a7fead3fd199d295",
-      "changelog": "First release on Alloy Hub\n- PACKS tab: mix resource packs per category (armor from one pack, swords from another) with previews, loadouts and Modrinth search\n- ALLOY tab: the built-in Alloy Pack with title backgrounds, glint colours, Monster can totems, steel GUI, title screen layouts and the Alloy loading screen\n- Armor named after a theme (Frostbite, Inferno, Voidwalker...) is recoloured, worn and in the inventory, with a glint in the theme colour\n- Themed particles around held named weapons, and a mace smash style for each theme",
+      "version": "0.7.5",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/alloypackmixer-v0.7.5/alloy-packmixer-0.7.5.jar",
+      "sha256": "ab3541d9a8046a9aa38ef2adf4bf13b3621aa9bf61d91555bef37b3d404c21ad",
+      "changelog": "Armor colours show everywhere\n- Icons for armor named after a theme now always work (they're part of the built-in Alloy Pack and follow the Armor colours switch)\n- Picking an armor pack on the PACKS tab no longer hides the themed icons of named armor\n- The Inspector shows a named variant's worn armor in its theme colours\n- The totem setting on the ALLOY tab wins again when you change it (it clears a PACKS totem pick)\n- The Inspector shows high-res armor packs correctly and labels variants by name",
       "environment": "client",
       "depends": {
         "fabric-api": "*"
