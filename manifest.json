@@ -139,10 +139,10 @@
     {
       "id": "cytramap",
       "name": "Alloy Map",
-      "version": "0.24.0",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/alloymap-v0.24.0/alloy-map-0.24.0.jar",
-      "sha256": "62694b7e80494ccce2bbc8437de0eb88e44080156325f40406e9d0718c947c86",
-      "changelog": "- The mod id is now alloymap: your saved maps, settings, marker pictures, key bindings and the server's shared map move over by themselves the first time it starts\n- Commands are /alloymap and /alloymapc (the old /cytramap ones still work)\n- Update the server and players together; don't keep the old Cytra Map jar next to it",
+      "version": "0.25.0",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/alloymap-v0.25.0/alloy-map-0.25.0.jar",
+      "sha256": "9d28545c060b5aa0f50802561049eff93e0fb29825c677769426730419831672",
+      "changelog": "- With Alloy Map on the server, it now maps everything already explored on its own when it starts (in the background, no command needed)\n- Only new or changed areas get looked at after the first time\n- An empty server keeps going until the map is done, then pauses as normal\n- Turn it off with autoRender in config/alloymap-server.json",
       "environment": "*",
       "depends": {
         "fabric-api": "*"
@@ -158,10 +158,10 @@
     {
       "id": "alloymap",
       "name": "Alloy Map",
-      "version": "0.24.0",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/alloymap-v0.24.0/alloy-map-0.24.0.jar",
-      "sha256": "62694b7e80494ccce2bbc8437de0eb88e44080156325f40406e9d0718c947c86",
-      "changelog": "- The mod id is now alloymap: your saved maps, settings, marker pictures, key bindings and the server's shared map move over by themselves the first time it starts\n- Commands are /alloymap and /alloymapc (the old /cytramap ones still work)\n- Update the server and players together; don't keep the old Cytra Map jar next to it",
+      "version": "0.25.0",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/alloymap-v0.25.0/alloy-map-0.25.0.jar",
+      "sha256": "9d28545c060b5aa0f50802561049eff93e0fb29825c677769426730419831672",
+      "changelog": "- With Alloy Map on the server, it now maps everything already explored on its own when it starts (in the background, no command needed)\n- Only new or changed areas get looked at after the first time\n- An empty server keeps going until the map is done, then pauses as normal\n- Turn it off with autoRender in config/alloymap-server.json",
       "environment": "*",
       "depends": {
         "fabric-api": "*"
