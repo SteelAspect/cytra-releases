@@ -321,10 +321,10 @@
     {
       "id": "schematic-tiling-javafied",
       "name": "Return Cannon Maker",
-      "version": "1.4.0",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/schematic-tiling-javafied-v1.4.0/return-cannon-maker-1.4.0.jar",
-      "sha256": "a4eb4ec8696c2f2e1c54eebd85324a702a17405392772c6d388f2a1410c437f3",
-      "changelog": "- The /cannon menu and saved spots now use the Alloy Nocturne look\n- Build options (load to memory, create placement, powder snow) are remembered after a restart\n- New Settings screen (also Mod Menu's Configure button)\n- New Alloy Hub page with the build options, the menu key and shortcuts to the menus\n- The advanced generator and block palette keep the old look for now",
+      "version": "1.5.0",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/schematic-tiling-javafied-v1.5.0/return-cannon-maker-1.5.0.jar",
+      "sha256": "40d224f2c9f922e9c387c97d0c93fa7378678b0d594e8eb9385d2c2540185aeb",
+      "changelog": "- The advanced generator now uses the Alloy Nocturne look: every solution in one sortable list, with a details card\n- The block palette is redone too: colour presets, block categories, search, warped/crimson wood\n- Messages show as pop-up toasts in every cannon screen\n- Generating from the advanced generator still opens Litematica's save dialog",
       "environment": "*",
       "depends": {
         "fabric-api": "*",
