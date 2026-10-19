@@ -34,7 +34,7 @@
       "version": "1.2.1",
       "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-botmacros-v1.2.1/alloy-botmacros-1.2.1.jar",
       "sha256": "dda63d90018a6f2f5451befb5ded136b3ef7d1fe25a6215b4ab4eb1d478b6e61",
-      "changelog": "Cytra Bot Macros is now Alloy Bot Macros. Renamed from Cytra to Alloy, with the new Alloy logo. Nothing else changes: settings, commands and saved data stay the same.",
+      "changelog": "Cytra Bot Macros is now Alloy Bot Macros. Renamed from Cytra to Alloy, with the new Alloy logo. Macros now run for everyone by default (runPermissionLevel 0); raise it in the config to limit who can run them. Settings, commands and saved data otherwise stay the same.",
       "environment": "*",
       "depends": {
         "fabric-api": "*"
