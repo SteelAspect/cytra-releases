@@ -321,17 +321,21 @@
     {
       "id": "schematic-tiling-javafied",
       "name": "Return Cannon Maker",
-      "version": "1.3.0",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/schematic-tiling-javafied-v1.3.0/return-cannon-maker-1.3.0.jar",
-      "sha256": "329603e79fd757d7c477ebf1de342b04e730af5538066001e28624bfda56808a",
-      "changelog": "- New: /cannon opens an easy Return Cannon menu\n- Pick where the cannon goes and where you want to land; it tells you straight away if it can reach\n- One click builds, saves and places the Litematica schematic\n- Saved spots, and Overworld coordinates are converted to Nether for you\n- Picks the fewest TNT that lands within 1 block; other setups one click away\n- Advanced opens the full original generator; based on Schematic Tiling by Selestor",
+      "version": "1.4.0",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/schematic-tiling-javafied-v1.4.0/return-cannon-maker-1.4.0.jar",
+      "sha256": "a4eb4ec8696c2f2e1c54eebd85324a702a17405392772c6d388f2a1410c437f3",
+      "changelog": "- The /cannon menu and saved spots now use the Alloy Nocturne look\n- Build options (load to memory, create placement, powder snow) are remembered after a restart\n- New Settings screen (also Mod Menu's Configure button)\n- New Alloy Hub page with the build options, the menu key and shortcuts to the menus\n- The advanced generator and block palette keep the old look for now",
       "environment": "*",
       "depends": {
         "fabric-api": "*",
         "malilib": "*",
-        "litematica": "*"
+        "litematica": "*",
+        "alloy-ui": ">=1.3.0 <2.0.0"
       },
-      "optional": {}
+      "optional": {
+        "modmenu": "*",
+        "cytra-hub": "*"
+      }
     },
     {
       "id": "stickytoggle",
