@@ -319,6 +319,21 @@
       "listed": false
     },
     {
+      "id": "schematic-tiling-javafied",
+      "name": "Return Cannon Maker",
+      "version": "1.3.0",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/schematic-tiling-javafied-v1.3.0/return-cannon-maker-1.3.0.jar",
+      "sha256": "329603e79fd757d7c477ebf1de342b04e730af5538066001e28624bfda56808a",
+      "changelog": "- New: /cannon opens an easy Return Cannon menu\n- Pick where the cannon goes and where you want to land; it tells you straight away if it can reach\n- One click builds, saves and places the Litematica schematic\n- Saved spots, and Overworld coordinates are converted to Nether for you\n- Picks the fewest TNT that lands within 1 block; other setups one click away\n- Advanced opens the full original generator; based on Schematic Tiling by Selestor",
+      "environment": "*",
+      "depends": {
+        "fabric-api": "*",
+        "malilib": "*",
+        "litematica": "*"
+      },
+      "optional": {}
+    },
+    {
       "id": "stickytoggle",
       "name": "StickyToggle",
       "version": "2.2.3",
