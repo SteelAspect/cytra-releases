@@ -84,17 +84,18 @@
     {
       "id": "cytracreative",
       "name": "Alloy Creative",
-      "version": "0.4.2",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytracreative-v0.4.2/alloy-creative-0.4.2.jar",
-      "sha256": "92941069436720df8d2a7731968dcb0901623f6f0e5295895cc791ad5f096a6b",
-      "changelog": "Cytra Creative is now Alloy Creative. Renamed from Cytra to Alloy, with the new Alloy logo. Nothing else changes: settings, commands and saved data stay the same.",
+      "version": "0.5.0",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytracreative-v0.5.0/alloy-creative-0.5.0.jar",
+      "sha256": "9ec21c08b5c8b0d698cac70eeedb7ef38aa1f098401a688cd2015c416a3b5e73",
+      "changelog": "New menu in the Alloy (Nocturne) look; MaLiLib is no longer needed\nSections: Regions, Selection, Labs, Gallery, Camera, Modules, Settings\nDeleting asks in a confirm dialog\nHotkeys are normal Minecraft key bindings (set them again: old MaLiLib bindings don't carry over)\nCamera options moved to Settings; Mod Menu's config button opens the menu",
       "environment": "*",
       "depends": {
-        "fabric-api": "*"
+        "fabric-api": "*",
+        "alloy-ui": ">=1.3.0 <2.0.0"
       },
       "optional": {
         "cytra-link": ">=0.3.0",
-        "malilib": "*"
+        "modmenu": "*"
       }
     },
     {
