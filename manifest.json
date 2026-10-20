@@ -296,13 +296,14 @@
     {
       "id": "sharedwaypoints",
       "name": "Alloy Waypoints",
-      "version": "2.8.0",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/sharedwaypoints-v2.8.0/alloy-waypoints-2.8.0.jar",
-      "sha256": "c0350a2c5ac13c88bc77924098f4c4a2ea6fcfbeceacdac810aa823be040c49f",
-      "changelog": "Cytra Waypoints is now Alloy Waypoints, with the new Alloy logo. Nothing else changes: waypoints, /cway, settings and Xaero's Shared set stay the same.",
+      "version": "2.9.0",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/sharedwaypoints-v2.9.0/alloy-waypoints-2.9.0.jar",
+      "sha256": "08763bb7087a3a3600f4f369d7d331abacb4320b15abc7aaf824adb1d11c2b4a",
+      "changelog": "New Alloy look for the waypoint menu, routes and forms (follows your Hub theme)\nSettings screen (gear in the menu, or Mod Menu): on/off, Xaero sync, Esc-menu button, default sort, remember last view, menu key\nAdd to Xaero, Edit, Set status, Teleport and Remove are in the ⋯ menu; Remove asks first\nServer answers show as pop-ups",
       "environment": "*",
       "depends": {
-        "fabric-api": "*"
+        "fabric-api": "*",
+        "alloy-ui": ">=1.3.0 <2.0.0"
       },
       "optional": {
         "luckperms": "*",
