@@ -159,10 +159,10 @@
     {
       "id": "cytramap",
       "name": "Alloy Map",
-      "version": "0.26.0",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/alloymap-v0.26.0/alloy-map-0.26.0.jar",
-      "sha256": "5a58f38df162ab3e02068d34b6c49313121e80f3b280c392ebf344d500aaf7ee",
-      "changelog": "- Every screen now uses the Alloy theme (Nocturne, or the theme you pick in Alloy Hub): settings, world map toolbar and panels, right-click menu, marker editor, map worlds, Xaero import\n- Settings: foldable sections, a reset button on every row and tips on hover; the world map's quick panel uses the same list\n- Marker editor: full colour picker (hex, recent colours) next to the 16 quick colours\n- Fixed: waypoints in the world drifting off their spot when the view zooms (sprinting, Speed, spyglass, zoom mods)",
+      "version": "0.27.0",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/alloymap-v0.27.0/alloy-map-0.27.0.jar",
+      "sha256": "504b1d6d67cd7a5684e12ecf43028c6beece0515b179f47431ea7c447106b839",
+      "changelog": "- Fixed: a server running C2ME could freeze at start-up with Alloy Map's auto-render; mapping saved chunks now never loads them on the server thread (auto-render is now off by default)\n- The shared map now covers the Nether (layer by layer, like your own Nether map) and the End\n- Fixed: the world map lowered FPS; it now redraws only when something changed and stays smooth and sharp while you drag it\n- Fixed: follow mode no longer pulls the world map back after 'go to' or a waypoint click",
       "environment": "*",
       "depends": {
         "fabric-api": "*",
@@ -179,10 +179,10 @@
     {
       "id": "alloymap",
       "name": "Alloy Map",
-      "version": "0.26.0",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/alloymap-v0.26.0/alloy-map-0.26.0.jar",
-      "sha256": "5a58f38df162ab3e02068d34b6c49313121e80f3b280c392ebf344d500aaf7ee",
-      "changelog": "- Every screen now uses the Alloy theme (Nocturne, or the theme you pick in Alloy Hub): settings, world map toolbar and panels, right-click menu, marker editor, map worlds, Xaero import\n- Settings: foldable sections, a reset button on every row and tips on hover; the world map's quick panel uses the same list\n- Marker editor: full colour picker (hex, recent colours) next to the 16 quick colours\n- Fixed: waypoints in the world drifting off their spot when the view zooms (sprinting, Speed, spyglass, zoom mods)",
+      "version": "0.27.0",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/alloymap-v0.27.0/alloy-map-0.27.0.jar",
+      "sha256": "504b1d6d67cd7a5684e12ecf43028c6beece0515b179f47431ea7c447106b839",
+      "changelog": "- Fixed: a server running C2ME could freeze at start-up with Alloy Map's auto-render; mapping saved chunks now never loads them on the server thread (auto-render is now off by default)\n- The shared map now covers the Nether (layer by layer, like your own Nether map) and the End\n- Fixed: the world map lowered FPS; it now redraws only when something changed and stays smooth and sharp while you drag it\n- Fixed: follow mode no longer pulls the world map back after 'go to' or a waypoint click",
       "environment": "*",
       "depends": {
         "fabric-api": "*",
