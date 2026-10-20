@@ -183,15 +183,16 @@
     {
       "id": "cytra-masscraft",
       "name": "Alloy Mass Craft",
-      "version": "0.3.2",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-masscraft-v0.3.2/alloy-masscraft-0.3.2.jar",
-      "sha256": "4d77968a221deedd7f662e32404984d32b6a5957193a46a342bc58485eb8358d",
-      "changelog": "Cytra Mass Craft is now Alloy Mass Craft. Renamed from Cytra to Alloy, with the new Alloy logo. Nothing else changes: settings, commands and saved data stay the same.",
+      "version": "0.4.0",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-masscraft-v0.4.0/alloy-masscraft-0.4.0.jar",
+      "sha256": "ee28abcb9840b34d4ef6b6eb7a1a9f51de5df08f110ff9632fff85b89aacf7b5",
+      "changelog": "New Alloy look: the Mass Craft panel uses the Alloy theme (Nocturne, or the theme you picked in Alloy Hub)\nPrimary buttons are filled (Craft, Confirm), themed text boxes, progress bar and search list\nWorks with Alloy Container 1.4.1 (now the minimum)",
       "environment": "client",
       "depends": {
         "fabric-api": "*",
         "malilib": ">=0.27.20",
-        "containerautofill": ">=1.3.9"
+        "containerautofill": ">=1.4.1",
+        "alloy-ui": ">=1.3.1 <2.0.0"
       },
       "optional": {
         "litematica": "*"
