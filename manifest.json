@@ -246,13 +246,14 @@
     {
       "id": "cytra-shulkerview",
       "name": "Alloy Shulker View",
-      "version": "1.2.0",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-shulkerview-v1.2.0/alloy-shulkerview-1.2.0.jar",
-      "sha256": "da2de9d8711eb9f416f948c45896b338cdac3654038d25462b1febfff865ad6a",
-      "changelog": "- Placed shulker boxes named Trash, Tools, Food or Blocks (any case) now use the Alloy Pack texture, like the item does. Needs Alloy Pack on; otherwise they look normal\n- Works with Optimized Block Entities\n- On servers without Alloy Shulker View the texture shows after you open the box once\n- New setting: namedTextures (on by default)",
+      "version": "1.3.0",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-shulkerview-v1.3.0/alloy-shulkerview-1.3.0.jar",
+      "sha256": "29a534e0e16b7fb2ce876cf380d9b321bd5d0b33c91a3f890c29bdbe8d78c2de",
+      "changelog": "- New settings screen in the Alloy look: open it from Mod Menu, or bind Open settings under Controls (no key by default)\n- All settings in one place: item icon, fill bar, icon sizes, label distance, named shulker textures, bar colours\n- Follows the theme picked in Alloy Hub",
       "environment": "*",
       "depends": {
-        "fabric-api": "*"
+        "fabric-api": "*",
+        "alloy-ui": ">=1.3.0 <2.0.0"
       },
       "optional": {}
     },
