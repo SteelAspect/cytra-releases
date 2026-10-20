@@ -98,10 +98,10 @@
     {
       "id": "cytra-hub",
       "name": "Alloy Hub",
-      "version": "0.6.0",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-hub-v0.6.0/alloy-hub-0.6.0.jar",
-      "sha256": "7b2af59b37d919fb662b25cf4df776d294a668c2a5cb5279853dc0c0eef329c6",
-      "changelog": "- New look on the shared Alloy UI theme: a cleaner two-pane layout, one row of tabs, quieter rows and tiles\n- Settings pages use config-list rows\n- Mod Menu and MaLiLib get a button for every Alloy mod without its own settings screen; it opens that mod's page in the Hub\n- Alloy Shulker View: new Named shulker textures setting\n- Arrow keys and Enter now work inside an open dropdown list\n- Alloy Backups keeps its settings in its own menu (no Hub page)\n- Return Cannon Maker is in the catalog",
+      "version": "0.6.1",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-hub-v0.6.1/alloy-hub-0.6.1.jar",
+      "sha256": "1cd82e933983a0aad935ecbd76053a5c45f3f46da386cd278dd84075252fee0d",
+      "changelog": "- /cytrahub <mod> opens the Hub straight on that mod's page (Tab completes the mods)\n- Alloy Trades page: auto-supply settings (with Alloy Container) and the trade hall sweep key\n- Changelogs for Alloy Ledger 0.4.0, Alloy Container 1.5.0 and Return Cannon Maker 1.5.0",
       "environment": "*",
       "depends": {
         "fabric-api": "*",
