@@ -274,13 +274,14 @@
     {
       "id": "cytratrades",
       "name": "Alloy Trades",
-      "version": "1.3.2",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytratrades-v1.3.2/alloy-trades-1.3.2.jar",
-      "sha256": "af8a32318b1ea5513e716ac4050b1e4fcc0eed86978a7090499241697d0e428b",
-      "changelog": "CytraTrades is now Alloy Trades. Renamed from Cytra to Alloy, with the new Alloy logo. Nothing else changes: settings, commands and saved data stay the same.",
+      "version": "1.4.0",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytratrades-v1.4.0/alloy-trades-1.4.0.jar",
+      "sha256": "87e02bfbb9bc0ab29354004d481defa0c95d9785139084b096c8ab46bd2abfdd",
+      "changelog": "New settings screen in the Alloy look: tool row, favourites you can reorder or remove (with a confirm), toasts\nAll text is now translatable\nHint when a stick is set as the trade tool while Litematica is loaded",
       "environment": "client",
       "depends": {
-        "fabric-api": "*"
+        "fabric-api": "*",
+        "alloy-ui": ">=1.3.0 <2.0.0"
       },
       "optional": {
         "modmenu": "*",
