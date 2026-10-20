@@ -104,10 +104,10 @@
     {
       "id": "cytrafx",
       "name": "Alloy FX",
-      "version": "0.2.0",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytrafx-v0.2.0/alloy-fx-0.2.0.jar",
-      "sha256": "adb19855714e4e5dc7886539a4161e8c61131a4a02d411a2c5663b468d2115a6",
-      "changelog": "First release: server-only Alloy theme effects for players with no client mods\n- Held Alloy-themed weapons get theme particles; themed maces get their own smash burst\n- Worn armor and elytra named after a theme are recoloured (serve Alloy Pack 1.3.2+ as the server resource pack)\n- Themed mace and trident sounds for everyone nearby\n- Players with Alloy Pack Mixer get no doubled particles, sounds or armor colours\n- /cytrafx (op): status, on/off, reload; config in config/cytrafx.json",
+      "version": "0.3.0",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytrafx-v0.3.0/alloy-fx-0.3.0.jar",
+      "sha256": "385f2ba7ae6e9ff01c5ad004f0571d53d2c0e255dd4aa1899964b9610b8da8f7",
+      "changelog": "Three new themes: Tidecaller, Soulfire, Blossom\n- Tidecaller: water drips, a splash and popping bubbles on a mace smash\n- Soulfire: soul flames and rising souls\n- Blossom: cherry petals\n- They work on swords, pickaxes, spears, maces, tridents (sounds), armor and elytra, like the first eight\n- Needs Alloy Pack 1.4.0 or later as the server resource pack (older packs: new-theme armor shows as no armor, no sounds)\n- /cytrafx shows how many players have Alloy Pack Mixer; /cytrafx reload no longer fails",
       "environment": "server",
       "depends": {
         "fabric-api": "*"
