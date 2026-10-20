@@ -127,10 +127,10 @@
     {
       "id": "cytra-ledger",
       "name": "Alloy Ledger",
-      "version": "0.4.0",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-ledger-v0.4.0/alloy-ledger-0.4.0.jar",
-      "sha256": "10c811a490036f083387b0132c999c72d42bdd96fd7ebdc77f688888e73672df",
-      "changelog": "Logs fire a player lit; blocks it burns count as broken by them, so rollback puts them back\nLogs TNT a player lit and every block a player's explosion destroyed (TNT, end crystals, beds, respawn anchors), with chest contents\nLogs items dropped (also on death) and picked up, with who dropped them\nLogs player deaths with the cause; kills by a player's fire or TNT count as theirs\nNew config switches: logFire, logExplosions, logDrops, logPickups, logDeaths",
+      "version": "0.5.0",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-ledger-v0.5.0/alloy-ledger-0.5.0.jar",
+      "sha256": "d45063e5f89ee3964ce632884a8f192b79cdd380b23ad3ea071038eda289812b",
+      "changelog": "/ll undo now works after a server restart\nAll chat text is translatable (cytraledger.* keys, English by default)",
       "environment": "server",
       "depends": {
         "fabric-api": "*"
