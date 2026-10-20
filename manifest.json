@@ -70,10 +70,10 @@
     {
       "id": "containerautofill",
       "name": "Alloy Container",
-      "version": "1.5.0",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/containerautofill-v1.5.0/alloy-container-1.5.0.jar",
-      "sha256": "0a735956cf40f503536117dc5f33780963f2c9c0c7446d1bbd60f97434cf95e5",
-      "changelog": "- New Alloy look for the storage menu (Y) and a new settings screen (L + C), in your Alloy Hub theme\n- Pick block, easy place and fills now take from stacked shulker boxes (needs 1.5.0 on the server too)\n- Fixed: filling a crafter sometimes left one slot empty",
+      "version": "1.5.1",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/containerautofill-v1.5.1/alloy-container-1.5.1.jar",
+      "sha256": "699f076c461a56190cc6fca0d69bb3f054f37a23ba3d1cf2654e6100857ce407",
+      "changelog": "- Fixed: the storage menu (Y) lowered your FPS with a big storage. It now only draws the rows you can see.",
       "environment": "*",
       "depends": {
         "fabric-api": "*",
