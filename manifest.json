@@ -260,6 +260,24 @@
       "optional": {}
     },
     {
+      "id": "stickytoggle",
+      "name": "Alloy Sticky Toggle",
+      "version": "2.3.0",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/stickytoggle-v2.3.0/alloy-stickytoggle-2.3.0.jar",
+      "sha256": "0cc42dff26f07b80ad7a39ae90f90c58d2d98151c9d67907fdfe9ca1974d3281",
+      "changelog": "Settings screen in the Alloy look (works without MaLiLib)\nAlloy Hub page with every block and setting\nRenamed to Alloy Sticky Toggle",
+      "environment": "*",
+      "depends": {
+        "fabric-api": "*",
+        "alloy-ui": ">=1.3.0 <2.0.0"
+      },
+      "optional": {
+        "malilib": ">=0.27.20",
+        "modmenu": "*",
+        "cytra-hub": "*"
+      }
+    },
+    {
       "id": "cytra-syncmatica",
       "name": "Alloy Syncmatica",
       "version": "1.4.1+1.21.11",
@@ -343,22 +361,6 @@
       "optional": {
         "modmenu": "*",
         "cytra-hub": "*"
-      }
-    },
-    {
-      "id": "stickytoggle",
-      "name": "StickyToggle",
-      "version": "2.2.3",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/stickytoggle-v2.2.3/stickytoggle-2.2.3.jar",
-      "sha256": "05c0cdd2ccea085ed764e312800bb3a732dfa018b89674c9e7e5e875fd3722be",
-      "changelog": "New Alloy logo as the mod icon.",
-      "environment": "*",
-      "depends": {
-        "fabric-api": "*"
-      },
-      "optional": {
-        "malilib": ">=0.27.20",
-        "modmenu": "*"
       }
     }
   ]
