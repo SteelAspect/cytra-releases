@@ -202,16 +202,18 @@
     {
       "id": "alloypackmixer",
       "name": "Alloy Pack Mixer",
-      "version": "0.10.1",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/alloypackmixer-v0.10.1/alloy-packmixer-0.10.1.jar",
-      "sha256": "40106b164fc461b9e4319cb48182b31cfdcf4fce83e5b953f88fc4ebb5c8ebeb",
-      "changelog": "Louder themed sounds\n- Themed mace and trident sounds come from Alloy Pack 1.3.2: every one at full volume, with clearer sounds per theme, so they're no longer drowned out by the vanilla mace and trident sounds\n- /alloysounds shows what the themed sounds are doing (setting, whether the server has Alloy FX, sounds loaded, the last one played or why it was skipped) and plays a test sound\n- debugSounds in the mixer's config.json logs every themed sound for troubleshooting",
+      "version": "0.11.0",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/alloypackmixer-v0.11.0/alloy-packmixer-0.11.0.jar",
+      "sha256": "0f62a7a28f7863cc6f477045ecbb99d281a45e728f77b85d0ffcd62c34147ae5",
+      "changelog": "Alloy UI look\n- The mixer now uses the Alloy UI theme (Nocturne, or the theme you picked in Alloy Hub): rounded panels, switches, the Alloy fonts\n- Export asks for the name in a dialog; clearing a loadout slot asks first\n- Alloy Hub page: the effect switches (weapon and smash particles, armor colours, theme glint, sounds, live apply)\n- Mod Menu's config button opens the ALLOY tab\n- The separate menu colours setting is gone",
       "environment": "client",
       "depends": {
-        "fabric-api": "*"
+        "fabric-api": "*",
+        "alloy-ui": ">=1.3.0 <2.0.0"
       },
       "optional": {
-        "cytra-hub": "*"
+        "cytra-hub": "*",
+        "modmenu": "*"
       }
     },
     {
