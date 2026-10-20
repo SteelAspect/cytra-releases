@@ -282,13 +282,14 @@
     {
       "id": "cytra-syncmatica",
       "name": "Alloy Syncmatica",
-      "version": "1.4.1+1.21.11",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-syncmatica-v1.4.1+1.21.11/alloy-syncmatica-1.4.1+1.21.11.jar",
-      "sha256": "56aef5c2914220f55931c10934280b5782d951011df3764b8fe13aa531c7ccf7",
-      "changelog": "- Cytra-Syncmatica is now Alloy Syncmatica, with the new Alloy logo\n- Server hardening: uploaded schematic previews are size-checked, chunk claims only accept the server's real dimensions, and the claim list is sent in bounded parts",
+      "version": "1.4.2+1.21.11",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-syncmatica-v1.4.2+1.21.11/alloy-syncmatica-1.4.2+1.21.11.jar",
+      "sha256": "65ebbae07cf57ca0ca2fc12f7655563db004e266aad0eb7eba00c4ce7a3112cd",
+      "changelog": "- Material lists read schematic size correctly, so /cytra-syncmatica where shows the real centre and distance\n- New settings screen in the Alloy look (Settings button in the material screen, openSettings hotkey)\n- Chinese translation completed for everything added since 1.0",
       "environment": "*",
       "depends": {
-        "fabric-api": "*"
+        "fabric-api": "*",
+        "alloy-ui": ">=1.3.0 <2.0.0"
       },
       "optional": {
         "cytra-link": ">=0.3.0",
