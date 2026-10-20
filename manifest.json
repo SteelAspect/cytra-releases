@@ -97,13 +97,14 @@
     {
       "id": "cytra-hub",
       "name": "Alloy Hub",
-      "version": "0.5.2",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-hub-v0.5.2/alloy-hub-0.5.2.jar",
-      "sha256": "121ce8a2d8454f6426532207d93dc83675ae23be0c1fa502bd21bf9dbfd41450",
-      "changelog": "Alloy Pack Mixer can be installed from the Hub\n- New in the Hub: Alloy Pack Mixer (Utility)\n- Changelogs for Alloy Printer 1.1.0, Alloy Shulker View 1.2.0 and Alloy Pack Mixer 0.7.4",
+      "version": "0.6.0",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-hub-v0.6.0/alloy-hub-0.6.0.jar",
+      "sha256": "7b2af59b37d919fb662b25cf4df776d294a668c2a5cb5279853dc0c0eef329c6",
+      "changelog": "- New look on the shared Alloy UI theme: a cleaner two-pane layout, one row of tabs, quieter rows and tiles\n- Settings pages use config-list rows\n- Mod Menu and MaLiLib get a button for every Alloy mod without its own settings screen; it opens that mod's page in the Hub\n- Alloy Shulker View: new Named shulker textures setting\n- Arrow keys and Enter now work inside an open dropdown list\n- Alloy Backups keeps its settings in its own menu (no Hub page)\n- Return Cannon Maker is in the catalog",
       "environment": "*",
       "depends": {
-        "fabric-api": "*"
+        "fabric-api": "*",
+        "alloy-ui": ">=1.2.0 <2.0.0"
       },
       "optional": {
         "modmenu": "*",
@@ -116,7 +117,6 @@
         "cytra-botmacros": "*",
         "cytracarpet": "*",
         "cytratrades": "*",
-        "cytrabackups": "*",
         "cytracreative": "*",
         "cytra-shulkerview": "*",
         "cytra-masscraft": "*",
