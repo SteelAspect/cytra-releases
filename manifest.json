@@ -117,10 +117,10 @@
     {
       "id": "cytra-hub",
       "name": "Alloy Hub",
-      "version": "0.6.1",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-hub-v0.6.1/alloy-hub-0.6.1.jar",
-      "sha256": "1cd82e933983a0aad935ecbd76053a5c45f3f46da386cd278dd84075252fee0d",
-      "changelog": "- /cytrahub <mod> opens the Hub straight on that mod's page (Tab completes the mods)\n- Alloy Trades page: auto-supply settings (with Alloy Container) and the trade hall sweep key\n- Changelogs for Alloy Ledger 0.4.0, Alloy Container 1.5.0 and Return Cannon Maker 1.5.0",
+      "version": "0.6.2",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-hub-v0.6.2/alloy-hub-0.6.2.jar",
+      "sha256": "8bbd0189c80af327e5c3e2a905cfa0aa4d60d70b648c6a48ac19b476903c5f20",
+      "changelog": "- Up-to-date changelogs for every Alloy mod (Map, Pack Mixer, Container, Area Scanner, Bot Macros, Ledger, Link, Mass Craft, Shulker View, Syncmatica, Backups, Carpet, Creative, Printer, Trades, Waypoints, Sticky Toggle, Return Cannon Maker)\n- Alloy FX in the catalog\n- Alloy Waypoints page uses the mod's own settings list (2.9.0+)\n- Open Alloy Carpet menu and Syncmatica Open settings actions",
       "environment": "*",
       "depends": {
         "fabric-api": "*",
