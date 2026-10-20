@@ -353,10 +353,10 @@
     {
       "id": "cytra-link",
       "name": "Cytra Link",
-      "version": "0.3.3",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-link-v0.3.3/cytra-link-0.3.3.jar",
-      "sha256": "0f05f5817f4795ec504f159aca6994a626cd07737fdade595fef43f3f2b47950",
-      "changelog": "Bots may send larger messages once connected (up to 8 MB), so areas sent to labs travel fast.",
+      "version": "0.3.4",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-link-v0.3.4/cytra-link-0.3.4.jar",
+      "sha256": "a18ab5f546938312a42a54082edded2e8b3b040e4cbd3fc43297159e513ec01c",
+      "changelog": "Built with the same tools as the other Alloy mods; nothing changes on the server.",
       "environment": "server",
       "depends": {
         "fabric-api": "*"
