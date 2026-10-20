@@ -219,10 +219,10 @@
     {
       "id": "alloypackmixer",
       "name": "Alloy Pack Mixer",
-      "version": "0.11.0",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/alloypackmixer-v0.11.0/alloy-packmixer-0.11.0.jar",
-      "sha256": "0f62a7a28f7863cc6f477045ecbb99d281a45e728f77b85d0ffcd62c34147ae5",
-      "changelog": "Alloy UI look\n- The mixer now uses the Alloy UI theme (Nocturne, or the theme you picked in Alloy Hub): rounded panels, switches, the Alloy fonts\n- Export asks for the name in a dialog; clearing a loadout slot asks first\n- Alloy Hub page: the effect switches (weapon and smash particles, armor colours, theme glint, sounds, live apply)\n- Mod Menu's config button opens the ALLOY tab\n- The separate menu colours setting is gone",
+      "version": "0.13.0",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/alloypackmixer-v0.13.0/alloy-packmixer-0.13.0.jar",
+      "sha256": "e8e6f0485046a1c1849e0b1fa1757447caca3c855a2e6a59cdcab65b48591d96",
+      "changelog": "New look, My packs, 3D off, no restart for new packs\n- Cleaner menu: one soft panel, filled buttons, cards with ACTIVE / PICKED tags, a MIXED strip of everything you've mixed (click to jump)\n- My packs: save your picks as named packs, switch between them, rename, export as a .zip, share codes (your old loadout slots became My packs)\n- 3D item models can be turned off, everywhere or per category: items use the flat model with the pack's textures\n- Packs added to the resourcepacks folder or turned on by the launcher show up while the game runs, no restart\n- Set the open-menu key right from the menu's footer",
       "environment": "client",
       "depends": {
         "fabric-api": "*",
