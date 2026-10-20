@@ -159,10 +159,10 @@
     {
       "id": "cytramap",
       "name": "Alloy Map",
-      "version": "0.27.0",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/alloymap-v0.27.0/alloy-map-0.27.0.jar",
-      "sha256": "504b1d6d67cd7a5684e12ecf43028c6beece0515b179f47431ea7c447106b839",
-      "changelog": "- Fixed: a server running C2ME could freeze at start-up with Alloy Map's auto-render; mapping saved chunks now never loads them on the server thread (auto-render is now off by default)\n- The shared map now covers the Nether (layer by layer, like your own Nether map) and the End\n- Fixed: the world map lowered FPS; it now redraws only when something changed and stays smooth and sharp while you drag it\n- Fixed: follow mode no longer pulls the world map back after 'go to' or a waypoint click",
+      "version": "0.27.1",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/alloymap-v0.27.1/alloy-map-0.27.1.jar",
+      "sha256": "8b81e1e21d3ac73630960892e1232e5e81c45c11f9ad21b63edb49d31c2f610c",
+      "changelog": "- Fixed: on big worlds the auto-render made the server fall behind until players timed out or it froze; map saving now runs in the background and the auto-render slows down with players online and pauses when the server is behind\n- Map data for players is prepared once per region and shared",
       "environment": "*",
       "depends": {
         "fabric-api": "*",
@@ -179,10 +179,10 @@
     {
       "id": "alloymap",
       "name": "Alloy Map",
-      "version": "0.27.0",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/alloymap-v0.27.0/alloy-map-0.27.0.jar",
-      "sha256": "504b1d6d67cd7a5684e12ecf43028c6beece0515b179f47431ea7c447106b839",
-      "changelog": "- Fixed: a server running C2ME could freeze at start-up with Alloy Map's auto-render; mapping saved chunks now never loads them on the server thread (auto-render is now off by default)\n- The shared map now covers the Nether (layer by layer, like your own Nether map) and the End\n- Fixed: the world map lowered FPS; it now redraws only when something changed and stays smooth and sharp while you drag it\n- Fixed: follow mode no longer pulls the world map back after 'go to' or a waypoint click",
+      "version": "0.27.1",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/alloymap-v0.27.1/alloy-map-0.27.1.jar",
+      "sha256": "8b81e1e21d3ac73630960892e1232e5e81c45c11f9ad21b63edb49d31c2f610c",
+      "changelog": "- Fixed: on big worlds the auto-render made the server fall behind until players timed out or it froze; map saving now runs in the background and the auto-render slows down with players online and pauses when the server is behind\n- Map data for players is prepared once per region and shared",
       "environment": "*",
       "depends": {
         "fabric-api": "*",
