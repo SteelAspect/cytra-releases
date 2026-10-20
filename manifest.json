@@ -19,13 +19,14 @@
     {
       "id": "cytrabackups",
       "name": "Alloy Backups",
-      "version": "1.7.1",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytrabackups-v1.7.1/alloy-backups-1.7.1.jar",
-      "sha256": "8f524a73f5696b96356fd806be308c5aac10a617e1a82b7593adfd81822e1f04",
-      "changelog": "CytraBackups is now Alloy Backups. Renamed from Cytra to Alloy, with the new Alloy logo. Nothing else changes: settings, commands and saved data stay the same.",
+      "version": "1.8.0",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytrabackups-v1.8.0/alloy-backups-1.8.0.jar",
+      "sha256": "7280ef35ec3bd0f971eb1a71347ca009175eb6fdb62eb9878bdacb1a42c3ddd4",
+      "changelog": "New Nocturne look: the backup menu, settings, chunk selector and dialogs use the Alloy theme. Mod Menu button. Commands, settings and backups are unchanged.",
       "environment": "*",
       "depends": {
-        "fabric-api": "*"
+        "fabric-api": "*",
+        "alloy-ui": ">=1.3.0 <2.0.0"
       },
       "optional": {}
     },
