@@ -146,10 +146,10 @@
     {
       "id": "cytra-ledger",
       "name": "Alloy Ledger",
-      "version": "0.5.0",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-ledger-v0.5.0/alloy-ledger-0.5.0.jar",
-      "sha256": "d45063e5f89ee3964ce632884a8f192b79cdd380b23ad3ea071038eda289812b",
-      "changelog": "/ll undo now works after a server restart\nAll chat text is translatable (cytraledger.* keys, English by default)",
+      "version": "0.6.0",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-ledger-v0.6.0/alloy-ledger-0.6.0.jar",
+      "sha256": "79df1d0cd62a889252e99be172ddc9cf9449ea67bfaefac7ea7e6b406e172724",
+      "changelog": "Inventory rollback: /ll inv <player> lists inventory snapshots (taken on death before the drops, on logout, every 10 minutes when changed, and before a restore)\nView a snapshot's inventory or ender chest in a read-only chest, or restore it (op 3): inventory, ender chest and XP\nNew config: snapshotInventories, inventorySnapshotMinutes, maxInventorySnapshots",
       "environment": "server",
       "depends": {
         "fabric-api": "*"
