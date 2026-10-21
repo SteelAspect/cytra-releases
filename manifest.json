@@ -222,7 +222,7 @@
       "version": "0.15.0",
       "url": "https://github.com/SteelAspect/cytra-releases/releases/download/alloypackmixer-v0.15.0/alloy-packmixer-0.15.0.jar",
       "sha256": "a2744e6015d6bb4ea1eb0f0424d4f5849222c441efc45ebd750b27d7ba631508",
-      "changelog": "41 themes, shared theme picks, weapon particles that follow\n- 26 new themes: Tidecaller, Soulfire, Blossom, Gilded, Femboy, Tempest, Echo, Eclipse, Venom, Oxide, Aurora, Prism, Redstone, Pale, Hive, Firefly, Sandstorm, Ominous, Glacier, Magma, Abyss, Mycelium, Enchanter, Phantom, Crimson, Sakura Night, Galaxy, Toxic Waste, Royal, Obsidian, Candy (match Alloy Pack 1.5.0 and Alloy FX 0.7.0)\n- Your THEMES picks show for other players on servers with Alloy FX, and theirs for you\n- Weapon particles stay on the blade as you move and swing, each theme with its own motion\n- Femboy swords meow when they hit\n- The Alloy loading screen logo is centred",
+      "changelog": "41 themes, shared theme picks, weapon particles that follow\n- 31 new themes: Tidecaller, Soulfire, Blossom, Gilded, Femboy, Tempest, Echo, Eclipse, Venom, Oxide, Aurora, Prism, Redstone, Pale, Hive, Firefly, Sandstorm, Ominous, Glacier, Magma, Abyss, Mycelium, Enchanter, Phantom, Crimson, Sakura Night, Galaxy, Toxic Waste, Royal, Obsidian, Candy (match Alloy Pack 1.5.0 and Alloy FX 0.7.0)\n- Your THEMES picks show for other players on servers with Alloy FX, and theirs for you\n- Weapon particles stay on the blade as you move and swing, each theme with its own motion\n- Femboy swords meow when they hit\n- The Alloy loading screen logo is centred",
       "environment": "client",
       "depends": {
         "fabric-api": "*",
