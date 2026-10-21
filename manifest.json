@@ -104,10 +104,10 @@
     {
       "id": "cytrafx",
       "name": "Alloy FX",
-      "version": "0.7.0",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytrafx-v0.7.0/alloy-fx-0.7.0.jar",
-      "sha256": "4e28c7e7dd40d869c045de0481d3bd65d874806dcd2e1cf96de1d91f30db79cc",
-      "changelog": "28 new themes, particles that move with the weapon, theme picks for everyone\n- New themes: Gilded, Femboy, Tempest, Echo, Eclipse, Venom, Oxide, Aurora, Prism, Redstone, Pale, Hive, Firefly, Sandstorm, Ominous, Glacier, Magma, Abyss, Mycelium, Enchanter, Phantom, Crimson, Sakura Night, Galaxy, Toxic Waste, Royal, Obsidian, Candy (each with its own particles, mace smash, sounds and armor)\n- Held weapon particles now sit along the weapon and move each theme's way (snow sinks, embers rise, sparks orbit, petals drift, hearts float...)\n- Femboy: cat-ear helmet, crop top and thigh highs from Alloy Pack; Femboy mace and sword hits meow\n- Named armor is themed on armor stands and mobs too, not only players\n- Alloy Pack Mixer players' theme picks are shared with everyone (vanilla players see them too)\n- Tidecaller is sea-green now, so it no longer looks like Soulfire\n- Needs Alloy Pack 1.5.0 as the server resource pack",
+      "version": "0.8.1",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytrafx-v0.8.1/alloy-fx-0.8.1.jar",
+      "sha256": "678a098191c323c8cccf535921691df58d1f7a960627f3bef4a364ab6aebdaf5",
+      "changelog": "Settings in game, armor per piece, safer on busy servers\n- /cytrafx settings lists every setting, /cytrafx set <key> <value> changes one (new: soundVolume, soundRange, swordSounds, armorOnEntities, usePicks, relayPicks, disabledThemes, particleBudget)\n- Alloy Pack Mixer theme picks per armor piece (helmet, chestplate, leggings, boots)\n- Fixed a server crash when smashAmount is 0\n- Busy places stay light: held-weapon particles per player are capped (particleBudget)\n- A config file with a typo is kept as cytrafx.json.broken instead of being wiped\n- /cytrafx shows the version; /cytrafx cleanup puts themed armor back to normal before removing the mod\n- Use Alloy Pack 1.5.1 as the server resource pack",
       "environment": "server",
       "depends": {
         "fabric-api": "*"
