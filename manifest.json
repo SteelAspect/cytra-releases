@@ -200,19 +200,19 @@
     {
       "id": "cytra-masscraft",
       "name": "Alloy Mass Craft",
-      "version": "0.5.0",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-masscraft-v0.5.0/alloy-masscraft-0.5.0.jar",
-      "sha256": "dd51cf3899f577079809e8253ad9b20c4231872c4782b366b74eea037ac5cfbd",
-      "changelog": "Mass stonecutting: the panel (Mass Cut) now also sits beside the stonecutter. Cut stairs, slabs, walls and more in bulk from your inventory and linked storage, results to the dump containers\nCut missing at the stonecutter cuts the stonecutter items on your Litematica material list\nClearer reasons when something can't be made: cut it at a stonecutter, make it at a crafting table, or (on servers) unlock it in the recipe book\nHover the shortfall lines to see the whole list\nNew setting: Mass Stonecutting (on)",
-      "environment": "client",
+      "version": "0.6.0",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-masscraft-v0.6.0/alloy-masscraft-0.6.0.jar",
+      "sha256": "58ef616c4c179abf7a602c2ef978cdec12c16cd8b24f5400a83ad4adb737d015",
+      "changelog": "Much faster: crafting now runs at full speed by default (1,500 observers in about 6 s instead of 20 s). New setting Careful Speed brings back the slow mode for strict anti-cheat servers\nServer crafting: put the same jar on the server and Mass Craft crafts the whole job in one go on the server (1,500 observers in under a second), straight into your dump containers. Without it on the server, it clicks as before\nNew setting Server Crafting (on)\nMaLiLib is now only needed on the client",
+      "environment": "*",
       "depends": {
         "fabric-api": "*",
-        "malilib": ">=0.27.20",
         "containerautofill": ">=1.4.1",
         "alloy-ui": ">=1.3.1 <2.0.0"
       },
       "optional": {
-        "litematica": "*"
+        "litematica": "*",
+        "malilib": ">=0.27.20"
       },
       "listed": false
     },
