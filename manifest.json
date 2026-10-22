@@ -200,10 +200,10 @@
     {
       "id": "cytra-masscraft",
       "name": "Alloy Mass Craft",
-      "version": "0.4.0",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-masscraft-v0.4.0/alloy-masscraft-0.4.0.jar",
-      "sha256": "ee28abcb9840b34d4ef6b6eb7a1a9f51de5df08f110ff9632fff85b89aacf7b5",
-      "changelog": "New Alloy look: the Mass Craft panel uses the Alloy theme (Nocturne, or the theme you picked in Alloy Hub)\nPrimary buttons are filled (Craft, Confirm), themed text boxes, progress bar and search list\nWorks with Alloy Container 1.4.1 (now the minimum)",
+      "version": "0.4.1",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-masscraft-v0.4.1/alloy-masscraft-0.4.1.jar",
+      "sha256": "7b5fbbbc23493db63b2e4a18ecf97aa88481064890002707a4444c3747bbe467",
+      "changelog": "Fixed: crafting Bone Block (or anything whose ingredient can be made back from it) counted the blocks you already had, so Can craft was far too high and the craft stopped with ingredients missing\nWhen an ingredient runs out, the message now says which one and how many were found",
       "environment": "client",
       "depends": {
         "fabric-api": "*",
