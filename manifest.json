@@ -70,10 +70,10 @@
     {
       "id": "containerautofill",
       "name": "Alloy Container",
-      "version": "1.5.1",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/containerautofill-v1.5.1/alloy-container-1.5.1.jar",
-      "sha256": "699f076c461a56190cc6fca0d69bb3f054f37a23ba3d1cf2654e6100857ce407",
-      "changelog": "- Fixed: the storage menu (Y) lowered your FPS with a big storage. It now only draws the rows you can see.",
+      "version": "1.6.0",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/containerautofill-v1.6.0/alloy-container-1.6.0.jar",
+      "sha256": "3daaededce33493db47abf6b742a6d3b39ad75f5ca0f69bf48d2d2711c8a1916",
+      "changelog": "- Live storage counts: the server now sends a linked container's contents as soon as it changes, instead of your client re-reading every linked container every few seconds. Much less server load with big groups. Needs 1.6.0 on the server too; older servers keep working the old way.",
       "environment": "*",
       "depends": {
         "fabric-api": "*",
