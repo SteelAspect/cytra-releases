@@ -19,10 +19,10 @@
     {
       "id": "cytrabackups",
       "name": "Alloy Backups",
-      "version": "1.8.0",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytrabackups-v1.8.0/alloy-backups-1.8.0.jar",
-      "sha256": "7280ef35ec3bd0f971eb1a71347ca009175eb6fdb62eb9878bdacb1a42c3ddd4",
-      "changelog": "New Nocturne look: the backup menu, settings, chunk selector and dialogs use the Alloy theme. Mod Menu button. Commands, settings and backups are unchanged.",
+      "version": "1.8.1",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytrabackups-v1.8.1/alloy-backups-1.8.1.jar",
+      "sha256": "5705b8bc62ae8bda2617d5ace371ffdc433bef1ab6454859684a33ac0fd34c0d",
+      "changelog": "Preview button in the area restore screen: see the selected chunks of a backup as a Litematica schematic before restoring.",
       "environment": "*",
       "depends": {
         "fabric-api": "*",
