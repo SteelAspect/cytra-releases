@@ -21,6 +21,7 @@ line becomes one item; a leading "- " is dropped. Skipped for Alloy Hub itself, 
 """
 import hashlib
 import json
+import fcntl
 import os
 import subprocess
 import sys
@@ -136,6 +137,14 @@ def update_hub(mod_id, name, description, version, changelog):
         print(f"Alloy Hub: {mod_id} is new; add a put(...) line in ModCatalog.java so the Hub shows its page.")
 
 
+def _try_lock(lock):
+    try:
+        fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
+        return True
+    except BlockingIOError:
+        return False
+
+
 def main():
     args = sys.argv[1:]
     unlisted = "--unlisted" in args
@@ -158,6 +167,13 @@ def main():
     mod_id, name, version, extra, description = read_mod_json(jar)
     jar_name = os.path.basename(jar)
     tag = f"{mod_id}-v{version}"
+
+    # Several chats release from this one checkout: hold an exclusive lock from the pull to the push (and the Hub
+    # changelog commit), so a second release waits instead of writing manifest.json from a stale copy.
+    lock = open(os.path.join(HERE, ".git", "release.lock"), "w")
+    if not _try_lock(lock):
+        print("Waiting for another release to finish...")
+        fcntl.flock(lock, fcntl.LOCK_EX)
 
     run("git", "pull", "--ff-only", "-q")
     with open(MANIFEST, encoding="utf-8") as f:
