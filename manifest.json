@@ -159,10 +159,10 @@
     {
       "id": "cytramap",
       "name": "Alloy Map",
-      "version": "0.28.0",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/alloymap-v0.28.0/alloy-map-0.28.0.jar",
-      "sha256": "443a1f2819405da2bca40767f0828e4b519d259831aa76eccaf1462671b6119a",
-      "changelog": "- World map layer picker (scaffolding button, or [ and ]): look at any Nether or cave layer you've mapped, or the surface / Nether roof\n- Smoother minimap when travelling fast (elytra, boats, minecarts)\n- For mod makers: other mods can show temporary markers on the maps (AlloyMapApi)",
+      "version": "0.29.0",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/alloymap-v0.29.0/alloy-map-0.29.0.jar",
+      "sha256": "d45bfaec0fe71b36ffe4cde13f6bc6ea7cc97427cd742837d2c6ff73751c014e",
+      "changelog": "- With Alloy Waypoints 2.10+: right-click the world map > Add shared waypoint opens Alloy Waypoints' full Add form, and clicking a shared waypoint's pin opens its menu",
       "environment": "*",
       "depends": {
         "fabric-api": "*",
@@ -179,10 +179,10 @@
     {
       "id": "alloymap",
       "name": "Alloy Map",
-      "version": "0.28.0",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/alloymap-v0.28.0/alloy-map-0.28.0.jar",
-      "sha256": "443a1f2819405da2bca40767f0828e4b519d259831aa76eccaf1462671b6119a",
-      "changelog": "- World map layer picker (scaffolding button, or [ and ]): look at any Nether or cave layer you've mapped, or the surface / Nether roof\n- Smoother minimap when travelling fast (elytra, boats, minecarts)\n- For mod makers: other mods can show temporary markers on the maps (AlloyMapApi)",
+      "version": "0.29.0",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/alloymap-v0.29.0/alloy-map-0.29.0.jar",
+      "sha256": "d45bfaec0fe71b36ffe4cde13f6bc6ea7cc97427cd742837d2c6ff73751c014e",
+      "changelog": "- With Alloy Waypoints 2.10+: right-click the world map > Add shared waypoint opens Alloy Waypoints' full Add form, and clicking a shared waypoint's pin opens its menu",
       "environment": "*",
       "depends": {
         "fabric-api": "*",
