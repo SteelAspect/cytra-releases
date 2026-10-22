@@ -104,10 +104,10 @@
     {
       "id": "cytrafx",
       "name": "Alloy FX",
-      "version": "0.9.0",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytrafx-v0.9.0/alloy-fx-0.9.0.jar",
-      "sha256": "f0a42c7c367bbc77a64d07a5f6e53e2f311577ad2be02eb91409a0623aa18fec",
-      "changelog": "Stable together with Alloy Pack Mixer: clear jobs, no doubles, no silence\n- Alloy FX now tells Alloy Pack Mixer on join exactly what it handles (sounds, armor, picks) and which themes it knows; the mixer does the rest, so sounds never double up or go silent, even with different versions\n- Themed swords, axes and spears play their theme's hit sound (Femboy: a meow); maces and tridents as before\n- /cytrafx shows the last themed sound played\n- Tested with a real server, two Alloy Pack Mixer players and one vanilla player: sounds (incl. Density smashes and theme picks), particles, armor (incl. Femboy cat ears, per-piece picks) and shared picks all pass\n- Use Alloy Pack 1.5.2 as the server resource pack and Alloy Pack Mixer 0.16.1 on clients",
+      "version": "0.9.1",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytrafx-v0.9.1/alloy-fx-0.9.1.jar",
+      "sha256": "b6d6483ffe95ee82a715cb9d02ee5b54d1a60ee85cbe95e6e3e038912c6327b8",
+      "changelog": "Lighter on busy servers\n- Armor is themed when equipment changes (and when entities load, players join, theme picks or settings change) instead of checking every entity every second; same results, far less server work\n- A slow safety sweep every 5 minutes remains (armorSweepSeconds, replaces armorInterval)\n- Tested with a real server, two Alloy Pack Mixer players and one vanilla player: all checks pass",
       "environment": "server",
       "depends": {
         "fabric-api": "*"
