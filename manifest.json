@@ -302,10 +302,10 @@
     {
       "id": "cytra-syncmatica",
       "name": "Alloy Syncmatica",
-      "version": "1.4.2+1.21.11",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-syncmatica-v1.4.2+1.21.11/alloy-syncmatica-1.4.2+1.21.11.jar",
-      "sha256": "65ebbae07cf57ca0ca2fc12f7655563db004e266aad0eb7eba00c4ce7a3112cd",
-      "changelog": "- Material lists read schematic size correctly, so /cytra-syncmatica where shows the real centre and distance\n- New settings screen in the Alloy look (Settings button in the material screen, openSettings hotkey)\n- Chinese translation completed for everything added since 1.0",
+      "version": "1.5.0+1.21.11",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-syncmatica-v1.5.0+1.21.11/alloy-syncmatica-1.5.0+1.21.11.jar",
+      "sha256": "acd9ab24013217e849457d0fee22439fc5428d6c95f63171525f09c99eda417f",
+      "changelog": "- Material list, shopping list, layers and projects screens in the Alloy look: dropdowns, search, toggles, confirm dialogs and toasts\n- Material HUD drawn in your Alloy theme\n- /cytra-syncmatica where finds the real centre of rotated and mirrored builds",
       "environment": "*",
       "depends": {
         "fabric-api": "*",
