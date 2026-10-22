@@ -51,10 +51,10 @@
     {
       "id": "cytracarpet",
       "name": "Alloy Carpet",
-      "version": "1.8.0",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytracarpet-v1.8.0/alloy-carpet-1.8.0.jar",
-      "sha256": "ab9c3d84f4dea97c363aed547027edba969423b56acc943a8f558d8b9581b22d",
-      "changelog": "easyDispenserRecipe: sticks and string can now be swapped (string on the diagonal, sticks in the column)\nWhile the rule is on, the easy dispenser recipe is added to every player's recipe book; turning it off removes it",
+      "version": "1.9.0",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytracarpet-v1.9.0/alloy-carpet-1.9.0.jar",
+      "sha256": "fbe8bef45d5130f980c8e5e0377d6b71363c4d702188cc2042c36bc7c9d3dfad",
+      "changelog": "Trash list in /cytra menu: Digging and Nether presets add a whole set of stone-type items in one click\nAdd from your inventory: click an item icon to put it on your trash list",
       "environment": "*",
       "depends": {
         "fabric-api": "*",
