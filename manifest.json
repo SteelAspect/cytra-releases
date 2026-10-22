@@ -51,10 +51,10 @@
     {
       "id": "cytracarpet",
       "name": "Alloy Carpet",
-      "version": "1.9.0",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytracarpet-v1.9.0/alloy-carpet-1.9.0.jar",
-      "sha256": "fbe8bef45d5130f980c8e5e0377d6b71363c4d702188cc2042c36bc7c9d3dfad",
-      "changelog": "Trash list in /cytra menu: Digging and Nether presets add a whole set of stone-type items in one click\nAdd from your inventory: click an item icon to put it on your trash list",
+      "version": "1.8.0",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytracarpet-v1.8.0/alloy-carpet-1.8.0.jar",
+      "sha256": "ab9c3d84f4dea97c363aed547027edba969423b56acc943a8f558d8b9581b22d",
+      "changelog": "easyDispenserRecipe: sticks and string can now be swapped (string on the diagonal, sticks in the column)\nWhile the rule is on, the easy dispenser recipe is added to every player's recipe book; turning it off removes it",
       "environment": "*",
       "depends": {
         "fabric-api": "*",
@@ -219,10 +219,10 @@
     {
       "id": "alloypackmixer",
       "name": "Alloy Pack Mixer",
-      "version": "0.16.0",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/alloypackmixer-v0.16.0/alloy-packmixer-0.16.0.jar",
-      "sha256": "6d657a98ea2f835686cfd5fcdc1d917ec482699e69642ab35c968990c779cd5a",
-      "changelog": "Smoother menu, real themed armour, more settings\n- The menu no longer freezes when it opens: item previews are drawn in the background\n- Themed armour uses the Alloy Pack's own textures (all their detail), and a Femboy helmet shows as cat ears\n- Armour themes per piece: Helmet, Chestplate, Leggings and Boots on the THEMES tab\n- The 3D item models switch works again (it had slid under the bottom bar); the ALLOY and THEMES settings now scroll\n- New settings: particles in first person, particle amount, sound volume, share theme picks\n- Themed sounds still play on servers with an older Alloy FX\n- /alloythemes shows what the mixer sees for each nearby player",
+      "version": "0.16.1",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/alloypackmixer-v0.16.1/alloy-packmixer-0.16.1.jar",
+      "sha256": "347515d94baa8b531231e927f65f73c0e5a3b6e6d50856ce4338610203c4aba7",
+      "changelog": "Works hand in hand with Alloy FX 0.9.0: the server says which themes it handles, so themed sounds and armour come from one place, never twice and never silent. Swords, axes and spears get themed hit sounds; every theme has its own sounds (Alloy Pack 1.5.2). THEMES preview always shows your pick. Faster item drawing and tidier internals; your settings carry over.",
       "environment": "client",
       "depends": {
         "fabric-api": "*",
