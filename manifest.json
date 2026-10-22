@@ -146,10 +146,10 @@
     {
       "id": "cytra-ledger",
       "name": "Alloy Ledger",
-      "version": "0.6.0",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-ledger-v0.6.0/alloy-ledger-0.6.0.jar",
-      "sha256": "79df1d0cd62a889252e99be172ddc9cf9449ea67bfaefac7ea7e6b406e172724",
-      "changelog": "Inventory rollback: /ll inv <player> lists inventory snapshots (taken on death before the drops, on logout, every 10 minutes when changed, and before a restore)\nView a snapshot's inventory or ender chest in a read-only chest, or restore it (op 3): inventory, ender chest and XP\nNew config: snapshotInventories, inventorySnapshotMinutes, maxInventorySnapshots",
+      "version": "0.7.0",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-ledger-v0.7.0/alloy-ledger-0.7.0.jar",
+      "sha256": "84fdb8c6cf7452efa7834e838adb52d8f391413e072c297715f83a4f0f6f34bf",
+      "changelog": "Item frames, glow item frames, paintings and armor stands are logged (placed, broken, items put in or taken out) and /ll rollback puts them back; ones changed since are left alone\n/ll search with filters: a:break,place b:diamond_ore,!dirt p:Steve r:20 t:2d\n/ll rollback search rolls back only what matches (needs t: and p: or r:)\nFaster lookups: hours that can't match are skipped",
       "environment": "server",
       "depends": {
         "fabric-api": "*"
