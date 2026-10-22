@@ -159,10 +159,10 @@
     {
       "id": "cytramap",
       "name": "Alloy Map",
-      "version": "0.27.1",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/alloymap-v0.27.1/alloy-map-0.27.1.jar",
-      "sha256": "8b81e1e21d3ac73630960892e1232e5e81c45c11f9ad21b63edb49d31c2f610c",
-      "changelog": "- Fixed: on big worlds the auto-render made the server fall behind until players timed out or it froze; map saving now runs in the background and the auto-render slows down with players online and pauses when the server is behind\n- Map data for players is prepared once per region and shared",
+      "version": "0.28.0",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/alloymap-v0.28.0/alloy-map-0.28.0.jar",
+      "sha256": "443a1f2819405da2bca40767f0828e4b519d259831aa76eccaf1462671b6119a",
+      "changelog": "- World map layer picker (scaffolding button, or [ and ]): look at any Nether or cave layer you've mapped, or the surface / Nether roof\n- Smoother minimap when travelling fast (elytra, boats, minecarts)\n- For mod makers: other mods can show temporary markers on the maps (AlloyMapApi)",
       "environment": "*",
       "depends": {
         "fabric-api": "*",
@@ -179,10 +179,10 @@
     {
       "id": "alloymap",
       "name": "Alloy Map",
-      "version": "0.27.1",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/alloymap-v0.27.1/alloy-map-0.27.1.jar",
-      "sha256": "8b81e1e21d3ac73630960892e1232e5e81c45c11f9ad21b63edb49d31c2f610c",
-      "changelog": "- Fixed: on big worlds the auto-render made the server fall behind until players timed out or it froze; map saving now runs in the background and the auto-render slows down with players online and pauses when the server is behind\n- Map data for players is prepared once per region and shared",
+      "version": "0.28.0",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/alloymap-v0.28.0/alloy-map-0.28.0.jar",
+      "sha256": "443a1f2819405da2bca40767f0828e4b519d259831aa76eccaf1462671b6119a",
+      "changelog": "- World map layer picker (scaffolding button, or [ and ]): look at any Nether or cave layer you've mapped, or the surface / Nether roof\n- Smoother minimap when travelling fast (elytra, boats, minecarts)\n- For mod makers: other mods can show temporary markers on the maps (AlloyMapApi)",
       "environment": "*",
       "depends": {
         "fabric-api": "*",
