@@ -117,10 +117,10 @@
     {
       "id": "cytra-hub",
       "name": "Alloy Hub",
-      "version": "0.7.0",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-hub-v0.7.0/alloy-hub-0.7.0.jar",
-      "sha256": "da05ad1798ecfb7e41d824252eaa107032b8632ebd73fb30344c4aa2ad2fcff4",
-      "changelog": "- This server uses: on the Updates page, the Alloy mods the server you're on has or recommends that you're missing or have older, with one Install all button (and a toast when you join)\n- Server owners can recommend client mods in config/cytra-hub/server.json (recommendClientMods)\n- Safer updates: a failed download is retried once, downloads show progress, failed rows have a Retry button, and a failed update at exit says which mod kept its version and why\n- Changelogs for Alloy Backups 1.8.1, Alloy FX 0.9.0 and Alloy Carpet 1.9.0",
+      "version": "0.7.1",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-hub-v0.7.1/alloy-hub-0.7.1.jar",
+      "sha256": "ea67282f0e1bea623a1370820825edbb43fff92af296e31680f5e26d67079a84",
+      "changelog": "- Changelogs for Alloy Map 0.28.0 and Alloy Ledger 0.7.0\n- HUD Layout: the Alloy Syncmatica material HUD box uses the HUD's real size (with the next Syncmatica)",
       "environment": "*",
       "depends": {
         "fabric-api": "*",
