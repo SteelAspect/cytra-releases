@@ -337,10 +337,10 @@
     {
       "id": "sharedwaypoints",
       "name": "Alloy Waypoints",
-      "version": "2.9.0",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/sharedwaypoints-v2.9.0/alloy-waypoints-2.9.0.jar",
-      "sha256": "08763bb7087a3a3600f4f369d7d331abacb4320b15abc7aaf824adb1d11c2b4a",
-      "changelog": "New Alloy look for the waypoint menu, routes and forms (follows your Hub theme)\nSettings screen (gear in the menu, or Mod Menu): on/off, Xaero sync, Esc-menu button, default sort, remember last view, menu key\nAdd to Xaero, Edit, Set status, Teleport and Remove are in the ⋯ menu; Remove asks first\nServer answers show as pop-ups",
+      "version": "2.10.0",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/sharedwaypoints-v2.10.0/alloy-waypoints-2.10.0.jar",
+      "sha256": "98d8c8683eafc9898fd19b391b4605032debc61bddeab15871787fd383629fe1",
+      "changelog": "Alloy Map: add a shared waypoint from the world map (right-click) and click a pin to open it (needs Alloy Map 0.29.0)\nRight-click a waypoint or route for its actions; keys G go, C copy, F favourite, E edit, S status, Delete remove, / search\nDetails panel scrolls; a new waypoint is selected after Add\nWaypoints load right after joining, so map pins show straight away",
       "environment": "*",
       "depends": {
         "fabric-api": "*",
