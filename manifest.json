@@ -270,10 +270,10 @@
     {
       "id": "cytra-shulkerview",
       "name": "Alloy Shulker View",
-      "version": "1.3.0",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-shulkerview-v1.3.0/alloy-shulkerview-1.3.0.jar",
-      "sha256": "29a534e0e16b7fb2ce876cf380d9b321bd5d0b33c91a3f890c29bdbe8d78c2de",
-      "changelog": "- New settings screen in the Alloy look: open it from Mod Menu, or bind Open settings under Controls (no key by default)\n- All settings in one place: item icon, fill bar, icon sizes, label distance, named shulker textures, bar colours\n- Follows the theme picked in Alloy Hub",
+      "version": "1.4.0",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-shulkerview-v1.4.0/alloy-shulkerview-1.4.0.jar",
+      "sha256": "f153131f0e16281103a0e598370d8cb931daaf3b0f5bee3a82dd15761a741742",
+      "changelog": "- Hovering a shulker now shows all 27 slots as a grid, tinted to the box's colour, instead of the text list (counts, durability bars and enchant glint included)\n- New settings: preview on/off, only while holding Shift, and compact (same items merged with their total)\n- Turns itself off when ShulkerBoxTooltip is installed",
       "environment": "*",
       "depends": {
         "fabric-api": "*",
