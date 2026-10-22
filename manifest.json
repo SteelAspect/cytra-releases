@@ -87,10 +87,10 @@
     {
       "id": "cytracreative",
       "name": "Alloy Creative",
-      "version": "0.5.0",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytracreative-v0.5.0/alloy-creative-0.5.0.jar",
-      "sha256": "9ec21c08b5c8b0d698cac70eeedb7ef38aa1f098401a688cd2015c416a3b5e73",
-      "changelog": "New menu in the Alloy (Nocturne) look; MaLiLib is no longer needed\nSections: Regions, Selection, Labs, Gallery, Camera, Modules, Settings\nDeleting asks in a confirm dialog\nHotkeys are normal Minecraft key bindings (set them again: old MaLiLib bindings don't carry over)\nCamera options moved to Settings; Mod Menu's config button opens the menu",
+      "version": "0.5.1",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytracreative-v0.5.1/alloy-creative-0.5.1.jar",
+      "sha256": "ff4ddeb00977c0036ce6303b69f4c4c274300b4da4106a007fd653cc4d63a2a7",
+      "changelog": "/weather in a lab now changes that lab's weather (rain and thunder work in labs)",
       "environment": "*",
       "depends": {
         "fabric-api": "*",
