@@ -117,10 +117,10 @@
     {
       "id": "cytra-hub",
       "name": "Alloy Hub",
-      "version": "0.7.1",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-hub-v0.7.1/alloy-hub-0.7.1.jar",
-      "sha256": "ea67282f0e1bea623a1370820825edbb43fff92af296e31680f5e26d67079a84",
-      "changelog": "- Changelogs for Alloy Map 0.28.0 and Alloy Ledger 0.7.0\n- HUD Layout: the Alloy Syncmatica material HUD box uses the HUD's real size (with the next Syncmatica)",
+      "version": "0.7.2",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-hub-v0.7.2/alloy-hub-0.7.2.jar",
+      "sha256": "adc994ac06a34ce4c4392a0700d0f6c87abf223b0769b77dc938fb9e6f47ed33",
+      "changelog": "- Alloy Shulker View page: Tooltip preview toggles (Contents preview, Only while holding Shift, Compact)\n- Alloy Mass Craft page: Mass stonecutting toggle\n- Alloy Syncmatica: Material Tracker and Layer Progress open its new Alloy screens\n- Changelogs for Pack Mixer 0.17.0, Mass Craft 0.5.0, Waypoints 2.10.0, Map 0.29.0, Creative 0.5.2, FX 0.9.1, Syncmatica 1.5.0, Container 1.6.0 and Shulker View 1.4.0",
       "environment": "*",
       "depends": {
         "fabric-api": "*",
