@@ -219,10 +219,10 @@
     {
       "id": "alloypackmixer",
       "name": "Alloy Pack Mixer",
-      "version": "0.16.1",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/alloypackmixer-v0.16.1/alloy-packmixer-0.16.1.jar",
-      "sha256": "347515d94baa8b531231e927f65f73c0e5a3b6e6d50856ce4338610203c4aba7",
-      "changelog": "Works hand in hand with Alloy FX 0.9.0: the server says which themes it handles, so themed sounds and armour come from one place, never twice and never silent. Swords, axes and spears get themed hit sounds; every theme has its own sounds (Alloy Pack 1.5.2). THEMES preview always shows your pick. Faster item drawing and tidier internals; your settings carry over.",
+      "version": "0.17.0",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/alloypackmixer-v0.17.0/alloy-packmixer-0.17.0.jar",
+      "sha256": "d00f6c61014c30f7bba52e6469047f7c02b67f5c7abfae62b9ec52eb360593e7",
+      "changelog": "Opens instantly: packs you already had aren't read again (about 10x faster). Quick apply: picks that only change item or block models and textures apply in under a second with no loading screen (switch in MIXER). Ctrl+Z / Ctrl+Y undo and redo picks, and hovering APPLY shows what will change. Bundles Alloy Pack 1.6.0: hand-made 32 px diamond and netherite tools in every theme, accent trim on diamond and netherite armour.",
       "environment": "client",
       "depends": {
         "fabric-api": "*",
