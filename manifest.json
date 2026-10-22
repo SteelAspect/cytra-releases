@@ -87,10 +87,10 @@
     {
       "id": "cytracreative",
       "name": "Alloy Creative",
-      "version": "0.5.1",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytracreative-v0.5.1/alloy-creative-0.5.1.jar",
-      "sha256": "ff4ddeb00977c0036ce6303b69f4c4c274300b4da4106a007fd653cc4d63a2a7",
-      "changelog": "/weather in a lab now changes that lab's weather (rain and thunder work in labs)",
+      "version": "0.5.2",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytracreative-v0.5.2/alloy-creative-0.5.2.jar",
+      "sha256": "daeaa37d087b88a70f8ed9883e4853fec52300451b35df6139de3509e6b62945",
+      "changelog": "Labs in the menu have a Details view: time, weather cycle, mob spawning, the weather right now and the lab's snapshots (save, load, delete)\nNew /cc lab weather <lab> clear|rain|thunder\nFix: the menu no longer pauses singleplayer (the Labs list stayed on Loading)",
       "environment": "*",
       "depends": {
         "fabric-api": "*",
