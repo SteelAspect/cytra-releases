@@ -200,10 +200,10 @@
     {
       "id": "cytra-masscraft",
       "name": "Alloy Mass Craft",
-      "version": "0.4.1",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-masscraft-v0.4.1/alloy-masscraft-0.4.1.jar",
-      "sha256": "7b5fbbbc23493db63b2e4a18ecf97aa88481064890002707a4444c3747bbe467",
-      "changelog": "Fixed: crafting Bone Block (or anything whose ingredient can be made back from it) counted the blocks you already had, so Can craft was far too high and the craft stopped with ingredients missing\nWhen an ingredient runs out, the message now says which one and how many were found",
+      "version": "0.5.0",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-masscraft-v0.5.0/alloy-masscraft-0.5.0.jar",
+      "sha256": "dd51cf3899f577079809e8253ad9b20c4231872c4782b366b74eea037ac5cfbd",
+      "changelog": "Mass stonecutting: the panel (Mass Cut) now also sits beside the stonecutter. Cut stairs, slabs, walls and more in bulk from your inventory and linked storage, results to the dump containers\nCut missing at the stonecutter cuts the stonecutter items on your Litematica material list\nClearer reasons when something can't be made: cut it at a stonecutter, make it at a crafting table, or (on servers) unlock it in the recipe book\nHover the shortfall lines to see the whole list\nNew setting: Mass Stonecutting (on)",
       "environment": "client",
       "depends": {
         "fabric-api": "*",
