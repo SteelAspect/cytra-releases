@@ -33,10 +33,10 @@
     {
       "id": "cytra-botmacros",
       "name": "Alloy Bot Macros",
-      "version": "1.3.1",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-botmacros-v1.3.1/alloy-botmacros-1.3.1.jar",
-      "sha256": "adfbdcdd44eeba25b8cf91cd052fa22b7c8c06450af846d6f41400e9d7341602",
-      "changelog": "Fix: server macros could seem to disappear (\"No bot macro called\", empty menu) after the client reconnected mid-session. Update the server and clients.",
+      "version": "1.4.0",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-botmacros-v1.4.0/alloy-botmacros-1.4.0.jar",
+      "sha256": "3e333ba250d6b1cf962f0a7da11e1d419d2a7669bf3ef4f46efd632f528c91bb",
+      "changelog": "Live progress: each macro in the menu shows the step it is on and what it waits for.\nFailed steps (a refused command, a bot that didn't join, a wait that gave up) show their reason on the macro and as a toast.\nThe menu no longer pauses singleplayer, so macros keep running while it's open.\nIf the server hasn't answered yet, the menu says so and has a Retry button. Update the server too.",
       "environment": "*",
       "depends": {
         "fabric-api": "*",
