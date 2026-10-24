@@ -70,10 +70,10 @@
     {
       "id": "containerautofill",
       "name": "Alloy Container",
-      "version": "1.6.0",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/containerautofill-v1.6.0/alloy-container-1.6.0.jar",
-      "sha256": "3daaededce33493db47abf6b742a6d3b39ad75f5ca0f69bf48d2d2711c8a1916",
-      "changelog": "- Live storage counts: the server now sends a linked container's contents as soon as it changes, instead of your client re-reading every linked container every few seconds. Much less server load with big groups. Needs 1.6.0 on the server too; older servers keep working the old way.",
+      "version": "1.7.0",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/containerautofill-v1.7.0/alloy-container-1.7.0.jar",
+      "sha256": "53d9b4f30e88bfd8d335eda7e8465d6ddb0d938f5327d2bd2932f7938e90d716",
+      "changelog": "- When taking items empties a shulker box in a linked container (storage menu, pick block, easy place, Get Materials, fills), the empty box now comes to your inventory too. Setting: Take Emptied Shulker Boxes (on by default). Needs 1.7.0 on the server too.",
       "environment": "*",
       "depends": {
         "fabric-api": "*",
