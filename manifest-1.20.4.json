@@ -1,6 +1,23 @@
 {
   "mods": [
     {
+      "id": "cytra-areascanner",
+      "name": "Alloy Area Scanner",
+      "version": "1.2.0+1.20.4",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-areascanner-v1.2.0+1.20.4/alloy-areascanner-1.2.0+1.20.4.jar",
+      "sha256": "460aca73e8f5358c822d13c4478fd5e5d66cf46f0885bee3829c8c1b4dbc2af4",
+      "changelog": "First Minecraft 1.20.4 build, same features as the 1.21.11 version. Only runs on 1.20.4.\nNeeds Litematica 0.17.4 and MaLiLib 0.18.3 for 1.20.4",
+      "environment": "client",
+      "depends": {
+        "fabric-api": "*",
+        "litematica": ">=0.17.4",
+        "malilib": ">=0.18.3",
+        "alloy-ui": ">=1.4.0+1.20.4 <2.0.0"
+      },
+      "optional": {},
+      "minecraft": "1.20.4"
+    },
+    {
       "id": "cytrabackups",
       "name": "Alloy Backups",
       "version": "1.8.1+1.20.4",
