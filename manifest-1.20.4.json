@@ -198,6 +198,24 @@
       "minecraft": "1.20.4"
     },
     {
+      "id": "cytratrades",
+      "name": "Alloy Trades",
+      "version": "1.4.0+1.20.4",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytratrades-v1.4.0+1.20.4/alloy-trades-1.4.0+1.20.4.jar",
+      "sha256": "ec6348aa784a325e27dec811430028b3d117f4f7c612cee57644e4d2eb28dc34",
+      "changelog": "First Minecraft 1.20.4 build, same features as the 1.21.11 version. Only runs on 1.20.4.",
+      "environment": "client",
+      "depends": {
+        "fabric-api": "*",
+        "alloy-ui": ">=1.4.0 <2.0.0"
+      },
+      "optional": {
+        "modmenu": "*",
+        "containerautofill": ">=1.6.0"
+      },
+      "minecraft": "1.20.4"
+    },
+    {
       "id": "sharedwaypoints",
       "name": "Alloy Waypoints",
       "version": "2.10.0+1.20.4",
