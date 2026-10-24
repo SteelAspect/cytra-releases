@@ -46,6 +46,25 @@
       "minecraft": "1.20.4"
     },
     {
+      "id": "alloymap",
+      "name": "Alloy Map",
+      "version": "0.29.0+1.20.4",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/alloymap-v0.29.0+1.20.4/alloy-map-0.29.0+1.20.4.jar",
+      "sha256": "9f43f6d59751df58189370e638214dbdd99938faec58fc871e7256aed60a6ca8",
+      "changelog": "First Minecraft 1.20.4 build, same features as the 1.21.11 version. Only runs on 1.20.4.",
+      "environment": "*",
+      "depends": {
+        "fabric-api": "*",
+        "alloy-ui": ">=1.4.0 <2.0.0"
+      },
+      "optional": {
+        "sharedwaypoints": "*",
+        "cytra-hub": "*",
+        "litematica": "*"
+      },
+      "minecraft": "1.20.4"
+    },
+    {
       "id": "cytra-syncmatica",
       "name": "Alloy Syncmatica",
       "version": "1.5.0+1.20.4",
