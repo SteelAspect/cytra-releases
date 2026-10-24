@@ -16,6 +16,26 @@
       "minecraft": "1.20.4"
     },
     {
+      "id": "cytracarpet",
+      "name": "Alloy Carpet",
+      "version": "1.11.0+1.20.4",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytracarpet-v1.11.0+1.20.4/alloy-carpet-1.11.0+1.20.4.jar",
+      "sha256": "96f0c5b01dde146749a09145253676dd6d934310eb4ee962d53cbd279d4a2ab9",
+      "changelog": "First Minecraft 1.20.4 build, same features as the 1.21.11 version. Only runs on 1.20.4.\nNeeds Carpet 1.4.128 for 1.20.4\noldRaids: 1.20.4 raids already work the old way, so only the Bad Omen minutes setting does anything",
+      "environment": "*",
+      "depends": {
+        "fabric-api": "*",
+        "carpet": ">=1.4.128",
+        "alloy-ui": ">=1.4.0 <2.0.0"
+      },
+      "optional": {
+        "carpet-extra": "*",
+        "carpet-tis-addition": "*",
+        "essential-addons": "*"
+      },
+      "minecraft": "1.20.4"
+    },
+    {
       "id": "containerautofill",
       "name": "Alloy Container",
       "version": "1.6.0+1.20.4",
