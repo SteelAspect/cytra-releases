@@ -1,6 +1,6 @@
 # Alloy Releases
 
-Public jars for the Alloy Fabric mods (Minecraft 1.21.11), plus:
+Public jars for the Alloy Fabric mods (Minecraft 1.21.11, and 1.20.4 ports), plus:
 
 - **Download page:** https://steelaspect.github.io/cytra-releases/
 - **Update manifest:** https://steelaspect.github.io/cytra-releases/manifest.json, which Alloy Hub's Updates tab reads.
@@ -42,6 +42,20 @@ Add `--replaces <old-id>` when a mod's id changed (Alloy Map was `cytramap`): th
 and `cytramap` gets an unlisted copy of the entry (same jar, `"renamedTo": "alloymap"`). Any Hub then updates the old
 mod to the renamed jar, and Alloy Hub 0.5.1+ doesn't offer the renamed mod as a second install while the old one is
 there. Later releases keep both in sync without the flag.
+
+## 1.20.4 releases
+
+1.20.4 ports (built in `~/Documents/Mods/1.20.4/`) go into their own manifest, `manifest-1.20.4.json`, which only the
+1.20.4 Alloy Hub reads. 1.21.11 Hubs read `manifest.json` and never see them.
+
+```
+python release.py --mc 1.20.4 <path-to-jar> "<changelog>"
+```
+
+The script refuses a jar whose version or `minecraft` dependency doesn't match: a `+1.20.4` jar without `--mc 1.20.4`,
+or a 1.21.11 jar with it. 1.20.4 entries get `"minecraft": "1.20.4"`; their GitHub releases are titled
+"(Minecraft 1.20.4)" and never marked latest, and they skip Alloy Hub's built-in changelog. When pruning old GitHub
+releases, count 1.20.4 releases (tags ending `+1.20.4`) separately from 1.21.11 ones.
 
 ## Manifest format
 

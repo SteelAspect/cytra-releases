@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Alloy Mods</title>
 <link rel="icon" type="image/png" href="alloy-logo.png">
-<meta name="description" content="Downloads for the Alloy Fabric mods for Minecraft 1.21.11.">
+<meta name="description" content="Downloads for the Alloy Fabric mods for Minecraft 1.21.11 and 1.20.4.">
 <style>
   :root {
     --bg: #0d1117;
@@ -89,6 +89,19 @@
   .sha { margin-top: 10px; color: var(--faint); font-size: 11px; font-family: ui-monospace, Consolas, monospace; overflow-wrap: anywhere; }
   .msg { color: var(--muted); padding: 24px; text-align: center; background: var(--panel); border: 1px dashed var(--border); border-radius: 14px; }
   .msg.err { color: var(--bad); }
+  .tabs { display: flex; gap: 8px; margin-top: 16px; }
+  .tab {
+    padding: 6px 14px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    background: var(--panel);
+    color: var(--muted);
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .tab[aria-selected="true"] { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+  .tab:focus-visible { outline: 2px solid var(--accent-hi); outline-offset: 2px; }
   footer { margin-top: 32px; color: var(--faint); font-size: 13px; }
 </style>
 </head>
@@ -96,7 +109,11 @@
 <div class="wrap">
   <header>
     <h1><img src="alloy-logo.png" alt="" width="44" height="44"><span>Alloy</span>&nbsp;Mods</h1>
-    <p class="sub">Fabric mods for Minecraft 1.21.11. Alloy Hub can install these updates for you from its Updates tab.</p>
+    <p class="sub" id="sub"></p>
+    <div class="tabs" role="tablist" aria-label="Minecraft version">
+      <button class="tab" role="tab" data-mc="1.21.11">1.21.11</button>
+      <button class="tab" role="tab" data-mc="1.20.4">1.20.4</button>
+    </div>
   </header>
   <main id="mods" class="grid" aria-live="polite"><div class="msg">Loading…</div></main>
   <footer>Made by steelaspect.</footer>
@@ -121,9 +138,24 @@
     return typeof u === 'string' && /^https:\/\/github\.com\/steelaspect\/cytra-releases\//i.test(u) ? u : null;
   }
 
-  fetch('manifest.json', { cache: 'no-cache' })
+  // Each Minecraft version has its own manifest, so a jar is only ever shown (and offered by Alloy Hub) for its version.
+  var VERSIONS = {
+    '1.21.11': { file: 'manifest.json', sub: 'Fabric mods for Minecraft 1.21.11. Alloy Hub can install these updates for you from its Updates tab.' },
+    '1.20.4': { file: 'manifest-1.20.4.json', sub: 'Fabric mods for Minecraft 1.20.4. These jars only run on 1.20.4; the 1.20.4 Alloy Hub installs them from its Updates tab.' }
+  };
+  var tabs = document.querySelectorAll('.tab');
+  var loadId = 0;
+
+  function load(mc) {
+    var v = VERSIONS[mc] || VERSIONS['1.21.11'];
+    var id = ++loadId;
+    tabs.forEach(function (t) { t.setAttribute('aria-selected', String(t.dataset.mc === mc)); });
+    document.getElementById('sub').textContent = v.sub;
+    message('Loading…');
+  fetch(v.file, { cache: 'no-cache' })
     .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
     .then(function (data) {
+      if (id !== loadId) return;
       var mods = (data && Array.isArray(data.mods)) ? data.mods.filter(function (m) { return m.listed !== false; }) : [];
       if (!mods.length) { message('No mods published yet.'); return; }
       mods.sort(function (a, b) { return String(a.name || a.id).localeCompare(String(b.name || b.id)); });
@@ -146,7 +178,15 @@
         root.append(card);
       });
     })
-    .catch(function (e) { message('Could not load the mod list (' + e.message + ').', true); });
+    .catch(function (e) { if (id === loadId) message('Could not load the mod list (' + e.message + ').', true); });
+  }
+
+  function fromHash() { return VERSIONS[location.hash.slice(1)] ? location.hash.slice(1) : '1.21.11'; }
+  tabs.forEach(function (t) {
+    t.addEventListener('click', function () { history.replaceState(null, '', '#' + t.dataset.mc); load(t.dataset.mc); });
+  });
+  window.addEventListener('hashchange', function () { load(fromHash()); });
+  load(fromHash());
 })();
 </script>
 </body>

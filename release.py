@@ -149,6 +149,15 @@ def main():
     args = sys.argv[1:]
     unlisted = "--unlisted" in args
     args = [a for a in args if a != "--unlisted"]
+    mc = None
+    if "--mc" in args:
+        i = args.index("--mc")
+        if i + 1 >= len(args):
+            fail("--mc needs a Minecraft version")
+        mc = args[i + 1]
+        del args[i:i + 2]
+    if mc not in (None, "1.20.4"):
+        fail("--mc only knows 1.20.4 (leave it out for 1.21.11)")
     replaces = []
     while "--replaces" in args:
         i = args.index("--replaces")
@@ -157,7 +166,7 @@ def main():
         replaces.append(args[i + 1])
         del args[i:i + 2]
     if len(args) != 2:
-        fail('usage: python release.py [--unlisted] <path-to-jar> "<changelog>"')
+        fail('usage: python release.py [--unlisted] [--mc 1.20.4] <path-to-jar> "<changelog>"')
     jar, changelog = os.path.abspath(args[0]), args[1].strip()
     if not os.path.isfile(jar):
         fail("no such file: " + jar)
@@ -165,6 +174,16 @@ def main():
         fail("changelog is empty")
 
     mod_id, name, version, extra, description = read_mod_json(jar)
+    # A jar only goes into the manifest for its own Minecraft: 1.21.11 Hubs read manifest.json, 1.20.4 Hubs
+    # read manifest-1.20.4.json, so neither can ever offer the other's jars.
+    with zipfile.ZipFile(jar) as z:
+        jar_mc = json.loads(z.read("fabric.mod.json")).get("depends", {}).get("minecraft", "")
+    jar_mc = " || ".join(jar_mc) if isinstance(jar_mc, list) else str(jar_mc)
+    if mc is None and ("1.20" in version or "1.20" in jar_mc):
+        fail(f"{version} is a 1.20.4 build: release it with --mc 1.20.4")
+    if mc is not None and not (version.endswith("+" + mc) and mc in jar_mc):
+        fail(f"{version} (minecraft {jar_mc or '?'}) is not a {mc} build")
+    manifest_path = MANIFEST if mc is None else os.path.join(HERE, f"manifest-{mc}.json")
     jar_name = os.path.basename(jar)
     tag = f"{mod_id}-v{version}"
 
@@ -176,7 +195,10 @@ def main():
         fcntl.flock(lock, fcntl.LOCK_EX)
 
     run("git", "pull", "--ff-only", "-q")
-    with open(MANIFEST, encoding="utf-8") as f:
+    if not os.path.exists(manifest_path):
+        with open(manifest_path, "w", encoding="utf-8") as f:
+            f.write('{\n  "mods": []\n}\n')
+    with open(manifest_path, encoding="utf-8") as f:
         manifest = json.load(f)
     mods = manifest.setdefault("mods", [])
     entry = next((m for m in mods if m.get("id") == mod_id), None)
@@ -185,7 +207,9 @@ def main():
 
     digest = sha256(jar)
     print(f"{name} ({mod_id}) {version}\nsha256 {digest}")
-    run("gh", "release", "create", tag, jar, "-R", REPO, "--title", f"{name} {version}", "--notes", changelog)
+    title = f"{name} {version}" if mc is None else f"{name} {version} (Minecraft {mc})"
+    latest = [] if mc is None else ["--latest=false"]
+    run("gh", "release", "create", tag, jar, "-R", REPO, "--title", title, "--notes", changelog, *latest)
 
     new_entry = {
         "id": mod_id,
@@ -196,6 +220,8 @@ def main():
         "changelog": changelog,
         **extra,
     }
+    if mc is not None:
+        new_entry["minecraft"] = mc
     if unlisted or (entry is not None and entry.get("listed") is False):
         new_entry["listed"] = False
     replaces = sorted(set(replaces) | set((entry or {}).get("replaces", [])))
@@ -215,15 +241,16 @@ def main():
         else:
             mods[mods.index(old)] = alias
     mods.sort(key=lambda m: m.get("name", "").lower())
-    with open(MANIFEST, "w", encoding="utf-8") as f:
+    with open(manifest_path, "w", encoding="utf-8") as f:
         json.dump(manifest, f, indent=2, ensure_ascii=False)
         f.write("\n")
 
-    run("git", "add", "manifest.json")
+    run("git", "add", os.path.basename(manifest_path))
     run("git", "commit", "-q", "-m", f"{name} {version}")
     run("git", "push", "-q")
     print(f"Released {name} {version}: https://github.com/{REPO}/releases/tag/{tag}")
-    update_hub(mod_id, name, description, version, changelog)
+    if mc is None:  # Hub's built-in changelog is the 1.21.11 Hub's; 1.20.4 builds stay out of it
+        update_hub(mod_id, name, description, version, changelog)
 
 
 if __name__ == "__main__":
