@@ -219,10 +219,10 @@
     {
       "id": "alloypackmixer",
       "name": "Alloy Pack Mixer",
-      "version": "0.17.0",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/alloypackmixer-v0.17.0/alloy-packmixer-0.17.0.jar",
-      "sha256": "d00f6c61014c30f7bba52e6469047f7c02b67f5c7abfae62b9ec52eb360593e7",
-      "changelog": "Opens instantly: packs you already had aren't read again (about 10x faster). Quick apply: picks that only change item or block models and textures apply in under a second with no loading screen (switch in MIXER). Ctrl+Z / Ctrl+Y undo and redo picks, and hovering APPLY shows what will change. Bundles Alloy Pack 1.6.0: hand-made 32 px diamond and netherite tools in every theme, accent trim on diamond and netherite armour.",
+      "version": "0.17.1",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/alloypackmixer-v0.17.1/alloy-packmixer-0.17.1.jar",
+      "sha256": "5411ae9d9a60b720061ca8a2b0b54b5f86a0070d6756ce2ff9575094cffac2ab",
+      "changelog": "Fixes: your THEMES pick now shows on worn armour on servers with Alloy FX (it showed plain before). 3D item models off keeps your themes: themed tools, maces, spears and tridents show as their flat themed icon instead of plain vanilla. No more disconnect in singleplayer when Alloy FX is in the same game.",
       "environment": "client",
       "depends": {
         "fabric-api": "*",
