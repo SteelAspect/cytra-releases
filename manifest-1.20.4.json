@@ -1,3 +1,34 @@
 {
-  "mods": []
+  "mods": [
+    {
+      "id": "cytra-hub",
+      "name": "Alloy Hub",
+      "version": "0.7.2+1.20.4",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-hub-v0.7.2+1.20.4/alloy-hub-0.7.2+1.20.4.jar",
+      "sha256": "9932bf54109b5c7710a53bb64963b6fafa735db0b66880d09df89d19d351c3fe",
+      "changelog": "First Minecraft 1.20.4 build, same features as the 1.21.11 version. Only runs on 1.20.4.\nUpdates tab only offers 1.20.4 builds\nMaLiLib menu entries left out (MaLiLib 0.18 has no menu registry)",
+      "environment": "*",
+      "depends": {
+        "fabric-api": "*",
+        "alloy-ui": ">=1.4.0 <2.0.0"
+      },
+      "optional": {
+        "modmenu": "*",
+        "cytra-link": "*",
+        "sharedwaypoints": "*",
+        "stickytoggle": "*",
+        "containerautofill": "*",
+        "cytra-syncmatica": "*",
+        "cytra-areascanner": "*",
+        "cytra-botmacros": "*",
+        "cytracarpet": "*",
+        "cytratrades": "*",
+        "cytracreative": "*",
+        "cytra-shulkerview": "*",
+        "cytra-masscraft": "*",
+        "alloymap": "*"
+      },
+      "minecraft": "1.20.4"
+    }
+  ]
 }
