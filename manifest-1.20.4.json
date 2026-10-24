@@ -194,6 +194,25 @@
       "minecraft": "1.20.4"
     },
     {
+      "id": "stickytoggle",
+      "name": "Alloy Sticky Toggle",
+      "version": "2.3.0+1.20.4",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/stickytoggle-v2.3.0+1.20.4/alloy-stickytoggle-2.3.0+1.20.4.jar",
+      "sha256": "b997ad188cf4382cd2e15e8870c5b728d0e78b6f43801603f3e34c9f0afab014",
+      "changelog": "First Minecraft 1.20.4 build, same features as the 1.21.11 version. Only runs on 1.20.4.",
+      "environment": "*",
+      "depends": {
+        "fabric-api": "*",
+        "alloy-ui": ">=1.4.0 <2.0.0"
+      },
+      "optional": {
+        "malilib": ">=0.18.3",
+        "modmenu": "*",
+        "cytra-hub": "*"
+      },
+      "minecraft": "1.20.4"
+    },
+    {
       "id": "cytra-syncmatica",
       "name": "Alloy Syncmatica",
       "version": "1.5.0+1.20.4",
