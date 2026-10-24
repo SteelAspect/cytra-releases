@@ -16,6 +16,25 @@
       "minecraft": "1.20.4"
     },
     {
+      "id": "cytra-botmacros",
+      "name": "Alloy Bot Macros",
+      "version": "1.4.0+1.20.4",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-botmacros-v1.4.0+1.20.4/alloy-botmacros-1.4.0+1.20.4.jar",
+      "sha256": "c3c12bc08d11bafbf6cb5d16c527ecff76d81bfe8129ad20d3f1bf8a46bf7922",
+      "changelog": "First Minecraft 1.20.4 build, same features as the 1.21.11 version. Only runs on 1.20.4.\nNeeds Carpet 1.4.128 for 1.20.4",
+      "environment": "*",
+      "depends": {
+        "fabric-api": "*",
+        "alloy-ui": ">=1.4.0 <2.0.0"
+      },
+      "optional": {
+        "carpet": "*",
+        "malilib": "*",
+        "modmenu": "*"
+      },
+      "minecraft": "1.20.4"
+    },
+    {
       "id": "cytracarpet",
       "name": "Alloy Carpet",
       "version": "1.11.0+1.20.4",
