@@ -179,6 +179,21 @@
       "minecraft": "1.20.4"
     },
     {
+      "id": "cytra-shulkerview",
+      "name": "Alloy Shulker View",
+      "version": "1.5.0+1.20.4",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-shulkerview-v1.5.0+1.20.4/alloy-shulkerview-1.5.0+1.20.4.jar",
+      "sha256": "0073ee2b33c468f8878c219881d0d504551a0352f98733b40a049833615d2313",
+      "changelog": "First Minecraft 1.20.4 build, same features as the 1.21.11 version. Only runs on 1.20.4.\nNew: compact preview (filled stacks, merged with counts) on hover, Shift for the full slot grid\nNew: Shulker Box Tooltip key style option (hint, Shift compact, Alt+Shift full)\nNew: previews for chests, barrels, furnaces and other containers, plus bundles\nNew: preview takes the shulker box colour, optional loot table line\nNew: ender chest preview when the server has the mod",
+      "environment": "*",
+      "depends": {
+        "fabric-api": "*",
+        "alloy-ui": ">=1.4.0 <2.0.0"
+      },
+      "optional": {},
+      "minecraft": "1.20.4"
+    },
+    {
       "id": "cytra-syncmatica",
       "name": "Alloy Syncmatica",
       "version": "1.5.0+1.20.4",
