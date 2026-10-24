@@ -29,6 +29,25 @@
         "alloymap": "*"
       },
       "minecraft": "1.20.4"
+    },
+    {
+      "id": "cytra-syncmatica",
+      "name": "Alloy Syncmatica",
+      "version": "1.5.0+1.20.4",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-syncmatica-v1.5.0+1.20.4/alloy-syncmatica-1.5.0+1.20.4.jar",
+      "sha256": "54bfb7d4e4880892366c9789439c14ac42b9869df0dac72fda5f08211701bf2e",
+      "changelog": "First Minecraft 1.20.4 build, same features as the 1.21.11 version. Only runs on 1.20.4.\nNeeds Litematica 0.17.4 and MaLiLib 0.18.3 for 1.20.4\nServer and client both need this 1.20.4 build",
+      "environment": "*",
+      "depends": {
+        "fabric-api": "*",
+        "alloy-ui": ">=1.4.0 <2.0.0"
+      },
+      "optional": {
+        "cytra-link": ">=0.3.0",
+        "litematica": "*",
+        "malilib": "*"
+      },
+      "minecraft": "1.20.4"
     }
   ]
 }
