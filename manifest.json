@@ -200,10 +200,10 @@
     {
       "id": "cytra-masscraft",
       "name": "Alloy Mass Craft",
-      "version": "0.6.0",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-masscraft-v0.6.0/alloy-masscraft-0.6.0.jar",
-      "sha256": "58ef616c4c179abf7a602c2ef978cdec12c16cd8b24f5400a83ad4adb737d015",
-      "changelog": "Much faster: crafting now runs at full speed by default (1,500 observers in about 6 s instead of 20 s). New setting Careful Speed brings back the slow mode for strict anti-cheat servers\nServer crafting: put the same jar on the server and Mass Craft crafts the whole job in one go on the server (1,500 observers in under a second), straight into your dump containers. Without it on the server, it clicks as before\nNew setting Server Crafting (on)\nMaLiLib is now only needed on the client",
+      "version": "0.6.1",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-masscraft-v0.6.1/alloy-masscraft-0.6.1.jar",
+      "sha256": "68eadbb77b1c6a8d200628209f32343bac2d8730089115a8a50198844015bfec",
+      "changelog": "Fixed: server crafting now puts results into the shulker boxes in your dump containers, like normal crafting does (including splitting a box off a stack of empty ones)",
       "environment": "*",
       "depends": {
         "fabric-api": "*",
