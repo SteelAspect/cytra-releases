@@ -16,6 +16,24 @@
       "minecraft": "1.20.4"
     },
     {
+      "id": "containerautofill",
+      "name": "Alloy Container",
+      "version": "1.6.0+1.20.4",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/containerautofill-v1.6.0+1.20.4/alloy-container-1.6.0+1.20.4.jar",
+      "sha256": "a234ad6b90e8c36e8c7658a09f8153838ef6c0cf0e1085d448291167a7662c19",
+      "changelog": "First Minecraft 1.20.4 build, same features as the 1.21.11 version. Only runs on 1.20.4.\nUnopened-container sync through Servux left out (Litematica 0.17 has none)",
+      "environment": "*",
+      "depends": {
+        "fabric-api": "*",
+        "alloy-ui": ">=1.4.0+1.20.4 <2.0.0"
+      },
+      "optional": {
+        "litematica": ">=0.17.4",
+        "malilib": ">=0.18.3"
+      },
+      "minecraft": "1.20.4"
+    },
+    {
       "id": "cytra-hub",
       "name": "Alloy Hub",
       "version": "0.7.2+1.20.4",
