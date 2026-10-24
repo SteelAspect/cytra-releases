@@ -159,10 +159,10 @@
     {
       "id": "cytramap",
       "name": "Alloy Map",
-      "version": "0.29.0",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/alloymap-v0.29.0/alloy-map-0.29.0.jar",
-      "sha256": "d45bfaec0fe71b36ffe4cde13f6bc6ea7cc97427cd742837d2c6ff73751c014e",
-      "changelog": "- With Alloy Waypoints 2.10+: right-click the world map > Add shared waypoint opens Alloy Waypoints' full Add form, and clicking a shared waypoint's pin opens its menu",
+      "version": "0.30.0",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/alloymap-v0.30.0/alloy-map-0.30.0.jar",
+      "sha256": "21ccae17584cfccecf60a76760092c0086bad6f8125543fdfd0702a06bda2d28",
+      "changelog": "- Temporary markers: in the marker menu choose Keep: Until reached (gone when you get within 4 blocks) or Until you leave (gone when you log out)\n- World map right-click > Go here: one click drops a temporary marker that disappears when you arrive\n- Chunk selection > Corners: marks the 4 outer corners of the selection for the perimeter (temporary)",
       "environment": "*",
       "depends": {
         "fabric-api": "*",
@@ -179,10 +179,10 @@
     {
       "id": "alloymap",
       "name": "Alloy Map",
-      "version": "0.29.0",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/alloymap-v0.29.0/alloy-map-0.29.0.jar",
-      "sha256": "d45bfaec0fe71b36ffe4cde13f6bc6ea7cc97427cd742837d2c6ff73751c014e",
-      "changelog": "- With Alloy Waypoints 2.10+: right-click the world map > Add shared waypoint opens Alloy Waypoints' full Add form, and clicking a shared waypoint's pin opens its menu",
+      "version": "0.30.0",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/alloymap-v0.30.0/alloy-map-0.30.0.jar",
+      "sha256": "21ccae17584cfccecf60a76760092c0086bad6f8125543fdfd0702a06bda2d28",
+      "changelog": "- Temporary markers: in the marker menu choose Keep: Until reached (gone when you get within 4 blocks) or Until you leave (gone when you log out)\n- World map right-click > Go here: one click drops a temporary marker that disappears when you arrive\n- Chunk selection > Corners: marks the 4 outer corners of the selection for the perimeter (temporary)",
       "environment": "*",
       "depends": {
         "fabric-api": "*",
