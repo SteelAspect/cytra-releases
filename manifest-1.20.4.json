@@ -1,6 +1,21 @@
 {
   "mods": [
     {
+      "id": "cytrabackups",
+      "name": "Alloy Backups",
+      "version": "1.8.1+1.20.4",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytrabackups-v1.8.1+1.20.4/alloy-backups-1.8.1+1.20.4.jar",
+      "sha256": "e24e806465dbea993da65cf7f3e2ae639fb476dbf85f2cab9740c26362f0bc2c",
+      "changelog": "First Minecraft 1.20.4 build, same features as the 1.21.11 version. Only runs on 1.20.4.",
+      "environment": "*",
+      "depends": {
+        "fabric-api": "*",
+        "alloy-ui": ">=1.4.0 <2.0.0"
+      },
+      "optional": {},
+      "minecraft": "1.20.4"
+    },
+    {
       "id": "cytra-hub",
       "name": "Alloy Hub",
       "version": "0.7.2+1.20.4",
