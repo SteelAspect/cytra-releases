@@ -51,10 +51,10 @@
     {
       "id": "cytracarpet",
       "name": "Alloy Carpet",
-      "version": "1.11.0",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytracarpet-v1.11.0/alloy-carpet-1.11.0.jar",
-      "sha256": "f14d21eeba59f58b53af6d41884cd7e51613bf25966d53fabf05c26e707f3420",
-      "changelog": "oldRaids matches 1.20.1 more closely: raiders go for dropped banners the 1.20.1 way, raid pillagers get 1.20.1 Multishot crossbows, and the Bad Omen cloud puff is back\n/cytra commands now use true|false instead of on|off (like Carpet rules)",
+      "version": "1.12.0",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytracarpet-v1.12.0/alloy-carpet-1.12.0.jar",
+      "sha256": "7f0f0c9d5727b7dc6cf0631767d7f5ff2de1deafcf2a4b59280405c167692d3a",
+      "changelog": "New Carpet rule missingTools with a player toggle (/cytra missingtools true): pickaxes mine glass, tinted and stained glass and all glass panes at pickaxe speed\nWorks for vanilla clients too: a fast pickaxe breaks glass instantly",
       "environment": "*",
       "depends": {
         "fabric-api": "*",
