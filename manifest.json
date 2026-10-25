@@ -270,10 +270,10 @@
     {
       "id": "cytra-shulkerview",
       "name": "Alloy Shulker View",
-      "version": "1.6.0",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-shulkerview-v1.6.0/alloy-shulkerview-1.6.0.jar",
-      "sha256": "f21ef7bc4137f3c637b93ff2adf065c71da777fdae33ced8080ba94f2db68b8d",
-      "changelog": "- The shulker preview now works like ShulkerBoxTooltip: the tooltip says Shift: preview, Shift shows the compact view (same items merged), Alt+Shift shows every slot\n- The preview window looks like a vanilla container, tinted with the shulker's colour (the dark Alloy look is a setting)\n- Chests, barrels, hoppers, furnaces and dispensers that hold items preview too\n- New settings: Window look, Shulker colour, Other containers, Shift shows (compact or full)",
+      "version": "1.7.0",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-shulkerview-v1.7.0/alloy-shulkerview-1.7.0.jar",
+      "sha256": "acaface0a243045025193d34043bcf0d55d9ad0c6a8dafeb1084fbdf9ded2dc8",
+      "changelog": "- Ender chest preview: hovering an ender chest item shows your own ender chest (Shift compact, Alt+Shift every slot)\n- With Alloy Shulker View on the server it's always up to date; on other servers it shows after you open your ender chest once\n- New setting: Ender chest (on by default)",
       "environment": "*",
       "depends": {
         "fabric-api": "*",
