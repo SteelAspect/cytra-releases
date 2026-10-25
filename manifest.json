@@ -370,10 +370,10 @@
     {
       "id": "schematic-tiling-javafied",
       "name": "Return Cannon Maker",
-      "version": "1.5.1",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/schematic-tiling-javafied-v1.5.1/return-cannon-maker-1.5.1.jar",
-      "sha256": "7bf7540dcaac3314d4a770dfd5f0739f83850f2b79e420a75d6c279092016fcc",
-      "changelog": "- Built with the same tools as the other Alloy mods (Java 21); nothing changes in game",
+      "version": "1.6.0",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/schematic-tiling-javafied-v1.6.0/return-cannon-maker-1.6.0.jar",
+      "sha256": "2e80c2e8f545c2507d789084559609774195428fb5e0e3670cab7a013e914a56",
+      "changelog": "- New 836 FTL screen (/cannon ftl or the 836 FTL button): firing setups for garlic-bred's 836 FTL v2 TNT cannon, matching the website exactly\n- Shows landing, TNT, direction, the stopper block and the encoding\n- Save schematics: the encoding laid out like a real one (glass/observer + rails, note block rows) and the stopper block at its exact spot\n- Place stopper (op) puts the stopper in the world",
       "environment": "*",
       "depends": {
         "fabric-api": "*",
