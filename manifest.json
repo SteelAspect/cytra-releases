@@ -159,10 +159,10 @@
     {
       "id": "cytramap",
       "name": "Alloy Map",
-      "version": "0.30.2",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/alloymap-v0.30.2/alloy-map-0.30.2.jar",
-      "sha256": "11b7f0bdcf2deaa6d8b1cf0965c8273f102e360a766415bdab312dac666039ee",
-      "changelog": "- The world map's chunk selection stays until you press Clear (also after closing the map or logging out)\n- The 4 corner markers stay too; Clear removes them with the selection",
+      "version": "0.30.3",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/alloymap-v0.30.3/alloy-map-0.30.3.jar",
+      "sha256": "c87d71c6e177724b0a669872c313103d2dc24ed9b383eac0b45f730f12afed57",
+      "changelog": "World map shows mob, villager and item icons like the minimap. Select mode stays on after a selection: drag an edge or corner to resize it, the middle to move it, right-drag moves the map.",
       "environment": "*",
       "depends": {
         "fabric-api": "*",
@@ -179,10 +179,10 @@
     {
       "id": "alloymap",
       "name": "Alloy Map",
-      "version": "0.30.2",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/alloymap-v0.30.2/alloy-map-0.30.2.jar",
-      "sha256": "11b7f0bdcf2deaa6d8b1cf0965c8273f102e360a766415bdab312dac666039ee",
-      "changelog": "- The world map's chunk selection stays until you press Clear (also after closing the map or logging out)\n- The 4 corner markers stay too; Clear removes them with the selection",
+      "version": "0.30.3",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/alloymap-v0.30.3/alloy-map-0.30.3.jar",
+      "sha256": "c87d71c6e177724b0a669872c313103d2dc24ed9b383eac0b45f730f12afed57",
+      "changelog": "World map shows mob, villager and item icons like the minimap. Select mode stays on after a selection: drag an edge or corner to resize it, the middle to move it, right-drag moves the map.",
       "environment": "*",
       "depends": {
         "fabric-api": "*",
