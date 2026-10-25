@@ -200,10 +200,10 @@
     {
       "id": "cytra-masscraft",
       "name": "Alloy Mass Craft",
-      "version": "0.6.2",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-masscraft-v0.6.2/alloy-masscraft-0.6.2.jar",
-      "sha256": "b0788a7407360d24722a5d654e7480a18abe7931023e0a7efe1d98282aa75cc8",
-      "changelog": "Server crafting: shulker boxes it empties in your linked containers now go into your inventory, like Alloy Container's Take Emptied Shulker Boxes (needs Alloy Container 1.7.1 on the server)",
+      "version": "0.6.3",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-masscraft-v0.6.3/alloy-masscraft-0.6.3.jar",
+      "sha256": "e2e97027475659cde43325a07dd05da242e2259b46d6e0a9372373208b8ac3e8",
+      "changelog": "Fixed: server crafting could stop with 'short of ...' although your storage had enough (e.g. shulker shells for shulker boxes). Now whatever the server can't make is crafted by clicking, and the chat says how many linked containers the server could read\nServer crafting requests are much smaller, so big storages (up to 3,000 linked containers) fit\nUpdate Mass Craft on the server too: older server versions don't talk to 0.6.3 clients, which then craft by clicking",
       "environment": "*",
       "depends": {
         "fabric-api": "*",
