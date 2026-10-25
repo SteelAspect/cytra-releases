@@ -270,10 +270,10 @@
     {
       "id": "cytra-shulkerview",
       "name": "Alloy Shulker View",
-      "version": "1.4.0",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-shulkerview-v1.4.0/alloy-shulkerview-1.4.0.jar",
-      "sha256": "f153131f0e16281103a0e598370d8cb931daaf3b0f5bee3a82dd15761a741742",
-      "changelog": "- Hovering a shulker now shows all 27 slots as a grid, tinted to the box's colour, instead of the text list (counts, durability bars and enchant glint included)\n- New settings: preview on/off, only while holding Shift, and compact (same items merged with their total)\n- Turns itself off when ShulkerBoxTooltip is installed",
+      "version": "1.5.0",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-shulkerview-v1.5.0/alloy-shulkerview-1.5.0.jar",
+      "sha256": "4f3d7cf0a62ca8b9c5db5a00734e495b6db5c169bb9f28c8e2afdc6234168821",
+      "changelog": "- Mixed shulkers can show an icon too: their main item, or the top four as a 2x2 (new setting Mixed shulkers, off by default)\n- Placed shulkers now also show their label on the lid; it hides while the box is open (setting Label on the lid)\n- Shulker item icons are cached, so big inventories draw faster",
       "environment": "*",
       "depends": {
         "fabric-api": "*",
