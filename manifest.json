@@ -117,10 +117,10 @@
     {
       "id": "cytra-hub",
       "name": "Alloy Hub",
-      "version": "0.7.2",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-hub-v0.7.2/alloy-hub-0.7.2.jar",
-      "sha256": "adc994ac06a34ce4c4392a0700d0f6c87abf223b0769b77dc938fb9e6f47ed33",
-      "changelog": "- Alloy Shulker View page: Tooltip preview toggles (Contents preview, Only while holding Shift, Compact)\n- Alloy Mass Craft page: Mass stonecutting toggle\n- Alloy Syncmatica: Material Tracker and Layer Progress open its new Alloy screens\n- Changelogs for Pack Mixer 0.17.0, Mass Craft 0.5.0, Waypoints 2.10.0, Map 0.29.0, Creative 0.5.2, FX 0.9.1, Syncmatica 1.5.0, Container 1.6.0 and Shulker View 1.4.0",
+      "version": "0.7.3",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-hub-v0.7.3/alloy-hub-0.7.3.jar",
+      "sha256": "a3cb7829fa9e65478bc9d7b56e5863c43df82df1bcb23334aa652c07f06a97da",
+      "changelog": "- Restart & apply: started from Alloy Launcher 0.1.22+, the Updates page restarts the game after installing updates and puts you back on the same server or world\n- Alloy Shulker View page: Mixed shulkers icon, Label on the lid, and the new tooltip settings (Shift shows, Window look, Shulker colour, Other containers)\n- Alloy Mass Craft page: Careful speed and Server crafting\n- Changelogs for Shulker View 1.5.0 and 1.6.0, Return Cannon Maker 1.6.0, Map 0.30.0, Container 1.7.0, Pack Mixer 0.17.1, Mass Craft 0.6.0 and 0.6.1, Carpet 1.10.0 and Printer 1.3.0",
       "environment": "*",
       "depends": {
         "fabric-api": "*",
