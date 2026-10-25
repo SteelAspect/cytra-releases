@@ -51,10 +51,10 @@
     {
       "id": "cytracarpet",
       "name": "Alloy Carpet",
-      "version": "1.10.0",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytracarpet-v1.10.0/alloy-carpet-1.10.0.jar",
-      "sha256": "7d98e0c6d7a9058cb0100ab88a9b4aa0c8a85a0382345ea513e784bea4a91d57",
-      "changelog": "New Carpet rule oldRaids: 1.20.1 raids, so old raid farms work again\nKilling a captain gives Bad Omen I-V again, and Bad Omen starts the raid at once (no Raid Omen)\nRaid waves spawn where they did in 1.20.1 and captains keep their leader slot when they leave the raid\nExtra rules: oldRaidsOminousBottles, oldRaidsBadOmenMinutes",
+      "version": "1.11.0",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytracarpet-v1.11.0/alloy-carpet-1.11.0.jar",
+      "sha256": "f14d21eeba59f58b53af6d41884cd7e51613bf25966d53fabf05c26e707f3420",
+      "changelog": "oldRaids matches 1.20.1 more closely: raiders go for dropped banners the 1.20.1 way, raid pillagers get 1.20.1 Multishot crossbows, and the Bad Omen cloud puff is back\n/cytra commands now use true|false instead of on|off (like Carpet rules)",
       "environment": "*",
       "depends": {
         "fabric-api": "*",
