@@ -236,10 +236,10 @@
     {
       "id": "cytraprinter",
       "name": "Alloy Printer",
-      "version": "1.3.0",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytraprinter-v1.3.0/alloy-printer-1.3.0.jar",
-      "sha256": "6dc4418bcc384ba1348b8393e698417e2b8774a8650e5e4aa5c477b91646efb7",
-      "changelog": "Skipped blocks stay outlined through walls, even after you walk away: red = wrong block it won't fix, orange = can't place it exactly from where you stood, yellow = gave up for now\nNext Skipped Block key points you to the nearest one (its outline pulses)\nRetry Skipped Blocks key makes the printer try them all again\nBoth are also buttons on the Alloy Hub page, and its status shows the counts",
+      "version": "1.3.1",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytraprinter-v1.3.1/alloy-printer-1.3.1.jar",
+      "sha256": "4c300ba5e7819e48dfdb562f634111b28f277a6d15b1d8c54ddd191e41b178c9",
+      "changelog": "Fixed low FPS while printing: the printer no longer redoes long placement searches every second, and never spends more than about 2 ms of a tick searching\nStanding at a finished build costs almost nothing now",
       "environment": "*",
       "depends": {
         "fabric-api": "*",
