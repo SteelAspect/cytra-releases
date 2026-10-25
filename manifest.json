@@ -200,10 +200,10 @@
     {
       "id": "cytra-masscraft",
       "name": "Alloy Mass Craft",
-      "version": "0.6.1",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-masscraft-v0.6.1/alloy-masscraft-0.6.1.jar",
-      "sha256": "68eadbb77b1c6a8d200628209f32343bac2d8730089115a8a50198844015bfec",
-      "changelog": "Fixed: server crafting now puts results into the shulker boxes in your dump containers, like normal crafting does (including splitting a box off a stack of empty ones)",
+      "version": "0.6.2",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-masscraft-v0.6.2/alloy-masscraft-0.6.2.jar",
+      "sha256": "b0788a7407360d24722a5d654e7480a18abe7931023e0a7efe1d98282aa75cc8",
+      "changelog": "Server crafting: shulker boxes it empties in your linked containers now go into your inventory, like Alloy Container's Take Emptied Shulker Boxes (needs Alloy Container 1.7.1 on the server)",
       "environment": "*",
       "depends": {
         "fabric-api": "*",
