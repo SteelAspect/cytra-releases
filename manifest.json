@@ -270,10 +270,10 @@
     {
       "id": "cytra-shulkerview",
       "name": "Alloy Shulker View",
-      "version": "1.5.0",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-shulkerview-v1.5.0/alloy-shulkerview-1.5.0.jar",
-      "sha256": "4f3d7cf0a62ca8b9c5db5a00734e495b6db5c169bb9f28c8e2afdc6234168821",
-      "changelog": "- Mixed shulkers can show an icon too: their main item, or the top four as a 2x2 (new setting Mixed shulkers, off by default)\n- Placed shulkers now also show their label on the lid; it hides while the box is open (setting Label on the lid)\n- Shulker item icons are cached, so big inventories draw faster",
+      "version": "1.6.0",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-shulkerview-v1.6.0/alloy-shulkerview-1.6.0.jar",
+      "sha256": "f21ef7bc4137f3c637b93ff2adf065c71da777fdae33ced8080ba94f2db68b8d",
+      "changelog": "- The shulker preview now works like ShulkerBoxTooltip: the tooltip says Shift: preview, Shift shows the compact view (same items merged), Alt+Shift shows every slot\n- The preview window looks like a vanilla container, tinted with the shulker's colour (the dark Alloy look is a setting)\n- Chests, barrels, hoppers, furnaces and dispensers that hold items preview too\n- New settings: Window look, Shulker colour, Other containers, Shift shows (compact or full)",
       "environment": "*",
       "depends": {
         "fabric-api": "*",
