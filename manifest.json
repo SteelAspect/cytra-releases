@@ -70,10 +70,10 @@
     {
       "id": "containerautofill",
       "name": "Alloy Container",
-      "version": "1.7.0",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/containerautofill-v1.7.0/alloy-container-1.7.0.jar",
-      "sha256": "53d9b4f30e88bfd8d335eda7e8465d6ddb0d938f5327d2bd2932f7938e90d716",
-      "changelog": "- When taking items empties a shulker box in a linked container (storage menu, pick block, easy place, Get Materials, fills), the empty box now comes to your inventory too. Setting: Take Emptied Shulker Boxes (on by default). Needs 1.7.0 on the server too.",
+      "version": "1.7.1",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/containerautofill-v1.7.1/alloy-container-1.7.1.jar",
+      "sha256": "3bde7cad2bb851a81b5f1ff64ec37a1ba4fefea90def5ab8eb6e28298696f2ea",
+      "changelog": "- Alloy Mass Craft's server crafting now also brings back shulker boxes it empties in your linked containers (with Mass Craft 0.6.2 and Take Emptied Shulker Boxes on).",
       "environment": "*",
       "depends": {
         "fabric-api": "*",
