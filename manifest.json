@@ -236,10 +236,10 @@
     {
       "id": "cytraprinter",
       "name": "Alloy Printer",
-      "version": "1.3.1",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytraprinter-v1.3.1/alloy-printer-1.3.1.jar",
-      "sha256": "4c300ba5e7819e48dfdb562f634111b28f277a6d15b1d8c54ddd191e41b178c9",
-      "changelog": "Fixed low FPS while printing: the printer no longer redoes long placement searches every second, and never spends more than about 2 ms of a tick searching\nStanding at a finished build costs almost nothing now",
+      "version": "1.3.2",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytraprinter-v1.3.2/alloy-printer-1.3.2.jar",
+      "sha256": "abee547b6cd1e10fc1966ebfb8bdbfc54c281bffd128a5e8f9df6fdc5ec47872",
+      "changelog": "No more wrong blocks on laggy servers: the printer waits until the server has confirmed its last change to a spot before clicking there again\nWith the server helper, a click that would land next to the aimed spot is refused instead of placing a stray block\nBreaking blocks no tool is faster on (glass) uses a pickaxe instead of whatever is in your hand",
       "environment": "*",
       "depends": {
         "fabric-api": "*",
