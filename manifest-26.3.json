@@ -100,6 +100,26 @@
         "malilib": "*"
       },
       "minecraft": "26.3"
+    },
+    {
+      "id": "schematic-tiling-javafied",
+      "name": "Return Cannon Maker",
+      "version": "1.6.0+26.3",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/schematic-tiling-javafied-v1.6.0+26.3/return-cannon-maker-1.6.0+26.3.jar",
+      "sha256": "cf1f79e4aa7df78429b5d65d51f1deb589eea544452342dc4e93a77fd77ad5df",
+      "changelog": "First Minecraft 26.3 build (needs Java 25 and Fabric Loader 0.20.1+). Only runs on 26.3. Same as Return Cannon Maker 1.6.0: /cannon menu, 836 FTL calculator, tiling and Hub page. Needs Litematica for 26.3.",
+      "environment": "*",
+      "depends": {
+        "fabric-api": "*",
+        "malilib": "*",
+        "litematica": "*",
+        "alloy-ui": ">=1.4.0 <2.0.0"
+      },
+      "optional": {
+        "modmenu": "*",
+        "cytra-hub": "*"
+      },
+      "minecraft": "26.3"
     }
   ]
 }
