@@ -57,6 +57,17 @@ or a 1.21.11 jar with it. 1.20.4 entries get `"minecraft": "1.20.4"`; their GitH
 "(Minecraft 1.20.4)" and never marked latest, and they skip Alloy Hub's built-in changelog. When pruning old GitHub
 releases, count 1.20.4 releases (tags ending `+1.20.4`) separately from 1.21.11 ones.
 
+## 26.3 releases
+
+26.3 ports (built in `~/Documents/Mods/26.3/`, versions ending `+26.3`) work the same way with their own manifest,
+`manifest-26.3.json`, read only by the 26.3 Alloy Hub:
+
+```
+python release.py --mc 26.3 <path-to-jar> "<changelog>"
+```
+
+The script refuses a `+26.3` jar without `--mc 26.3`. Count 26.3 releases separately when pruning too.
+
 ## Manifest format
 
 ```json

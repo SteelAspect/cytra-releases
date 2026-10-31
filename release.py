@@ -156,8 +156,8 @@ def main():
             fail("--mc needs a Minecraft version")
         mc = args[i + 1]
         del args[i:i + 2]
-    if mc not in (None, "1.20.4"):
-        fail("--mc only knows 1.20.4 (leave it out for 1.21.11)")
+    if mc not in (None, "1.20.4", "26.3"):
+        fail("--mc only knows 1.20.4 and 26.3 (leave it out for 1.21.11)")
     replaces = []
     while "--replaces" in args:
         i = args.index("--replaces")
@@ -166,7 +166,7 @@ def main():
         replaces.append(args[i + 1])
         del args[i:i + 2]
     if len(args) != 2:
-        fail('usage: python release.py [--unlisted] [--mc 1.20.4] <path-to-jar> "<changelog>"')
+        fail('usage: python release.py [--unlisted] [--mc 1.20.4|26.3] <path-to-jar> "<changelog>"')
     jar, changelog = os.path.abspath(args[0]), args[1].strip()
     if not os.path.isfile(jar):
         fail("no such file: " + jar)
@@ -174,13 +174,15 @@ def main():
         fail("changelog is empty")
 
     mod_id, name, version, extra, description = read_mod_json(jar)
-    # A jar only goes into the manifest for its own Minecraft: 1.21.11 Hubs read manifest.json, 1.20.4 Hubs
-    # read manifest-1.20.4.json, so neither can ever offer the other's jars.
+    # A jar only goes into the manifest for its own Minecraft: 1.21.11 Hubs read manifest.json, 1.20.4 and 26.3
+    # Hubs read manifest-<mc>.json, so no Hub can ever offer another version's jars.
     with zipfile.ZipFile(jar) as z:
         jar_mc = json.loads(z.read("fabric.mod.json")).get("depends", {}).get("minecraft", "")
     jar_mc = " || ".join(jar_mc) if isinstance(jar_mc, list) else str(jar_mc)
     if mc is None and ("1.20" in version or "1.20" in jar_mc):
         fail(f"{version} is a 1.20.4 build: release it with --mc 1.20.4")
+    if mc is None and ("+26." in version or jar_mc.startswith("26.")):
+        fail(f"{version} is a 26.x build: release it with --mc 26.3")
     if mc is not None and not (version.endswith("+" + mc) and mc in jar_mc):
         fail(f"{version} (minecraft {jar_mc or '?'}) is not a {mc} build")
     manifest_path = MANIFEST if mc is None else os.path.join(HERE, f"manifest-{mc}.json")
@@ -249,7 +251,7 @@ def main():
     run("git", "commit", "-q", "-m", f"{name} {version}")
     run("git", "push", "-q")
     print(f"Released {name} {version}: https://github.com/{REPO}/releases/tag/{tag}")
-    if mc is None:  # Hub's built-in changelog is the 1.21.11 Hub's; 1.20.4 builds stay out of it
+    if mc is None:  # Hub's built-in changelog is the 1.21.11 Hub's; other versions' builds stay out of it
         update_hub(mod_id, name, description, version, changelog)
 
 

@@ -3,14 +3,14 @@
 Public home of the Alloy mod jars, the update manifests that Alloy Hub reads, the download page, and `release.py`. Workspace rules: `../CLAUDE.md`. **This repo is public: write nothing private into it.** Never release, publish or edit the manifest without the user's OK.
 
 ## What it is
-- GitHub `SteelAspect/cytra-releases`, branch `main`, served by GitHub Pages (`.nojekyll`): download page `index.html`, manifests `manifest.json` (Minecraft 1.21.11, 22 mod entries) and `manifest-1.20.4.json` (14 entries, read only by the 1.20.4 Hub), `alloy-logo.png`, `README.md`.
+- GitHub `SteelAspect/cytra-releases`, branch `main`, served by GitHub Pages (`.nojekyll`): download page `index.html`, manifests `manifest.json` (Minecraft 1.21.11, 22 mod entries) and `manifest-1.20.4.json` (14 entries, read only by the 1.20.4 Hub) and `manifest-26.3.json` (read only by the 26.3 Hub), `alloy-logo.png`, `README.md`.
 - Jars live in GitHub releases named `<id>-v<version>` (Alloy Pack: `alloypack-v<version>`, 13 zips; Cytra Link: `cytra-link-v<version>`); 1.20.4 releases are tagged with `+1.20.4`.
 
 ## Stack
 - Python 3 and the `gh` CLI logged in with push access. No build system. `__pycache__` is ignored.
 
 ## Code map
-- `release.py` (about 260 lines): `python release.py [--unlisted] [--replaces <old-id>] [--mc 1.20.4] <jar> "<changelog>"`. Reads id/name/version/environment/depends from `fabric.mod.json` in the jar, computes SHA-256, creates the GitHub release with the jar, updates the manifest entry (`id`, `name`, `version`, `url`, `sha256`, `changelog`, `environment`, `depends`, `optional`, `listed`, optional `replaces`/`renamedTo`/`minecraft`), commits and pushes, then adds the changelog to Alloy Hub's built-in list (`src/client/resources/cytra-hub/mods.json` in `../cytra-hub`, or `$CYTRA_HUB`) and commits it there without pushing. Refuses a version already in the manifest and a 1.21.11 jar given `--mc 1.20.4` or the reverse. Takes a file lock so two releases cannot run at once.
+- `release.py` (about 260 lines): `python release.py [--unlisted] [--replaces <old-id>] [--mc 1.20.4|26.3] <jar> "<changelog>"`. Reads id/name/version/environment/depends from `fabric.mod.json` in the jar, computes SHA-256, creates the GitHub release with the jar, updates the manifest entry (`id`, `name`, `version`, `url`, `sha256`, `changelog`, `environment`, `depends`, `optional`, `listed`, optional `replaces`/`renamedTo`/`minecraft`), commits and pushes, then adds the changelog to Alloy Hub's built-in list (`src/client/resources/cytra-hub/mods.json` in `../cytra-hub`, or `$CYTRA_HUB`) and commits it there without pushing. Refuses a version already in the manifest and a jar whose Minecraft doesn't match `--mc` (or a 1.20.4/26.x jar without it). Takes a file lock so two releases cannot run at once.
 - `index.html`: reads the manifest for the chosen Minecraft version and lists mods that are `listed`.
 
 ## Build and test

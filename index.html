@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Alloy Mods</title>
 <link rel="icon" type="image/png" href="alloy-logo.png">
-<meta name="description" content="Downloads for the Alloy Fabric mods for Minecraft 1.21.11 and 1.20.4.">
+<meta name="description" content="Downloads for the Alloy Fabric mods for Minecraft 1.21.11, 26.3 and 1.20.4.">
 <style>
   :root {
     --bg: #0d1117;
@@ -112,6 +112,7 @@
     <p class="sub" id="sub"></p>
     <div class="tabs" role="tablist" aria-label="Minecraft version">
       <button class="tab" role="tab" data-mc="1.21.11">1.21.11</button>
+      <button class="tab" role="tab" data-mc="26.3">26.3</button>
       <button class="tab" role="tab" data-mc="1.20.4">1.20.4</button>
     </div>
   </header>
@@ -141,7 +142,8 @@
   // Each Minecraft version has its own manifest, so a jar is only ever shown (and offered by Alloy Hub) for its version.
   var VERSIONS = {
     '1.21.11': { file: 'manifest.json', sub: 'Fabric mods for Minecraft 1.21.11. Alloy Hub can install these updates for you from its Updates tab.' },
-    '1.20.4': { file: 'manifest-1.20.4.json', sub: 'Fabric mods for Minecraft 1.20.4. These jars only run on 1.20.4; the 1.20.4 Alloy Hub installs them from its Updates tab.' }
+    '1.20.4': { file: 'manifest-1.20.4.json', sub: 'Fabric mods for Minecraft 1.20.4. These jars only run on 1.20.4; the 1.20.4 Alloy Hub installs them from its Updates tab.' },
+    '26.3': { file: 'manifest-26.3.json', sub: 'Fabric mods for Minecraft 26.3 (Java 25). These jars only run on 26.3; the 26.3 Alloy Hub installs them from its Updates tab.' }
   };
   var tabs = document.querySelectorAll('.tab');
   var loadId = 0;
