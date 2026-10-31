@@ -146,10 +146,10 @@
     {
       "id": "cytra-ledger",
       "name": "Alloy Ledger",
-      "version": "0.7.0",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-ledger-v0.7.0/alloy-ledger-0.7.0.jar",
-      "sha256": "84fdb8c6cf7452efa7834e838adb52d8f391413e072c297715f83a4f0f6f34bf",
-      "changelog": "Item frames, glow item frames, paintings and armor stands are logged (placed, broken, items put in or taken out) and /ll rollback puts them back; ones changed since are left alone\n/ll search with filters: a:break,place b:diamond_ore,!dirt p:Steve r:20 t:2d\n/ll rollback search rolls back only what matches (needs t: and p: or r:)\nFaster lookups: hours that can't match are skipped",
+      "version": "0.8.0",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-ledger-v0.8.0/alloy-ledger-0.8.0.jar",
+      "sha256": "a170c0f13f6c57a8cc1a8443358888f51848abfd5110031cc636f7a67ebb4a3d",
+      "changelog": "Partial restore: /ll inv <player> take <n> [ender] (or the new [Take] button) lets staff hand back single items instead of a whole inventory\nLeft-click a stack to take it, shift-click to give it straight to the player, right-click a shulker box to take single stacks from inside it\nHanded-out items leave the snapshot (never given twice, skipped by a later full restore) and are logged as give (/ll search a:give)",
       "environment": "server",
       "depends": {
         "fabric-api": "*"
