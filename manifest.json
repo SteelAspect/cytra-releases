@@ -200,10 +200,10 @@
     {
       "id": "cytra-masscraft",
       "name": "Alloy Mass Craft",
-      "version": "0.6.3",
-      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-masscraft-v0.6.3/alloy-masscraft-0.6.3.jar",
-      "sha256": "e2e97027475659cde43325a07dd05da242e2259b46d6e0a9372373208b8ac3e8",
-      "changelog": "Fixed: server crafting could stop with 'short of ...' although your storage had enough (e.g. shulker shells for shulker boxes). Now whatever the server can't make is crafted by clicking, and the chat says how many linked containers the server could read\nServer crafting requests are much smaller, so big storages (up to 3,000 linked containers) fit\nUpdate Mass Craft on the server too: older server versions don't talk to 0.6.3 clients, which then craft by clicking",
+      "version": "0.6.4",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-masscraft-v0.6.4/alloy-masscraft-0.6.4.jar",
+      "sha256": "36284b1df6ff6f176c832b0d45303d2a38cd3fcedf2fe3242440772554762bc2",
+      "changelog": "Fixed: the game could freeze when picking certain items (white bed, white wool and other colored items). Counting and planning now always finish quickly\nColored items work: beds, carpets, wool and shulker boxes in any color, made from their normal recipe or by dyeing ones you have (shulker box dyeing is new)\nRecipes can be mixed in one craft, e.g. some white beds from wool and the rest by dyeing other beds",
       "environment": "*",
       "depends": {
         "fabric-api": "*",
