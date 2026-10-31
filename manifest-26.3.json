@@ -29,6 +29,26 @@
         "alloymap": "*"
       },
       "minecraft": "26.3"
+    },
+    {
+      "id": "cytraprinter",
+      "name": "Alloy Printer",
+      "version": "1.3.2+26.3",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytraprinter-v1.3.2+26.3/alloy-printer-1.3.2+26.3.jar",
+      "sha256": "b34a8a50ac37a8aa8a63c116719d0c7a143d9556fd8219b91fb55ccd8f174633",
+      "changelog": "First Minecraft 26.3 build (needs Java 25 and Fabric Loader 0.20.1+). Only runs on 26.3. Same as Printer 1.3.2, with the Nocturne screen and Hub page. Needs Litematica 0.29.1 and MaLiLib 0.30.2 for 26.3. No composter or extra reach.",
+      "environment": "*",
+      "depends": {
+        "fabric-api": "*",
+        "alloy-ui": ">=1.4.0"
+      },
+      "optional": {
+        "takeitout": "*",
+        "cytra-hub": "*",
+        "litematica": ">=0.29.1",
+        "malilib": ">=0.30.2"
+      },
+      "minecraft": "26.3"
     }
   ]
 }
