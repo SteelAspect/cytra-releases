@@ -1,0 +1,34 @@
+{
+  "mods": [
+    {
+      "id": "cytra-hub",
+      "name": "Alloy Hub",
+      "version": "0.7.3+26.3",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-hub-v0.7.3+26.3/alloy-hub-0.7.3+26.3.jar",
+      "sha256": "fc9b08a5f05b145286f1ef3f043410a29be32ae0688ce1fa1a93a108d85eec9f",
+      "changelog": "First Minecraft 26.3 build (needs Java 25 and Fabric Loader 0.20.1+). Only runs on 26.3. Same as Hub 0.7.3; its Updates tab only offers 26.3 builds. Left out for now: Cytra Link hook and Discord commands.",
+      "environment": "*",
+      "depends": {
+        "fabric-api": "*",
+        "alloy-ui": ">=1.2.0 <2.0.0"
+      },
+      "optional": {
+        "modmenu": "*",
+        "cytra-link": "*",
+        "sharedwaypoints": "*",
+        "stickytoggle": "*",
+        "containerautofill": "*",
+        "cytra-syncmatica": "*",
+        "cytra-areascanner": "*",
+        "cytra-botmacros": "*",
+        "cytracarpet": "*",
+        "cytratrades": "*",
+        "cytracreative": "*",
+        "cytra-shulkerview": "*",
+        "cytra-masscraft": "*",
+        "alloymap": "*"
+      },
+      "minecraft": "26.3"
+    }
+  ]
+}
