@@ -18,6 +18,21 @@
       "minecraft": "26.3"
     },
     {
+      "id": "cytrabackups",
+      "name": "Alloy Backups",
+      "version": "1.9.0+26.3",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytrabackups-v1.9.0+26.3/alloy-backups-1.9.0+26.3.jar",
+      "sha256": "75622560521adeedacd29aa19e5c33a302c796d052edba63403e680ab7af1951",
+      "changelog": "First Minecraft 26.3 build (needs Java 25 and Fabric Loader 0.20.1+). Only runs on 26.3. Same as Backups 1.9.0, including migrate. No Mod Menu button (no Mod Menu for 26.3 yet).",
+      "environment": "*",
+      "depends": {
+        "fabric-api": "*",
+        "alloy-ui": ">=1.4.0 <2.0.0"
+      },
+      "optional": {},
+      "minecraft": "26.3"
+    },
+    {
       "id": "cytra-hub",
       "name": "Alloy Hub",
       "version": "0.7.3+26.3",
