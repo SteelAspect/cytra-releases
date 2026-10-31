@@ -1,6 +1,23 @@
 {
   "mods": [
     {
+      "id": "cytra-areascanner",
+      "name": "Alloy Area Scanner",
+      "version": "1.2.0+26.3",
+      "url": "https://github.com/SteelAspect/cytra-releases/releases/download/cytra-areascanner-v1.2.0+26.3/alloy-areascanner-1.2.0+26.3.jar",
+      "sha256": "72c9ea6dcbbdd36fd346418559ac08144ad1b7f00cc37ae3d9380b96caf88b15",
+      "changelog": "First Minecraft 26.3 build (needs Java 25 and Fabric Loader 0.20.1+). Only runs on 26.3. Same as Area Scanner 1.2.0: Nocturne screen, overlay, HUD, presets and Hub page. Needs Litematica 0.29.1 and MaLiLib 0.30.2 for 26.3.",
+      "environment": "client",
+      "depends": {
+        "fabric-api": "*",
+        "litematica": ">=0.29.1",
+        "malilib": ">=0.30.2",
+        "alloy-ui": ">=1.4.0 <2.0.0"
+      },
+      "optional": {},
+      "minecraft": "26.3"
+    },
+    {
       "id": "cytra-hub",
       "name": "Alloy Hub",
       "version": "0.7.3+26.3",
